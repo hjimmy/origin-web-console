@@ -1,0 +1,6282 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: \n"
+
+#: app/views/directives/labels.html:4
+msgid "&lt;empty&gt;"
+msgstr ""
+
+#: app/views/directives/lifecycle-hook.html:6
+msgid "&ndash; runs after the deployment strategy completes"
+msgstr ""
+
+#: app/views/directives/lifecycle-hook.html:5
+msgid "&ndash; runs after the previous deployment is scaled down to zero and before the first pod of the new deployment is created"
+msgstr ""
+
+#: app/views/directives/lifecycle-hook.html:4
+msgid "&ndash; runs before the deployment begins"
+msgstr ""
+
+#: app/views/create/fromimage.html:213
+msgid "(Build and Runtime)"
+msgstr ""
+
+#: app/views/overview/_list-row-actions.html:20
+msgid "(Paused)"
+msgstr ""
+
+#: app/views/create/fromimage.html:254
+msgid "(Runtime only)"
+msgstr ""
+
+#: app/views/browse/_replica-set-details.html:82
+#: app/views/browse/deployment-config.html:207
+#: app/views/browse/deployment.html:148
+msgid "(autoscaled)"
+msgstr ""
+
+#: app/views/_volumes.html:52
+msgid "(bare host directory volume)"
+msgstr ""
+
+#: app/views/directives/osc-persistent-volume-claim.html:106
+#: app/views/directives/osc-persistent-volume-claim.html:138
+#: app/views/modals/edit-pvc-resource.html:26
+msgid "(cannot be changed)"
+msgstr ""
+
+#: app/views/browse/deployment-config.html:267
+msgid "(disabled)"
+msgstr ""
+
+#: app/views/browse/deployment-config.html:150
+msgid "(latest)"
+msgstr ""
+
+#: app/views/_volumes.html:95
+msgid "(populated by a config map)"
+msgstr ""
+
+#: app/views/_volumes.html:18
+msgid "(populated by a secret when the pod is created)"
+msgstr ""
+
+#: app/views/_volumes.html:84
+msgid "(populated with information about the pod)"
+msgstr ""
+
+#: app/views/_volumes.html:73
+msgid "(pulled from git when the pod is created)"
+msgstr ""
+
+#: app/views/_volumes.html:38
+msgid "(reference to a persistent volume claim)"
+msgstr ""
+
+#: app/views/_volumes.html:61
+msgid "(temporary directory destroyed with the pod)"
+msgstr ""
+
+#: app/views/membership.html:91
+msgid "(you)"
+msgstr ""
+
+#: app/views/_pod-template-container.html:120
+msgid ", subpath {{mount.subPath}}"
+msgstr ""
+
+#: app/views/services.html:67
+msgid ",and {{service.spec.ports.length - 4}} others"
+msgstr ""
+
+#: app/views/services.html:61
+msgid ",and {{service.status.loadBalancer.ingress.length - 4}} others"
+msgstr ""
+
+#: app/views/create/fromimage.html:88
+msgid ",context dir: {{image.metadata.annotations.sampleContextDir}}"
+msgstr ""
+
+#: app/views/create/fromimage.html:88
+msgid ",ref: {{image.metadata.annotations.sampleRef}}"
+msgstr ""
+
+#: app/views/overview/_networking.html:42
+msgid ",target port {{route.spec.port.targetPort}}"
+msgstr ""
+
+#: app/views/attach-pvc.html:68
+msgid ". You cannot create new storage since you are at quota."
+msgstr ""
+
+#: app/views/directives/traffic-table.html:5
+msgid "/ Node Port"
+msgstr ""
+
+#: app/views/create/fromimage.html:93
+#: app/views/edit/build-config.html:46
+msgid "A Git repository URL is required."
+msgstr ""
+
+#: app/views/directives/next-steps.html:79
+msgid "A GitHub"
+msgstr ""
+
+#: app/views/edit/jenkinsfile-examples.html:2
+msgid "A Jenkinsfile is a Groovy script that defines your pipeline. In the Jenkinsfile, you can declare pipeline stages and run one or more steps within each stage. Here are some examples you can use in your pipelines."
+msgstr ""
+
+#: app/views/_cannot-create-project.html:1
+msgid "A cluster admin can create a project for you by running the command"
+msgstr ""
+
+#: app/views/directives/_edit-command.html:111
+msgid "A command is required."
+msgstr ""
+
+#: app/views/add-config-volume.html:79
+msgid "A file will be created in this directory for each key from the config map or secret. The file contents will be the value of the key."
+msgstr ""
+
+#: app/views/edit/health-checks.html:37
+msgid "A liveness probe checks if the container is still running. If the liveness probe fails, the container is killed."
+msgstr ""
+
+#: app/views/create/fromimage.html:49
+#: app/views/directives/deploy-image.html:140
+msgid "A name is required."
+msgstr ""
+
+#: app/views/overview/_list-row-empty-state.html:3
+msgid "A new deployment will start automatically when"
+msgstr ""
+
+#: app/views/attach-pvc.html:13
+msgid "A persistent volume claim"
+msgstr ""
+
+#: app/views/create-from-url.html:91
+msgid "A project is required in order to complete the installation."
+msgstr ""
+
+#: app/views/edit/health-checks.html:20
+msgid "A readiness probe checks if the container is ready to handle requests. A failed readiness probe means that a container should not receive any traffic from a proxy, even if it's running."
+msgstr ""
+
+#: app/views/command-line.html:38
+msgid "A token is a form of a password."
+msgstr ""
+
+#: app/views/directives/edit-config-map-or-secret.html:74
+msgid "A unique key for this {{type}} entry."
+msgstr ""
+
+#: app/views/directives/osc-autoscaling.html:23
+msgid "A unique name for the horizontal pod autoscaler within the project."
+msgstr ""
+
+#: app/views/directives/osc-routing.html:25
+msgid "A unique name for the route within the project."
+msgstr ""
+
+#: app/views/directives/osc-persistent-volume-claim.html:84
+msgid "A unique name for the storage claim within the project."
+msgstr ""
+
+#: app/views/directives/edit-config-map-or-secret.html:25
+msgid "A unique name for the {{type}} within the project."
+msgstr ""
+
+#: app/views/create/fromimage.html:53
+msgid "A valid name is applied to all generated resources. It is an alphanumeric (a-z, and 0-9) string with a maximum length of 24 characters, where the first character is a letter (a-z), and the '-' character is allowed anywhere except the first or last character."
+msgstr ""
+
+#: app/views/directives/replicas.html:40
+msgid "A value for replicas is required."
+msgstr ""
+
+#: app/components/osc-webhook-triggers/osc-webhook-triggers.html:76
+msgid "A {{trigger.data.type}} webhook trigger referencing the secret {{(trigger | getWebhookSecretData).secretReference.name}} already exists."
+msgstr ""
+
+#: app/views/about.html:8
+msgid "About"
+msgstr ""
+
+#: app/views/directives/deployment-metrics.html:4
+#: app/views/directives/pod-metrics.html:4
+msgid "About Compute Resources"
+msgstr ""
+
+#: app/views/directives/osc-form-section.html:14
+msgid "About {{aboutTitle}}"
+msgstr ""
+
+#: app/views/directives/osc-persistent-volume-claim.html:104
+msgid "Access Mode"
+msgstr ""
+
+#: app/views/storage.html:59
+msgid "Access Modes"
+msgstr ""
+
+#: app/views/_volume-claim-templates.html:12
+#: app/views/browse/persistent-volume-claim.html:80
+msgid "Access Modes:"
+msgstr ""
+
+#: app/views/directives/osc-persistent-volume-claim.html:40
+msgid "Access: {{sclass | storageClassAccessMode}}"
+msgstr ""
+
+#: app/views/about.html:38
+msgid "Account"
+msgstr ""
+
+#: app/views/directives/lifecycle-hook.html:10
+msgid "Action:"
+msgstr ""
+
+#: app/views/browse/_replica-set-actions.html:3
+#: app/views/browse/_replica-set-actions.html:8
+#: app/views/browse/_replication-controller-actions.html:3
+#: app/views/browse/_replication-controller-actions.html:8
+#: app/views/browse/build-config.html:23
+#: app/views/browse/build-config.html:28
+#: app/views/browse/build.html:21
+#: app/views/browse/build.html:26
+#: app/views/browse/config-map.html:26
+#: app/views/browse/config-map.html:33
+#: app/views/browse/deployment-config.html:20
+#: app/views/browse/deployment-config.html:25
+#: app/views/browse/deployment.html:10
+#: app/views/browse/deployment.html:15
+#: app/views/browse/imagestream.html:11
+#: app/views/browse/imagestream.html:16
+#: app/views/browse/persistent-volume-claim.html:11
+#: app/views/browse/persistent-volume-claim.html:16
+#: app/views/browse/pod.html:11
+#: app/views/browse/pod.html:16
+#: app/views/browse/route.html:11
+#: app/views/browse/route.html:16
+#: app/views/browse/secret.html:30
+#: app/views/browse/service-instance.html:25
+#: app/views/browse/service-instance.html:30
+#: app/views/browse/service.html:11
+#: app/views/browse/service.html:16
+#: app/views/browse/stateful-set.html:17
+#: app/views/browse/stateful-set.html:24
+#: app/views/other-resources.html:54
+#: app/views/other-resources.html:67
+#: app/views/overview/_list-row-actions.html:45
+#: app/views/overview/_list-row-actions.html:60
+#: app/views/overview/_list-row-actions.html:8
+#: app/views/overview/_mobile-client-row.html:22
+#: app/views/overview/_service-instance-row.html:75
+#: app/views/overview/_virtual-machine-row.html:29
+#: app/views/projects.html:128
+msgid "Actions"
+msgstr ""
+
+#: app/views/browse/_pod-details.html:50
+msgid "Active Deadline:"
+msgstr ""
+
+#: app/views/add-config-volume.html:190
+#: app/views/attach-pvc.html:211
+#: app/views/directives/_edit-command.html:65
+#: app/views/directives/_edit-command.html:86
+#: app/views/membership.html:135
+#: app/views/membership.html:249
+msgid "Add"
+msgstr ""
+
+#: app/views/directives/edit-environment-from.html:121
+msgid "Add ALL Values from Config Map or Secret"
+msgstr ""
+
+#: app/views/directives/osc-secrets.html:50
+#: app/views/directives/osc-source-secrets.html:112
+msgid "Add Another Secret"
+msgstr ""
+
+#: app/views/directives/osc-routing.html:175
+msgid "Add Another Service"
+msgstr ""
+
+#: app/views/browse/_replica-set-actions.html:19
+#: app/views/browse/_replica-set-actions.html:22
+#: app/views/browse/_replica-set-details.html:191
+#: app/views/browse/_replica-set-details.html:194
+#: app/views/browse/_replica-set-details.html:197
+#: app/views/browse/_replica-set-details.html:200
+#: app/views/browse/_replication-controller-actions.html:20
+#: app/views/browse/_replication-controller-actions.html:23
+#: app/views/browse/deployment-config.html:304
+#: app/views/browse/deployment-config.html:50
+#: app/views/browse/deployment.html:256
+#: app/views/browse/deployment.html:30
+msgid "Add Autoscaler"
+msgstr ""
+
+#: app/views/browse/_replica-set-details.html:105
+#: app/views/browse/_replica-set-details.html:119
+#: app/views/browse/_replica-set-details.html:133
+#: app/views/browse/_replica-set-details.html:147
+#: app/views/browse/deployment-config.html:248
+#: app/views/browse/deployment.html:236
+msgid "Add Config Files"
+msgstr ""
+
+#: app/views/add-config-volume.html:25
+msgid "Add Config Files to {{name}}"
+msgstr ""
+
+#: app/views/_pod-template.html:16
+msgid "Add Health Checks"
+msgstr ""
+
+#: app/views/add-config-volume.html:165
+#: app/views/directives/edit-config-map-or-secret.html:120
+#: app/views/directives/edit-config-map-or-secret.html:46
+msgid "Add Item"
+msgstr ""
+
+#: app/views/edit/health-checks.html:41
+msgid "Add Liveness Probe"
+msgstr ""
+
+#: app/views/edit/health-checks.html:24
+msgid "Add Readiness Probe"
+msgstr ""
+
+#: app/views/browse/_replica-set-actions.html:11
+#: app/views/browse/_replica-set-actions.html:15
+#: app/views/browse/_replica-set-details.html:103
+#: app/views/browse/_replica-set-details.html:117
+#: app/views/browse/_replica-set-details.html:131
+#: app/views/browse/_replica-set-details.html:145
+#: app/views/browse/_replication-controller-actions.html:11
+#: app/views/browse/_replication-controller-actions.html:15
+#: app/views/browse/deployment-config.html:246
+#: app/views/browse/deployment-config.html:45
+#: app/views/browse/deployment.html:234
+#: app/views/browse/deployment.html:25
+#: app/views/browse/pod.html:19
+msgid "Add Storage"
+msgstr ""
+
+#: app/views/attach-pvc.html:29
+msgid "Add Storage to {{name}}"
+msgstr ""
+
+#: app/components/osc-webhook-triggers/osc-webhook-triggers.html:81
+msgid "Add Webhook"
+msgstr ""
+
+#: app/views/overview/_mobile-client-row.html:42
+msgid "Add a mobile service to your project. Or connect to external service."
+msgstr ""
+
+#: app/views/attach-pvc.html:30
+msgid "Add an existing persistent volume claim to the template of {{kind | humanizeKind}} {{name}}."
+msgstr ""
+
+#: app/views/directives/_edit-command.html:47
+msgid "Add argument"
+msgstr ""
+
+#: app/views/overview.html:10
+msgid "Add content to your project from the catalog of web frameworks, databases, and other components. You may also deploy an existing image, create or replace resources from their YAML or JSON definitions, or select an item shared from another project."
+msgstr ""
+
+#: app/views/add-config-volume.html:107
+msgid "Add only certain keys or use paths that are different than the key names."
+msgstr ""
+
+#: app/views/directives/add-config-to-application.html:11
+msgid "Add this {{ctrl.apiObject.kind | humanizeKind}} to application:"
+msgstr ""
+
+#: app/views/browse/config-map.html:19
+#: app/views/browse/config-map.html:36
+#: app/views/browse/secret.html:15
+#: app/views/browse/secret.html:33
+#: app/views/directives/add-config-to-application.html:6
+msgid "Add to Application"
+msgstr ""
+
+#: app/views/directives/header/header.html:42
+msgid "Add to Project"
+msgstr ""
+
+#: app/views/add-config-volume.html:26
+msgid "Add values from a config map or secret as volume. This will make the data available as files for {{kind | humanizeKind}} {{name}}."
+msgstr ""
+
+#: app/views/directives/add-config-to-application.html:34
+msgid "Add {{ctrl.apiObject.kind | humanizeKind}} as:"
+msgstr ""
+
+#: app/views/directives/edit-lifecycle-hook.html:132
+msgid "Add {{type | upperFirst}} Lifecycle Hook"
+msgstr ""
+
+#: app/views/browse/route.html:72
+msgid "Admission status unknown for router '{{ingress.routerName}}'"
+msgstr ""
+
+#: app/views/command-line.html:31
+msgid "After downloading and installing it, you can start by logging in. You are currently logged into this console as"
+msgstr ""
+
+#: app/views/command-line.html:42
+msgid "After you login to your account you will get a list of projects that you can switch between:"
+msgstr ""
+
+#: app/views/directives/pods-table.html:12
+#: app/views/services.html:50
+#: app/views/storage.html:60
+msgid "Age"
+msgstr ""
+
+#: app/views/catalog/catalog.html:50
+#: app/views/catalog/category-content.html:47
+msgid "All content is hidden by the current filter."
+msgstr ""
+
+#: app/views/directives/events.html:66
+msgid "All events hidden by filter."
+msgstr ""
+
+#: app/views/overview.html:293
+msgid "All pipelines are filtered."
+msgstr ""
+
+#: app/views/directives/osc-routing.html:280
+msgid "Allow"
+msgstr ""
+
+#: app/views/directives/osc-routing.html:149
+msgid "Alternate Services"
+msgstr ""
+
+#: app/views/directives/osc-routing-service.html:16
+msgid "Alternate service for route traffic."
+msgstr ""
+
+#: app/views/edit/build-config.html:362
+msgid "Always pull the builder image from the docker registry, even if it is present locally"
+msgstr ""
+
+#: app/views/_compute-resource.html:6
+#: app/views/directives/osc-persistent-volume-claim.html:157
+#: app/views/modals/edit-pvc-resource.html:45
+msgid "Amount"
+msgstr ""
+
+#: app/views/directives/bind-service/delete-binding-result.html:28
+msgid "An error occurred deleting the binding."
+msgstr ""
+
+#: app/views/directives/deployment-metrics.html:45
+#: app/views/directives/pod-metrics.html:45
+msgid "An error occurred getting metrics"
+msgstr ""
+
+#: app/views/directives/logs/_log-viewer.html:110
+msgid "An error occurred loading the log."
+msgstr ""
+
+#: app/views/modals/debug-terminal.html:26
+msgid "An error occurred starting the debug pod."
+msgstr ""
+
+#: app/views/edit/deployment-config.html:59
+msgid "An image that can carry out the deployment."
+msgstr ""
+
+#: app/views/overview.html:122
+msgid "Application"
+msgstr ""
+
+#: app/views/directives/header/header.html:17
+msgid "Application Console"
+msgstr ""
+
+#: app/views/directives/next-steps.html:97
+msgid "Applied Parameter Values"
+msgstr ""
+
+#: app/views/modals/delete-resource.html:11
+msgid "Are you sure you want to delete the {{typeDisplayName || (kind | humanizeKind)}}"
+msgstr ""
+
+#: app/views/modals/confirmScale.html:11
+msgid "Are you sure you want to scale"
+msgstr ""
+
+#: app/views/directives/build-hooks.html:43
+msgid "Args:"
+msgstr ""
+
+#: app/views/edit/build-config.html:594
+msgid "Arguments"
+msgstr ""
+
+#: app/views/directives/create-secret.html:90
+msgid "Authentication Type"
+msgstr ""
+
+#: app/views/create/fromimage.html:240
+msgid "Autodeploy when"
+msgstr ""
+
+#: app/views/create/fromimage.html:199
+#: app/views/edit/build-config.html:470
+msgid "Automatically build a new image when the builder image changes"
+msgstr ""
+
+#: app/views/edit/deployment-config.html:299
+msgid "Automatically start a new deployment when the image changes"
+msgstr ""
+
+#: app/views/edit/autoscaler.html:11
+msgid "Autoscale {{targetKind | humanizeKind : true}} {{targetName}}"
+msgstr ""
+
+#: app/views/directives/deployment-donut.html:53
+msgid "Autoscaled:"
+msgstr ""
+
+#: app/views/browse/_replica-set-details.html:161
+#: app/views/browse/deployment-config.html:287
+#: app/views/browse/deployment.html:239
+msgid "Autoscaling"
+msgstr ""
+
+#: app/views/browse/_replica-set-details.html:205
+msgid "Autoscaling is not enabled. There are no autoscalers for this"
+msgstr ""
+
+#: app/views/browse/deployment-config.html:306
+msgid "Autoscaling is not enabled. There are no autoscalers for this deployment config."
+msgstr ""
+
+#: app/views/directives/pod-metrics.html:73
+msgid "Available of"
+msgstr ""
+
+#: app/views/pipelines.html:103
+#: app/views/pipelines.html:97
+msgid "Average Duration:"
+msgstr ""
+
+#: app/views/overview/_list-row-expanded.html:152
+#: app/views/overview/_list-row-expanded.html:47
+msgid "Average Usage"
+msgstr ""
+
+#: app/views/_build-trends-chart.html:27
+msgid "Average build duration {{averageDurationText}}"
+msgstr ""
+
+#: app/views/directives/deployment-metrics.html:58
+msgid "Average per pod"
+msgstr ""
+
+#: app/views/_build-trends-chart.html:17
+msgid "Average: {{averageDurationText}}"
+msgstr ""
+
+#: app/views/_sidebar.html:52
+msgid "Back"
+msgstr ""
+
+#: app/views/catalog/category-content.html:16
+msgid "Back to catalog"
+msgstr ""
+
+#: app/views/catalog/catalog.html:17
+msgid "Back to overview"
+msgstr ""
+
+#: app/views/add-config-volume.html:21
+#: app/views/attach-pvc.html:25
+msgid "Back to {{kind | humanizeKind}} {{name}}"
+msgstr ""
+
+#: app/views/command-line.html:54
+msgid "Basic CLI Operations"
+msgstr ""
+
+#: app/views/browse/build-config.html:270
+msgid "Binary Input as File:"
+msgstr ""
+
+#: app/views/modals/about-compute-units-modal.html:37
+msgid "Binary Units"
+msgstr ""
+
+#: app/views/directives/bind-service/delete-binding-result.html:3
+msgid "Binding for the following has been deleted:"
+msgstr ""
+
+#: app/views/directives/resource-service-bindings.html:2
+#: app/views/directives/service-instance-bindings.html:2
+#: app/views/overview/_list-row-expanded.html:182
+#: app/views/overview/_service-instance-row.html:164
+#: app/views/overview/_service-instance-row.html:46
+#: app/views/service-instances.html:49
+msgid "Bindings"
+msgstr ""
+
+#: app/views/browse/build-config.html:388
+msgid "Bitbucket Webhook URL:"
+msgstr ""
+
+#: app/views/directives/osc-file-input.html:16
+msgid "Browse"
+msgstr ""
+
+#: app/views/create.html:9
+#: app/views/directives/header/header.html:46
+#: app/views/directives/header/header.html:50
+#: app/views/directives/resource-service-bindings.html:22
+#: app/views/overview.html:14
+#: app/views/overview/_service-bindings.html:22
+msgid "Browse Catalog"
+msgstr ""
+
+#: app/views/overview/_mobile-client-row.html:45
+msgid "Browse Mobile Services"
+msgstr ""
+
+#: app/views/browse/build-config.html:138
+#: app/views/browse/build-config.html:184
+#: app/views/overview/_builds.html:26
+msgid "Build"
+msgstr ""
+
+#: app/views/directives/_build-pipeline-expanded.html:20
+msgid "Build #{{build | annotation : 'buildNumber'}}"
+msgstr ""
+
+#: app/views/edit/build-config.html:297
+msgid "Build From"
+msgstr ""
+
+#: app/views/directives/osc-source-secrets.html:63
+#: app/views/directives/osc-source-secrets.html:8
+msgid "Build Secret"
+msgstr ""
+
+#: app/views/edit/build-config.html:490
+msgid "Build Secrets"
+msgstr ""
+
+#: app/views/browse/_build-details.html:61
+#: app/views/browse/build-config.html:243
+msgid "Build Strategy:"
+msgstr ""
+
+#: app/views/pipelines.html:78
+msgid "Build config"
+msgstr ""
+
+#: app/views/browse/build-config.html:432
+msgid "Build config {{buildConfig.metadata.name}}"
+msgstr ""
+
+#: app/views/edit/build-config.html:547
+msgid "Build hooks allow you to run commands at the end of the build to verify the image."
+msgstr ""
+
+#: app/views/_pod-template-container.html:34
+msgid "Build:"
+msgstr ""
+
+#: app/views/browse/_build-details.html:63
+#: app/views/browse/build-config.html:300
+msgid "Builder Image:"
+msgstr ""
+
+#: app/views/builds.html:6
+#: app/views/monitoring.html:402
+#: app/views/overview/_builds.html:2
+#: app/views/overview/_list-row-expanded.html:169
+msgid "Builds"
+msgstr ""
+
+#: app/views/catalog/_image.html:11
+msgid "Builds source code"
+msgstr ""
+
+#: app/views/edit/build-config.html:526
+msgid "Builds triggered from this Build Configuration will run all at the same time. The order in which they will finish is not guaranteed."
+msgstr ""
+
+#: app/views/edit/build-config.html:525
+msgid "Builds triggered from this Build Configuration will run one at the time, in the order they have been triggered."
+msgstr ""
+
+#: app/views/edit/build-config.html:527
+msgid "Builds triggered from this Build Configuration will run one at the time. When a currently running build completes, the next build that will run is the latest build created. Other queued builds will be cancelled."
+msgstr ""
+
+#: app/views/edit/build-config.html:528
+msgid "Builds triggered from this Build Configuration will run using the {{updatedBuildConfig.spec.runPolicy | sentenceCase}} policy."
+msgstr ""
+
+#: app/views/browse/build-config.html:86
+msgid "Builds will create an image from"
+msgstr ""
+
+#: app/views/directives/osc-routing.html:326
+msgid "CA Certificate"
+msgstr ""
+
+#: app/views/directives/create-secret.html:147
+msgid "CA Certificate File"
+msgstr ""
+
+#: app/views/browse/route.html:180
+msgid "CA Certificate:"
+msgstr ""
+
+#: app/views/command-line.html:54
+msgid "CLI Reference"
+msgstr ""
+
+#: app/views/directives/hpa.html:29
+msgid "CPU Request"
+msgstr ""
+
+#: app/views/directives/osc-autoscaling.html:102
+msgid "CPU Request Target"
+msgstr ""
+
+#: app/views/set-limits.html:11
+msgid "CPU and"
+msgstr ""
+
+#: app/views/modals/about-compute-units-modal.html:21
+msgid "CPU is often measured in units called"
+msgstr ""
+
+#: app/views/create/fromimage.html:315
+msgid "CPU metrics might not be available. In order to use horizontal pod autoscalers, your cluster administrator must have properly configured cluster metrics."
+msgstr ""
+
+#: app/views/_compute-resource.html:41
+msgid "Can't be greater than {{limitRangeMax | usageWithUnits : type}}."
+msgstr ""
+
+#: app/views/directives/osc-persistent-volume-claim.html:203
+#: app/views/modals/edit-pvc-resource.html:89
+msgid "Can't be greater than {{limits.max | usageWithUnits : 'storage'}}."
+msgstr ""
+
+#: app/views/_compute-resource.html:38
+msgid "Can't be less than {{limitRangeMin | usageWithUnits : type}}."
+msgstr ""
+
+#: app/views/directives/osc-persistent-volume-claim.html:199
+#: app/views/modals/edit-pvc-resource.html:84
+msgid "Can't be less than {{limits.min | usageWithUnits : 'storage'}}."
+msgstr ""
+
+#: app/views/directives/osc-routing.html:79
+msgid "Can't be longer than {{hostnameMaxLength}} characters."
+msgstr ""
+
+#: app/views/directives/create-secret.html:42
+#: app/views/directives/edit-config-map-or-secret.html:38
+#: app/views/directives/osc-autoscaling.html:35
+#: app/views/directives/osc-persistent-volume-claim.html:97
+#: app/views/directives/osc-routing.html:33
+msgid "Can't be longer than {{nameValidation.maxlength}} characters."
+msgstr ""
+
+#: app/views/_compute-resource.html:35
+msgid "Can't be negative."
+msgstr ""
+
+#: app/views/add-config-volume.html:194
+#: app/views/attach-pvc.html:215
+#: app/views/browse/_replica-set-details.html:46
+#: app/views/create-config-map.html:21
+#: app/views/create-from-url.html:44
+#: app/views/create-from-url.html:79
+#: app/views/create-persistent-volume-claim.html:22
+#: app/views/create-route.html:33
+#: app/views/create/fromimage.html:401
+#: app/views/directives/add-config-to-application.html:142
+#: app/views/directives/create-secret.html:366
+#: app/views/directives/deploy-image.html:189
+#: app/views/directives/from-file.html:19
+#: app/views/directives/process-template.html:15
+#: app/views/directives/replicas.html:37
+#: app/views/edit/autoscaler.html:69
+#: app/views/edit/build-config.html:617
+#: app/views/edit/config-map.html:34
+#: app/views/edit/deployment-config.html:375
+#: app/views/edit/health-checks.html:65
+#: app/views/edit/project.html:35
+#: app/views/edit/route.html:26
+#: app/views/edit/yaml.html:33
+#: app/views/modals/confirm-replace.html:26
+#: app/views/modals/confirm-save-log.html:20
+#: app/views/modals/confirmScale.html:16
+#: app/views/modals/delete-resource.html:93
+#: app/views/modals/edit-pvc-resource.html:104
+#: app/views/modals/process-or-save-template.html:34
+#: app/views/modals/set-home-page-modal.html:47
+#: app/views/overview/_list-row-content.html:48
+#: app/views/set-limits.html:55
+#: app/views/util/oauth.html:12
+#: app/views/util/oauth.html:20
+msgid "Cancel"
+msgstr ""
+
+#: app/views/browse/build.html:11
+#: app/views/browse/build.html:41
+msgid "Cancel Build"
+msgstr ""
+
+#: app/views/modals/edit-pvc-resource.html:32
+#: app/views/storage.html:58
+msgid "Capacity"
+msgstr ""
+
+#: app/views/_volume-claim-templates.html:24
+#: app/views/browse/persistent-volume-claim.html:66
+msgid "Capacity:"
+msgstr ""
+
+#: app/views/modals/set-home-page-modal.html:17
+msgid "Catalog Home (Default)"
+msgstr ""
+
+#: app/views/directives/osc-routing.html:304
+msgid "Certificate"
+msgstr ""
+
+#: app/views/browse/route.html:160
+msgid "Certificate:"
+msgstr ""
+
+#: app/views/directives/osc-routing.html:286
+msgid "Certificates"
+msgstr ""
+
+#: app/views/browse/deployment-config.html:271
+msgid "Change Of:"
+msgstr ""
+
+#: app/views/set-limits.html:18
+msgid "Changes will only apply to new pods."
+msgstr ""
+
+#: app/views/directives/deployment-donut.html:74
+#: app/views/directives/deployment-donut.html:75
+msgid "Check events"
+msgstr ""
+
+#: app/views/edit/jenkinsfile-examples.html:21
+msgid "Checkout source code and run shell commands on a node labelled"
+msgstr ""
+
+#: app/views/create-from-url.html:52
+msgid "Choose Existing Project"
+msgstr ""
+
+#: app/views/create-from-url.html:17
+msgid "Choose a Project"
+msgstr ""
+
+#: app/views/catalog/catalog.html:21
+msgid "Choose from web frameworks, databases, and other components to add content to your project."
+msgstr ""
+
+#: app/views/_volumes.html:40
+msgid "Claim name:"
+msgstr ""
+
+#: app/views/browse/config-maps.html:41
+#: app/views/browse/routes.html:41
+#: app/views/browse/stateful-sets.html:38
+#: app/views/builds.html:35
+#: app/views/catalog/catalog.html:51
+#: app/views/catalog/category-content.html:48
+#: app/views/deployments.html:35
+#: app/views/directives/events.html:60
+#: app/views/directives/events.html:67
+#: app/views/images.html:35
+#: app/views/other-resources.html:38
+#: app/views/overview.html:115
+#: app/views/overview.html:294
+#: app/views/pods.html:35
+#: app/views/projects.html:95
+#: app/views/secrets.html:41
+#: app/views/service-instances.html:35
+#: app/views/services.html:35
+#: app/views/storage.html:46
+msgid "Clear All Filters"
+msgstr ""
+
+#: app/views/browse/build-config.html:487
+#: app/views/directives/edit-environment-variables.html:56
+msgid "Clear Changes"
+msgstr ""
+
+#: app/views/directives/osc-file-input.html:39
+msgid "Clear Value"
+msgstr ""
+
+#: app/views/directives/notifications/notification-body.html:10
+msgid "Clear notification"
+msgstr ""
+
+#: app/views/directives/_edit-command.html:105
+msgid "Clear {{ (type || 'Command') | upperFirst }}"
+msgstr ""
+
+#: app/components/alerts/alerts.html:6
+#: app/views/directives/edit-environment-from.html:185
+#: app/views/modals/jenkinsfile-examples-modal.html:12
+msgid "Close"
+msgstr ""
+
+#: app/views/quota.html:6
+msgid "Cluster"
+msgstr ""
+
+#: app/views/directives/header/header.html:18
+msgid "Cluster Console"
+msgstr ""
+
+#: app/views/services.html:46
+msgid "Cluster IP"
+msgstr ""
+
+#: app/views/_templateopt.html:9
+#: app/views/directives/osc-form-section.html:9
+#: app/views/monitoring.html:172
+#: app/views/monitoring.html:242
+#: app/views/monitoring.html:345
+#: app/views/monitoring.html:422
+#: app/views/monitoring.html:76
+#: app/views/overview/_list-row-chevron.html:4
+msgid "Collapse"
+msgstr ""
+
+#: app/views/directives/events-sidebar.html:5
+msgid "Collapse event sidebar"
+msgstr ""
+
+#: app/views/_templateopt.html:54
+msgid "Collapse to a single line input"
+msgstr ""
+
+#: app/views/directives/_edit-probe.html:48
+#: app/views/directives/edit-lifecycle-hook.html:50
+#: app/views/edit/build-config.html:584
+#: app/views/edit/deployment-config.html:63
+msgid "Command"
+msgstr ""
+
+#: app/views/about.html:35
+#: app/views/command-line.html:7
+msgid "Command Line Tools"
+msgstr ""
+
+#: app/views/_pod-template-container.html:79
+#: app/views/directives/build-hooks.html:6
+#: app/views/directives/lifecycle-hook.html:25
+msgid "Command:"
+msgstr ""
+
+#: app/views/modals/about-compute-units-modal.html:7
+msgid "Compute Resources"
+msgstr ""
+
+#: app/views/browse/deployment-config.html:272
+msgid "Config"
+msgstr ""
+
+#: app/views/browse/build-config.html:431
+msgid "Config Change For:"
+msgstr ""
+
+#: app/views/directives/edit-environment-from.html:4
+msgid "Config Map/Secret"
+msgstr ""
+
+#: app/views/_volumes.html:97
+msgid "Config Map:"
+msgstr ""
+
+#: app/views/browse/config-maps.html:9
+msgid "Config Maps"
+msgstr ""
+
+#: app/views/browse/deployment-config.html:176
+#: app/views/deployments.html:110
+msgid "Config change"
+msgstr ""
+
+#: app/views/edit/config-map.html:24
+msgid "Config map {[configMap.metadata.name}} has been deleted since you started editing it."
+msgstr ""
+
+#: app/views/edit/config-map.html:18
+msgid "Config map {{configMap.metadata.name}} has changed since you started editing it."
+msgstr ""
+
+#: app/views/create-config-map.html:9
+msgid "Config maps hold key-value pairs that can be used in pods to read application configuration."
+msgstr ""
+
+#: app/views/edit/config-map.html:9
+msgid "Config maps hold key-value pairs that can be used in pods to read applicationconfiguration."
+msgstr ""
+
+#: app/views/browse/_build-details.html:59
+#: app/views/browse/build-config.html:232
+#: app/views/browse/deployment-config.html:187
+#: app/views/browse/deployment.html:128
+#: app/views/browse/image.html:30
+#: app/views/browse/service-instance.html:104
+msgid "Configuration"
+msgstr ""
+
+#: app/views/directives/create-secret.html:303
+msgid "Configuration File"
+msgstr ""
+
+#: app/views/directives/create-secret.html:323
+msgid "Configuration file should be in JSON format."
+msgstr ""
+
+#: app/views/create/fromimage.html:187
+msgid "Configure a webhook build trigger"
+msgstr ""
+
+#: app/views/modals/delete-resource.html:8
+msgid "Confirm Delete"
+msgstr ""
+
+#: app/views/util/oauth.html:9
+msgid "Confirm Login"
+msgstr ""
+
+#: app/views/modals/confirm-replace.html:6
+msgid "Confirm Replace"
+msgstr ""
+
+#: app/views/modals/confirm-save-log.html:6
+msgid "Confirm Save"
+msgstr ""
+
+#: app/views/modals/confirmScale.html:6
+msgid "Confirm Scale Down"
+msgstr ""
+
+#: app/views/util/oauth.html:16
+msgid "Confirm User Change"
+msgstr ""
+
+#: app/views/directives/pod-metrics.html:59
+msgid "Container Metrics"
+msgstr ""
+
+#: app/views/directives/edit-lifecycle-hook.html:40
+#: app/views/directives/edit-lifecycle-hook.html:86
+msgid "Container Name"
+msgstr ""
+
+#: app/views/directives/pods-table.html:11
+msgid "Container Restarts"
+msgstr ""
+
+#: app/views/edit/health-checks.html:11
+msgid "Container health is periodically checked using readiness and liveness probes."
+msgstr ""
+
+#: app/views/directives/edit-environment-variables.html:4
+#: app/views/edit/health-checks.html:18
+#: app/views/set-limits.html:23
+msgid "Container {{container.name}}"
+msgstr ""
+
+#: app/views/edit/deployment-config.html:284
+#: app/views/edit/deployment-config.html:353
+msgid "Container {{containerName}}"
+msgstr ""
+
+#: app/views/_container-statuses.html:49
+msgid "Container {{containerStatus.name}}"
+msgstr ""
+
+#: app/views/_pod-template.html:13
+msgid "Container {{podTemplate.spec.containers[0].name}} does not have health checks"
+msgstr ""
+
+#: app/views/directives/lifecycle-hook.html:23
+msgid "Container {{strategyParams[type].execNewPod.containerName}}"
+msgstr ""
+
+#: app/views/directives/lifecycle-hook.html:78
+msgid "Container {{tagImage.containerName}}"
+msgstr ""
+
+#: app/views/browse/pod.html:149
+#: app/views/browse/pod.html:91
+#: app/views/directives/deployment-metrics.html:7
+#: app/views/directives/pod-metrics.html:8
+#: app/views/monitoring.html:127
+msgid "Container:"
+msgstr ""
+
+#: app/views/_pod-template.html:36
+#: app/views/add-config-volume.html:172
+#: app/views/add-config-volume.html:179
+#: app/views/attach-pvc.html:195
+#: app/views/directives/add-config-to-application.html:130
+#: app/views/overview/_list-row-expanded.html:122
+#: app/views/overview/_list-row-expanded.html:13
+msgid "Containers"
+msgstr ""
+
+#: app/views/directives/pods-table.html:10
+msgid "Containers Ready"
+msgstr ""
+
+#: app/views/directives/add-config-to-application.html:122
+msgid "Containers:"
+msgstr ""
+
+#: app/views/directives/next-steps.html:86
+#: app/views/directives/next-steps.html:89
+msgid "Content type"
+msgstr ""
+
+#: app/views/create/fromimage.html:123
+#: app/views/edit/build-config.html:76
+msgid "Context Dir"
+msgstr ""
+
+#: app/views/modals/process-or-save-template.html:35
+#: app/views/util/oauth.html:11
+msgid "Continue"
+msgstr ""
+
+#: app/views/modals/logout.html:15
+msgid "Continue Session"
+msgstr ""
+
+#: app/views/directives/next-steps.html:53
+msgid "Continue to the project overview"
+msgstr ""
+
+#: app/views/directives/_copy-to-clipboard.html:25
+#: app/views/directives/_copy-to-clipboard.html:38
+msgid "Copy to Clipboard"
+msgstr ""
+
+#: app/views/directives/deploy-image.html:207
+msgid "Could not find any images for {{import.name | stripTag}}:{{import.tag}}."
+msgstr ""
+
+#: app/views/directives/deploy-image.html:197
+msgid "Could not load image metadata."
+msgstr ""
+
+#: app/views/modals/debug-terminal.html:23
+msgid "Could not start container {{container.name}}."
+msgstr ""
+
+#: app/views/create-config-map.html:16
+#: app/views/create-persistent-volume-claim.html:17
+#: app/views/create-route.html:28
+#: app/views/create/fromimage.html:397
+#: app/views/directives/create-secret.html:362
+#: app/views/directives/deploy-image.html:184
+#: app/views/directives/from-file.html:12
+#: app/views/directives/process-template.html:14
+msgid "Create"
+msgstr ""
+
+#: app/views/directives/resource-service-bindings.html:16
+#: app/views/directives/service-instance-bindings.html:13
+#: app/views/overview/_list-row-actions.html:29
+#: app/views/overview/_list-row-actions.html:69
+#: app/views/overview/_service-bindings.html:16
+#: app/views/overview/_service-instance-row.html:42
+#: app/views/overview/_service-instance-row.html:79
+msgid "Create Binding"
+msgstr ""
+
+#: app/views/add-config-volume.html:48
+#: app/views/browse/config-maps.html:37
+#: app/views/browse/config-maps.html:6
+#: app/views/create-config-map.html:8
+msgid "Create Config Map"
+msgstr ""
+
+#: app/views/directives/osc-secrets.html:55
+#: app/views/directives/osc-source-secrets.html:117
+msgid "Create New Secret"
+msgstr ""
+
+#: app/components/osc-webhook-triggers/osc-webhook-triggers.html:84
+msgid "Create New Webhook Secret"
+msgstr ""
+
+#: app/views/create-project.html:5
+#: app/views/projects.html:180
+#: app/views/projects.html:25
+msgid "Create Project"
+msgstr ""
+
+#: app/views/browse/routes.html:37
+#: app/views/browse/routes.html:6
+#: app/views/browse/service.html:19
+#: app/views/create-route.html:8
+#: app/views/overview/_networking.html:52
+msgid "Create Route"
+msgstr ""
+
+#: app/views/overview.html:282
+#: app/views/pipelines.html:37
+msgid "Create Sample Pipeline"
+msgstr ""
+
+#: app/views/add-config-volume.html:52
+#: app/views/create-secret.html:11
+#: app/views/secrets.html:37
+#: app/views/secrets.html:6
+msgid "Create Secret"
+msgstr ""
+
+#: app/views/attach-pvc.html:17
+#: app/views/create-persistent-volume-claim.html:8
+#: app/views/storage.html:41
+#: app/views/storage.html:42
+#: app/views/storage.html:6
+#: app/views/storage.html:7
+msgid "Create Storage"
+msgstr ""
+
+#: app/views/create-from-url.html:13
+#: app/views/create-from-url.html:85
+msgid "Create a New Project"
+msgstr ""
+
+#: app/views/projects.html:175
+msgid "Create a project for your application."
+msgstr ""
+
+#: app/views/create-persistent-volume-claim.html:10
+msgid "Create a request for an administrator-defined storage asset by specifying size and permissions for a best fit."
+msgstr ""
+
+#: app/views/directives/from-file.html:3
+msgid "Create or replace resources from their YAML or JSON definitions. If adding a template, you'll have the option to process the template."
+msgstr ""
+
+#: app/views/browse/service.html:84
+msgid "Create route"
+msgstr ""
+
+#: app/views/modals/process-or-save-template.html:16
+msgid "Create the objects defined in the template. You will have an opportunity to fill in template parameters."
+msgstr ""
+
+#: app/views/modals/create-secret.html:7
+msgid "Create {{type | capitalize}} Secret"
+msgstr ""
+
+#: app/views/browse/build-config.html:187
+#: app/views/browse/config-maps.html:52
+#: app/views/browse/deployment-config.html:137
+#: app/views/browse/deployment.html:103
+#: app/views/browse/stateful-sets.html:50
+#: app/views/builds.html:55
+#: app/views/deployments.html:135
+#: app/views/deployments.html:175
+#: app/views/deployments.html:203
+#: app/views/deployments.html:54
+#: app/views/directives/bind-service/delete-binding-select-form.html:21
+#: app/views/other-resources.html:52
+#: app/views/secrets.html:55
+#: app/views/service-instances.html:48
+msgid "Created"
+msgstr ""
+
+#: app/views/_config-file-params.html:18
+msgid "Credentials Store"
+msgstr ""
+
+#: app/views/directives/hpa.html:33
+msgid "Current Usage:"
+msgstr ""
+
+#: app/views/directives/osc-routing.html:296
+msgid "Custom certificates cannot be used with passthrough termination."
+msgstr ""
+
+#: app/views/overview.html:248
+msgid "Daemon Sets"
+msgstr ""
+
+#: app/views/overview/_service-instance-row.html:67
+msgid "Dashboard"
+msgstr ""
+
+#: app/views/modals/debug-terminal.html:6
+msgid "Debug Container {{container.name}}"
+msgstr ""
+
+#: app/views/_container-statuses.html:66
+msgid "Debug in Terminal"
+msgstr ""
+
+#: app/views/directives/pods-table.html:29
+msgid "Debugging pod {{pod | debugPodSourceName}}"
+msgstr ""
+
+#: app/views/modals/about-compute-units-modal.html:46
+msgid "Decimal Units"
+msgstr ""
+
+#: app/views/quota.html:223
+#: app/views/quota.html:230
+msgid "Default"
+msgstr ""
+
+#: app/views/directives/_edit-probe.html:86
+msgid "Delay can't be negative."
+msgstr ""
+
+#: app/views/browse/service-instance.html:41
+#: app/views/modals/delete-resource.html:80
+#: app/views/modals/delete-resource.html:94
+#: app/views/overview/_service-instance-row.html:87
+msgid "Delete"
+msgstr ""
+
+#: app/views/overview/_list-row-actions.html:34
+#: app/views/overview/_list-row-actions.html:74
+#: app/views/overview/_service-instance-row.html:84
+msgid "Delete Binding"
+msgstr ""
+
+#: app/views/overview/_service-instance-row.html:123
+msgid "Delete This Service"
+msgstr ""
+
+#: app/views/modals/delete-resource.html:60
+msgid "Delete pod immediately without waiting for the processes to terminate gracefully"
+msgstr ""
+
+#: app/views/directives/_edit-command.html:39
+#: app/views/directives/edit-environment-from.html:114
+#: app/views/directives/key-value-editor.html:217
+msgid "Delete row"
+msgstr ""
+
+#: app/views/directives/delete-button.html:10
+msgid "Delete {{kind | humanizeKind}} {{resourceName}}"
+msgstr ""
+
+#: app/views/directives/bind-service/delete-binding-result.html:23
+msgid "Deletion of Binding Failed"
+msgstr ""
+
+#: app/views/browse/deployment-config.html:10
+#: app/views/browse/deployment-config.html:28
+#: app/views/overview/_list-row-actions.html:18
+#: app/views/overview/_list-row-actions.html:20
+msgid "Deploy"
+msgstr ""
+
+#: app/views/create.html:20
+#: app/views/directives/header/header.html:47
+#: app/views/directives/header/header.html:51
+#: app/views/overview.html:19
+msgid "Deploy Image"
+msgstr ""
+
+#: app/views/directives/deploy-image.html:4
+msgid "Deploy an existing image from an image stream tag or image registry."
+msgstr ""
+
+#: app/views/browse/deployment-config.html:109
+#: app/views/browse/deployment-config.html:135
+msgid "Deployment"
+msgstr ""
+
+#: app/views/browse/_replica-set-details.html:49
+msgid "Deployment Config:"
+msgstr ""
+
+#: app/views/deployments.html:40
+#: app/views/overview.html:187
+msgid "Deployment Configs"
+msgstr ""
+
+#: app/views/edit/deployment-config.html:16
+msgid "Deployment Strategy"
+msgstr ""
+
+#: app/views/create/fromimage.html:250
+msgid "Deployment configuration changes"
+msgstr ""
+
+#: app/views/browse/_pod-details.html:20
+#: app/views/browse/_replica-set-details.html:53
+msgid "Deployment:"
+msgstr ""
+
+#: app/views/deployments.html:121
+#: app/views/deployments.html:6
+#: app/views/monitoring.html:152
+#: app/views/overview.html:190
+#: app/views/overview.html:206
+msgid "Deployments"
+msgstr ""
+
+#: app/views/browse/service-instance.html:124
+#: app/views/browse/service-instance.html:84
+#: app/views/edit/project.html:21
+msgid "Description"
+msgstr ""
+
+#: app/views/directives/osc-persistent-volume-claim.html:180
+#: app/views/modals/edit-pvc-resource.html:67
+msgid "Desired storage capacity."
+msgstr ""
+
+#: app/views/browse/route.html:190
+msgid "Destination CA Cert:"
+msgstr ""
+
+#: app/views/directives/osc-routing.html:337
+msgid "Destination CA Certificate"
+msgstr ""
+
+#: app/views/directives/osc-source-secrets.html:13
+msgid "Destination Directory"
+msgstr ""
+
+#: app/views/_container-statuses.html:21
+#: app/views/browse/build-config.html:240
+#: app/views/browse/build.html:89
+#: app/views/browse/deployment-config.html:195
+#: app/views/browse/deployment.html:136
+#: app/views/browse/image.html:23
+#: app/views/browse/persistent-volume-claim.html:57
+#: app/views/browse/pod.html:51
+#: app/views/browse/replica-set.html:40
+#: app/views/browse/route.html:90
+#: app/views/browse/service-instance.html:69
+#: app/views/browse/service.html:48
+#: app/views/browse/stateful-set.html:61
+msgid "Details"
+msgstr ""
+
+#: app/views/directives/osc-source-secrets.html:53
+msgid "Directory where the files will be available at build time."
+msgstr ""
+
+#: app/views/directives/_build-close.html:3
+msgid "Dismiss"
+msgstr ""
+
+#: app/views/edit/project.html:11
+msgid "Display Name"
+msgstr ""
+
+#: app/views/command-line.html:39
+msgid "Do not share your API token. To reveal your token, press the copy to clipboard button and then paste the clipboard contents."
+msgstr ""
+
+#: app/views/modals/confirm-replace.html:20
+msgid "Do you want to replace the existing resources?"
+msgstr ""
+
+#: app/views/modals/confirm-replace.html:11
+msgid "Do you want to replace with the new content?"
+msgstr ""
+
+#: app/views/edit/build-config.html:182
+#: app/views/edit/build-config.html:314
+#: app/views/edit/build-config.html:384
+msgid "Docker Image Repository"
+msgstr ""
+
+#: app/views/images.html:49
+msgid "Docker Repo"
+msgstr ""
+
+#: app/views/edit/build-config.html:106
+msgid "Dockerfile"
+msgstr ""
+
+#: app/views/edit/build-config.html:118
+msgid "Dockerfile Path"
+msgstr ""
+
+#: app/views/browse/build-config.html:338
+msgid "Dockerfile:"
+msgstr ""
+
+#: app/views/membership.html:12
+msgid "Done Editing"
+msgstr ""
+
+#: app/views/command-line.html:17
+msgid "Download"
+msgstr ""
+
+#: app/views/directives/osc-file-input.html:3
+msgid "Drop file here"
+msgstr ""
+
+#: app/views/directives/edit-config-map-or-secret.html:83
+msgid "Duplicate key \"{{item.key}}\". Keys must be unique within the {{type}}."
+msgstr ""
+
+#: app/views/browse/build-config.html:186
+#: app/views/builds.html:54
+msgid "Duration"
+msgstr ""
+
+#: app/views/browse/_build-details.html:24
+#: app/views/browse/_replica-set-details.html:61
+msgid "Duration:"
+msgstr ""
+
+#: app/views/modals/about-compute-units-modal.html:14
+msgid "Each container running on a node uses compute resources like CPU and memory. You can specify how much CPU and memory a container needs to improve scheduling and performance."
+msgstr ""
+
+#: app/views/modals/about-compute-units-modal.html:21
+msgid "Each millicore is equivalent to"
+msgstr ""
+
+#: app/views/browse/build-config.html:41
+#: app/views/browse/config-map.html:39
+#: app/views/browse/deployment-config.html:35
+#: app/views/browse/route.html:19
+#: app/views/browse/route.html:204
+#: app/views/browse/service-instance.html:16
+#: app/views/browse/service-instance.html:33
+#: app/views/directives/hpa.html:5
+#: app/views/directives/replicas.html:10
+#: app/views/edit/yaml.html:8
+#: app/views/overview/_list-row-actions.html:24
+msgid "Edit"
+msgstr ""
+
+#: app/views/browse/deployment-config.html:55
+#: app/views/browse/deployment.html:35
+msgid "Edit Autoscaler"
+msgstr ""
+
+#: app/views/edit/build-config.html:10
+msgid "Edit Build Config {{buildConfig.metadata.name}}"
+msgstr ""
+
+#: app/views/edit/config-map.html:8
+msgid "Edit Config Map {{configMap.metadata.name}}"
+msgstr ""
+
+#: app/views/browse/build.html:30
+msgid "Edit Configuration"
+msgstr ""
+
+#: app/views/edit/deployment-config.html:10
+msgid "Edit Deployment Config {{deploymentConfig.metadata.name}}"
+msgstr ""
+
+#: app/views/browse/_replica-set-actions.html:35
+#: app/views/browse/_replication-controller-actions.html:37
+#: app/views/browse/deployment-config.html:63
+#: app/views/browse/deployment.html:43
+msgid "Edit Health Checks"
+msgstr ""
+
+#: app/views/membership.html:11
+msgid "Edit Membership"
+msgstr ""
+
+#: app/views/_templateopt.html:10
+msgid "Edit Parameters"
+msgstr ""
+
+#: app/views/browse/build.html:33
+#: app/views/pipelines.html:115
+msgid "Edit Pipeline"
+msgstr ""
+
+#: app/views/projects.html:136
+msgid "Edit Project"
+msgstr ""
+
+#: app/views/edit/project.html:5
+msgid "Edit Project {{project.metadata.name}}"
+msgstr ""
+
+#: app/views/browse/_replica-set-details.html:174
+#: app/views/browse/_replica-set-details.html:179
+#: app/views/browse/_replica-set-details.html:183
+#: app/views/browse/deployment-config.html:298
+#: app/views/browse/deployment.html:250
+msgid "Edit Resource"
+msgstr ""
+
+#: app/views/browse/_replica-set-actions.html:27
+#: app/views/browse/_replica-set-actions.html:31
+#: app/views/browse/_replication-controller-actions.html:28
+#: app/views/browse/_replication-controller-actions.html:32
+#: app/views/browse/deployment-config.html:59
+#: app/views/browse/deployment.html:39
+msgid "Edit Resource Limits"
+msgstr ""
+
+#: app/views/edit/route.html:8
+msgid "Edit Route {{routeName}}"
+msgstr ""
+
+#: app/views/directives/osc-routing.html:179
+msgid "Edit Weights Using Percentage Slider"
+msgstr ""
+
+#: app/views/browse/_replica-set-actions.html:38
+#: app/views/browse/_replication-controller-actions.html:40
+#: app/views/browse/build-config.html:44
+#: app/views/browse/build.html:55
+#: app/views/browse/config-map.html:42
+#: app/views/browse/deployment-config.html:66
+#: app/views/browse/deployment.html:46
+#: app/views/browse/imagestream.html:19
+#: app/views/browse/persistent-volume-claim.html:19
+#: app/views/browse/pod.html:23
+#: app/views/browse/route.html:22
+#: app/views/browse/secret.html:36
+#: app/views/browse/service-instance.html:38
+#: app/views/browse/service.html:23
+#: app/views/browse/stateful-set.html:28
+#: app/views/other-resources.html:72
+#: app/views/overview/_list-row-actions.html:49
+#: app/views/overview/_list-row-actions.html:64
+msgid "Edit YAML"
+msgstr ""
+
+#: app/views/directives/create-secret.html:278
+msgid "Email"
+msgstr ""
+
+#: app/views/directives/create-secret.html:295
+msgid "Email is required."
+msgstr ""
+
+#: app/views/directives/create-secret.html:293
+msgid "Email must be in the form of"
+msgstr ""
+
+#: app/views/directives/logs/_log-viewer.html:88
+msgid "End of log"
+msgstr ""
+
+#: app/views/directives/_edit-command.html:96
+msgid "Enter the command to run inside the container. The command is considered successful if its exit code is 0. Drag and drop to reorder arguments."
+msgstr ""
+
+#: app/views/browse/build-config.html:452
+#: app/views/browse/build.html:95
+#: app/views/browse/deployment-config.html:340
+#: app/views/browse/deployment.html:282
+#: app/views/browse/pod.html:55
+#: app/views/browse/replica-set.html:46
+#: app/views/browse/stateful-set.html:143
+msgid "Environment"
+msgstr ""
+
+#: app/views/directives/edit-environment-variables.html:37
+msgid "Environment From"
+msgstr ""
+
+#: app/views/browse/build-config.html:453
+#: app/views/browse/build.html:96
+#: app/views/create/fromimage.html:213
+#: app/views/create/fromimage.html:254
+#: app/views/directives/edit-lifecycle-hook.html:55
+#: app/views/edit/build-config.html:419
+#: app/views/edit/deployment-config.html:349
+#: app/views/edit/deployment-config.html:67
+msgid "Environment Variables"
+msgstr ""
+
+#: app/views/directives/lifecycle-hook.html:33
+msgid "Environment Variables:"
+msgstr ""
+
+#: app/views/directives/add-config-to-application.html:38
+msgid "Environment variables"
+msgstr ""
+
+#: app/views/browse/replica-set.html:54
+msgid "Environment variables can be edited on deployment config"
+msgstr ""
+
+#: app/views/browse/build.html:99
+msgid "Environment variables can be edited on the"
+msgstr ""
+
+#: app/views/browse/replica-set.html:49
+msgid "Environment variables can be edited on the deployment"
+msgstr ""
+
+#: app/views/directives/edit-lifecycle-hook.html:63
+msgid "Environment variables to supply to the hook pod's container."
+msgstr ""
+
+#: app/views/directives/_service-binding.html:27
+#: app/views/directives/next-steps.html:17
+#: app/views/overview/_service-instance-row.html:22
+#: app/views/util/error.html:4
+msgid "Error"
+msgstr ""
+
+#: app/views/overview/_notification-icon.html:13
+msgid "Errors"
+msgstr ""
+
+#: app/views/browse/build-config.html:507
+#: app/views/browse/build.html:140
+#: app/views/browse/deployment-config.html:344
+#: app/views/browse/deployment.html:286
+#: app/views/browse/persistent-volume-claim.html:86
+#: app/views/browse/pod.html:215
+#: app/views/browse/replica-set.html:96
+#: app/views/browse/service-instance.html:154
+#: app/views/browse/service.html:104
+#: app/views/browse/stateful-set.html:162
+#: app/views/directives/events-badge.html:1
+#: app/views/directives/events-badge.html:2
+#: app/views/directives/events-sidebar.html:6
+#: app/views/events.html:6
+msgid "Events"
+msgstr ""
+
+#: app/views/edit/build-config.html:136
+msgid "Execute docker build without reusing cached instructions."
+msgstr ""
+
+#: app/views/modals/debug-terminal.html:28
+msgid "Exit code: {{containerState.terminated.exitCode}}"
+msgstr ""
+
+#: app/views/directives/logs/_log-viewer.html:31
+#: app/views/modals/edit-pvc-resource.html:105
+#: app/views/monitoring.html:176
+#: app/views/monitoring.html:246
+#: app/views/monitoring.html:349
+#: app/views/monitoring.html:426
+#: app/views/monitoring.html:80
+#: app/views/overview/_list-row-chevron.html:8
+msgid "Expand"
+msgstr ""
+
+#: app/views/modals/edit-pvc-resource.html:6
+msgid "Expand Persistent Volume Claim"
+msgstr ""
+
+#: app/views/directives/events-badge.html:2
+msgid "Expand event sidebar"
+msgstr ""
+
+#: app/views/_templateopt.html:55
+msgid "Expand to enter multiline input"
+msgstr ""
+
+#: app/views/browse/route.html:75
+msgid "Exposed on router '{{ingress.routerName}}'"
+msgstr ""
+
+#: app/views/browse/service.html:67
+msgid "External Hostname:"
+msgstr ""
+
+#: app/views/services.html:47
+msgid "External IP"
+msgstr ""
+
+#: app/views/browse/service.html:76
+msgid "External IPs:"
+msgstr ""
+
+#: app/views/directives/edit-lifecycle-hook.html:124
+msgid "Fail the deployment if the hook fails."
+msgstr ""
+
+#: app/views/_parse-error.html:6
+msgid "Failed to process the resource."
+msgstr ""
+
+#: app/views/directives/edit-lifecycle-hook.html:114
+msgid "Failure Policy"
+msgstr ""
+
+#: app/views/directives/lifecycle-hook.html:12
+msgid "Failure Policy:"
+msgstr ""
+
+#: app/views/directives/create-secret.html:319
+msgid "File with credentials and other configuration for connecting to a secured image registry."
+msgstr ""
+
+#: app/views/directives/events.html:10
+msgid "Filter"
+msgstr ""
+
+#: app/views/projects.html:32
+msgid "Filter by keyword"
+msgstr ""
+
+#: app/views/projects.html:164
+msgid "Filter by keyword or change sort options to see other projects."
+msgstr ""
+
+#: app/views/directives/_project-filter.html:3
+msgid "Filter by labels"
+msgstr ""
+
+#: app/views/monitoring.html:23
+#: app/views/overview.html:65
+msgid "Filter by name"
+msgstr ""
+
+#: app/views/catalog/catalog.html:27
+#: app/views/catalog/category-content.html:24
+msgid "Filter by name or description"
+msgstr ""
+
+#: app/views/directives/deploy-image.html:58
+msgid "Find"
+msgstr ""
+
+#: app/views/directives/logs/_log-viewer.html:77
+msgid "Follow"
+msgstr ""
+
+#: app/views/command-line.html:54
+msgid "For other information about the command line tools, check the"
+msgstr ""
+
+#: app/views/directives/create-secret.html:68
+msgid "Generate"
+msgstr ""
+
+#: app/views/browse/build-config.html:410
+msgid "Generic Webhook URL:"
+msgstr ""
+
+#: app/views/command-line.html:11
+#: app/views/command-line.html:14
+msgid "Get Started with the CLI"
+msgstr ""
+
+#: app/views/directives/from-file-dialog.html:63
+#: app/views/directives/process-template-dialog/process-template-info.html:24
+#: app/views/overview/_service-instance-row.html:157
+msgid "Get Support"
+msgstr ""
+
+#: app/views/overview.html:9
+msgid "Get started with your project."
+msgstr ""
+
+#: app/views/directives/create-secret.html:199
+msgid "Git Configuration File"
+msgstr ""
+
+#: app/views/create/fromimage.html:104
+#: app/views/edit/build-config.html:56
+msgid "Git Reference"
+msgstr ""
+
+#: app/views/create/fromimage.html:70
+#: app/views/edit/build-config.html:24
+msgid "Git Repository URL"
+msgstr ""
+
+#: app/views/edit/build-config.html:42
+msgid "Git URL of the source code to build."
+msgstr ""
+
+#: app/views/browse/build-config.html:396
+msgid "GitHub Webhook URL:"
+msgstr ""
+
+#: app/views/browse/build-config.html:403
+msgid "GitLab Webhook URL:"
+msgstr ""
+
+#: app/views/directives/logs/_log-viewer.html:80
+msgid "Go to End"
+msgstr ""
+
+#: app/views/projects.html:86
+msgid "Go to Project"
+msgstr ""
+
+#: app/views/directives/logs/_log-viewer.html:97
+msgid "Go to Top"
+msgstr ""
+
+#: app/views/browse/_pod-details.html:34
+msgid "Grace Period:"
+msgstr ""
+
+#: app/views/overview/_service-linking-button.html:6
+msgid "Group service to {{service.metadata.name}}"
+msgstr ""
+
+#: app/views/edit/health-checks.html:9
+msgid "Health Checks: {{name}}"
+msgstr ""
+
+#: app/views/_container-statuses.html:20
+#: app/views/create/fromimage.html:392
+msgid "Hide"
+msgstr ""
+
+#: app/views/edit/deployment-config.html:342
+msgid "Hide Advanced Image Options"
+msgstr ""
+
+#: app/views/edit/deployment-config.html:272
+msgid "Hide Advanced Strategy Options"
+msgstr ""
+
+#: app/views/browse/build-config.html:457
+msgid "Hide Image Environment Variables"
+msgstr ""
+
+#: app/views/edit/build-config.html:279
+msgid "Hide examples"
+msgstr ""
+
+#: app/views/monitoring.html:46
+msgid "Hide older resources"
+msgstr ""
+
+#: app/views/browse/build-config.html:75
+#: app/views/browse/deployment-config.html:103
+#: app/views/browse/deployment.html:83
+msgid "History"
+msgstr ""
+
+#: app/views/edit/build-config.html:554
+msgid "Hook Types"
+msgstr ""
+
+#: app/views/browse/deployment-config.html:316
+msgid "Hooks"
+msgstr ""
+
+#: app/views/modals/delete-resource.html:82
+msgid "Horizontal Pod Autoscaler"
+msgstr ""
+
+#: app/views/browse/routes.html:56
+#: app/views/directives/osc-routing.html:41
+#: app/views/directives/traffic-table.html:10
+msgid "Hostname"
+msgstr ""
+
+#: app/views/directives/osc-routing.html:74
+msgid "Hostname must consist of lower-case letters, numbers, periods, and  hyphens. It must start and end with a letter or number."
+msgstr ""
+
+#: app/views/browse/service.html:60
+msgid "Hostname:"
+msgstr ""
+
+#: app/views/directives/_edit-probe.html:79
+msgid "How long to wait after the container starts before checking its health."
+msgstr ""
+
+#: app/views/edit/deployment-config.html:94
+msgid "How long to wait for a pod to scale up before giving up."
+msgstr ""
+
+#: app/views/directives/_edit-probe.html:111
+msgid "How long to wait for the probe to finish. If the time is exceeded, the probe is considered failed."
+msgstr ""
+
+#: app/views/create/fromimage.html:47
+msgid "Identifies the resources created for this application."
+msgstr ""
+
+#: app/views/directives/deploy-image.html:138
+msgid "Identifies the resources created for this image."
+msgstr ""
+
+#: app/views/directives/pod-donut.html:14
+msgid "Idle"
+msgstr ""
+
+#: app/views/directives/deployment-donut.html:81
+msgid "Idled due to inactivity."
+msgstr ""
+
+#: app/views/directives/osc-persistent-volume-claim.html:54
+msgid "If another storage class is not chosen, the default storage class"
+msgstr ""
+
+#: app/views/directives/osc-routing.html:62
+msgid "If not specified, a hostname is generated."
+msgstr ""
+
+#: app/views/util/oauth.html:18
+msgid "If this is unexpected, click Cancel. This could be an attempt to trick you into acting as another user."
+msgstr ""
+
+#: app/views/_templateopt.html:78
+msgid "If this isn't what you want,"
+msgstr ""
+
+#: app/views/directives/pause-rollouts-checkbox.html:13
+msgid "If unchecked, a new rollout will start on save."
+msgstr ""
+
+#: app/views/command-line.html:46
+msgid "If you do not have any existing projects, you can create one:"
+msgstr ""
+
+#: app/views/_request-access.html:1
+msgid "If you need to create resources in this project, a project administrator can grant you additional access by running this command:"
+msgstr ""
+
+#: app/views/command-line.html:31
+msgid "If you want to log into the CLI using the same session token:"
+msgstr ""
+
+#: app/views/edit/build-config.html:43
+msgid "If your Git repository is private, view the"
+msgstr ""
+
+#: app/views/directives/edit-lifecycle-hook.html:125
+msgid "Ignore hook failures and continue the deployment."
+msgstr ""
+
+#: app/views/browse/deployment-config.html:173
+#: app/views/deployments.html:107
+#: app/views/directives/deploy-image.html:87
+msgid "Image"
+msgstr ""
+
+#: app/views/edit/build-config.html:292
+msgid "Image Configuration"
+msgstr ""
+
+#: app/views/directives/deploy-image.html:30
+#: app/views/edit/deployment-config.html:305
+#: app/views/edit/deployment-config.html:47
+msgid "Image Name"
+msgstr ""
+
+#: app/views/directives/create-secret.html:219
+msgid "Image Registry Server Address"
+msgstr ""
+
+#: app/views/edit/build-config.html:151
+#: app/views/edit/build-config.html:215
+msgid "Image Source From"
+msgstr ""
+
+#: app/views/browse/build-config.html:285
+msgid "Image Sources:"
+msgstr ""
+
+#: app/components/istag-select/istag-select.html:16
+msgid "Image Stream"
+msgstr ""
+
+#: app/views/edit/build-config.html:167
+#: app/views/edit/build-config.html:328
+msgid "Image Stream Image"
+msgstr ""
+
+#: app/views/directives/deploy-image.html:12
+#: app/views/edit/deployment-config.html:293
+msgid "Image Stream Tag"
+msgstr ""
+
+#: app/views/images.html:6
+msgid "Image Streams"
+msgstr ""
+
+#: app/views/edit/build-config.html:466
+msgid "Image change"
+msgstr ""
+
+#: app/views/directives/deploy-image.html:38
+msgid "Image name or pull spec"
+msgstr ""
+
+#: app/views/directives/create-secret.html:233
+msgid "Image registry server address is required."
+msgstr ""
+
+#: app/views/directives/deploy-image.html:32
+msgid "Image search is only available for existing projects."
+msgstr ""
+
+#: app/views/newfromtemplate.html:24
+msgid "Image value set"
+msgstr ""
+
+#: app/views/_pod-template-container.html:16
+msgid "Image:"
+msgstr ""
+
+#: app/views/edit/deployment-config.html:279
+#: app/views/newfromtemplate.html:16
+msgid "Images"
+msgstr ""
+
+#: app/views/create.html:27
+#: app/views/directives/header/header.html:48
+#: app/views/directives/header/header.html:52
+#: app/views/overview.html:22
+msgid "Import YAML / JSON"
+msgstr ""
+
+#: app/views/modals/edit-pvc-resource.html:10
+msgid "Increase the capacity of claim"
+msgstr ""
+
+#: app/views/browse/service.html:71
+msgid "Ingress Points:"
+msgstr ""
+
+#: app/views/_pod-template.html:20
+msgid "Init Containers"
+msgstr ""
+
+#: app/views/_container-statuses.html:29
+msgid "Init container {{containerStatus.name}}"
+msgstr ""
+
+#: app/views/directives/_edit-probe.html:64
+msgid "Initial Delay"
+msgstr ""
+
+#: app/views/directives/_build-pipeline-expanded.html:39
+msgid "Input Required"
+msgstr ""
+
+#: app/views/directives/osc-routing.html:258
+msgid "Insecure Traffic"
+msgstr ""
+
+#: app/views/browse/route.html:158
+msgid "Insecure Traffic:"
+msgstr ""
+
+#: app/views/service-instances.html:46
+msgid "Instance Name"
+msgstr ""
+
+#: app/views/edit/deployment-config.html:146
+msgid "Interval"
+msgstr ""
+
+#: app/views/edit/deployment-config.html:168
+msgid "Interval can't be negative."
+msgstr ""
+
+#: app/views/browse/deployment-config.html:218
+msgid "Interval:"
+msgstr ""
+
+#: app/views/modals/delete-resource.html:35
+msgid "It cannot be undone. Make sure this is something you really want to do!"
+msgstr ""
+
+#: app/views/edit/build-config.html:233
+msgid "Jenkins Pipeline Configuration"
+msgstr ""
+
+#: app/views/browse/build-config.html:107
+#: app/views/edit/build-config.html:264
+#: app/views/pipelines.html:85
+msgid "Jenkinsfile"
+msgstr ""
+
+#: app/views/edit/build-config.html:281
+#: app/views/modals/jenkinsfile-examples-modal.html:6
+msgid "Jenkinsfile Examples"
+msgstr ""
+
+#: app/views/browse/_build-details.html:101
+#: app/views/browse/build-config.html:259
+msgid "Jenkinsfile Path:"
+msgstr ""
+
+#: app/views/edit/build-config.html:248
+msgid "Jenkinsfile Source Path"
+msgstr ""
+
+#: app/views/edit/build-config.html:235
+msgid "Jenkinsfile Type"
+msgstr ""
+
+#: app/views/browse/_build-details.html:118
+#: app/views/browse/build-config.html:359
+msgid "Jenkinsfile:"
+msgstr ""
+
+#: app/views/add-config-volume.html:123
+#: app/views/directives/edit-config-map-or-secret.html:51
+msgid "Key"
+msgstr ""
+
+#: app/views/directives/edit-config-map-or-secret.html:78
+msgid "Key is required."
+msgstr ""
+
+#: app/views/_volumes.html:100
+#: app/views/_volumes.html:30
+msgid "Key to File:"
+msgstr ""
+
+#: app/views/browse/route.html:170
+msgid "Key:"
+msgstr ""
+
+#: app/views/add-config-volume.html:114
+msgid "Keys and Paths"
+msgstr ""
+
+#: app/views/directives/edit-config-map-or-secret.html:93
+msgid "Keys may not be longer than 253 characters."
+msgstr ""
+
+#: app/views/directives/edit-config-map-or-secret.html:88
+msgid "Keys may only consist of letters, numbers, periods, hyphens, and underscores."
+msgstr ""
+
+#: app/views/directives/events.html:47
+msgid "Kind"
+msgstr ""
+
+#: app/views/directives/events.html:43
+msgid "Kind and Name"
+msgstr ""
+
+#: app/views/about.html:19
+msgid "Kubernetes Master:"
+msgstr ""
+
+#: app/views/browse/config-maps.html:53
+#: app/views/other-resources.html:53
+msgid "Labels"
+msgstr ""
+
+#: app/views/overview/_list-row-expanded.html:142
+#: app/views/overview/_list-row-expanded.html:152
+#: app/views/overview/_list-row-expanded.html:38
+#: app/views/overview/_list-row-expanded.html:47
+msgid "Last 15 Minutes"
+msgstr ""
+
+#: app/views/builds.html:52
+msgid "Last Build"
+msgstr ""
+
+#: app/views/directives/hpa.html:42
+msgid "Last Scaled:"
+msgstr ""
+
+#: app/views/_container-statuses.html:36
+#: app/views/_container-statuses.html:56
+msgid "Last State"
+msgstr ""
+
+#: app/views/deployments.html:133
+#: app/views/deployments.html:52
+msgid "Last Version"
+msgstr ""
+
+#: app/views/create/fromimage.html:210
+msgid "Launch the first build when the build configuration is created"
+msgstr ""
+
+#: app/views/browse/image.html:35
+msgid "Layers"
+msgstr ""
+
+#: app/views/browse/build-config.html:383
+#: app/views/browse/config-maps.html:12
+#: app/views/browse/deployment-config.html:254
+#: app/views/browse/deployment-config.html:318
+#: app/views/browse/routes.html:12
+#: app/views/builds.html:9
+#: app/views/create-persistent-volume-claim.html:11
+#: app/views/create/fromimage.html:312
+#: app/views/deployments.html:9
+#: app/views/directives/create-secret.html:335
+#: app/views/directives/create-secret.html:73
+#: app/views/directives/deploy-image.html:68
+#: app/views/directives/edit-lifecycle-hook.html:34
+#: app/views/directives/osc-autoscaling.html:120
+#: app/views/directives/osc-persistent-volume-claim.html:224
+#: app/views/directives/osc-persistent-volume-claim.html:56
+#: app/views/directives/osc-routing.html:252
+#: app/views/directives/osc-secrets.html:34
+#: app/views/directives/osc-secrets.html:38
+#: app/views/directives/osc-secrets.html:42
+#: app/views/edit/autoscaler.html:18
+#: app/views/edit/build-config.html:442
+#: app/views/edit/build-config.html:491
+#: app/views/edit/build-config.html:538
+#: app/views/edit/deployment-config.html:31
+#: app/views/edit/deployment-config.html:35
+#: app/views/edit/deployment-config.html:39
+#: app/views/edit/health-checks.html:13
+#: app/views/images.html:9
+#: app/views/membership.html:17
+#: app/views/membership.html:47
+#: app/views/modals/about-compute-units-modal.html:9
+#: app/views/modals/create-secret.html:10
+#: app/views/modals/create-secret.html:11
+#: app/views/modals/create-secret.html:12
+#: app/views/modals/create-secret.html:9
+#: app/views/modals/edit-pvc-resource.html:13
+#: app/views/pipelines.html:9
+#: app/views/pods.html:9
+#: app/views/quota.html:9
+#: app/views/secrets.html:12
+#: app/views/services.html:9
+#: app/views/storage.html:13
+msgid "Learn More"
+msgstr ""
+
+#: app/views/browse/service.html:94
+#: app/views/edit/jenkinsfile-examples.html:51
+#: app/views/overview.html:276
+#: app/views/pipelines.html:31
+msgid "Learn more about"
+msgstr ""
+
+#: app/views/modals/confirm-save-log.html:16
+msgid "Learn more about the"
+msgstr ""
+
+#: app/views/directives/edit-lifecycle-hook.html:12
+msgid "Lifecycle Action"
+msgstr ""
+
+#: app/views/quota.html:141
+#: app/views/quota.html:145
+#: app/views/quota.html:232
+#: app/views/quota.html:49
+#: app/views/quota.html:53
+msgid "Limit"
+msgstr ""
+
+#: app/views/quota.html:197
+msgid "Limit Range"
+msgstr ""
+
+#: app/views/_compute-resource.html:44
+msgid "Limit can't be less than request ({{request | usageWithUnits : type}})."
+msgstr ""
+
+#: app/views/_compute-resource.html:51
+msgid "Limit cannot be more than {{maxLimitRequestRatio}} times request value. (Request: {{request | usageWithUnits : type}},Limit: {{(input.amount ? (input.amount + input.unit) : defaultValue) | usageWithUnits : type}})"
+msgstr ""
+
+#: app/views/_compute-resource.html:48
+msgid "Limit is required if request is set. (Max Limit/Request Ratio: {{maxLimitRequestRatio}})"
+msgstr ""
+
+#: app/views/browse/_replica-set-details.html:175
+#: app/views/browse/_replica-set-details.html:180
+#: app/views/browse/_replica-set-details.html:184
+#: app/views/browse/deployment-config.html:299
+#: app/views/browse/deployment.html:251
+msgid "Limits"
+msgstr ""
+
+#: app/views/quota.html:20
+msgid "Limits resource usage across a set of projects."
+msgstr ""
+
+#: app/views/directives/create-secret.html:334
+msgid "Link secret to a service account."
+msgstr ""
+
+#: app/views/overview.html:90
+msgid "List by"
+msgstr ""
+
+#: app/views/directives/edit-lifecycle-hook.html:76
+msgid "List of named volumes to copy to the hook pod."
+msgstr ""
+
+#: app/views/edit/health-checks.html:36
+msgid "Liveness Probe"
+msgstr ""
+
+#: app/views/_pod-template-container.html:177
+msgid "Liveness Probe:"
+msgstr ""
+
+#: app/views/directives/deploy-image.html:78
+msgid "Loading image metadata for"
+msgstr ""
+
+#: app/views/add-config-volume.html:6
+#: app/views/attach-pvc.html:7
+#: app/views/browse/build-config.html:70
+#: app/views/browse/build-config.html:78
+#: app/views/browse/build.html:6
+#: app/views/browse/config-map.html:6
+#: app/views/browse/config-maps.html:29
+#: app/views/browse/deployment-config.html:90
+#: app/views/browse/deployment.html:70
+#: app/views/browse/image.html:16
+#: app/views/browse/image.html:6
+#: app/views/browse/imagestream.html:6
+#: app/views/browse/persistent-volume-claim.html:6
+#: app/views/browse/pod.html:6
+#: app/views/browse/replica-set.html:6
+#: app/views/browse/route.html:6
+#: app/views/browse/routes.html:29
+#: app/views/browse/secret.html:6
+#: app/views/browse/service-instance.html:11
+#: app/views/browse/service.html:6
+#: app/views/browse/stateful-set.html:55
+#: app/views/browse/stateful-sets.html:29
+#: app/views/builds.html:26
+#: app/views/catalog/catalog.html:1
+#: app/views/catalog/category-content.html:1
+#: app/views/create-from-url.html:6
+#: app/views/create-route.html:13
+#: app/views/create-secret.html:6
+#: app/views/create/fromimage.html:6
+#: app/views/deployments.html:25
+#: app/views/directives/events.html:1
+#: app/views/edit/autoscaler.html:7
+#: app/views/edit/build-config.html:8
+#: app/views/edit/config-map.html:13
+#: app/views/edit/deployment-config.html:8
+#: app/views/edit/health-checks.html:7
+#: app/views/edit/route.html:9
+#: app/views/edit/yaml.html:6
+#: app/views/images.html:26
+#: app/views/newfromtemplate.html:6
+#: app/views/overview.html:36
+#: app/views/overview/_mobile-client-row.html:50
+#: app/views/pipelines.html:22
+#: app/views/pods.html:26
+#: app/views/projects.html:15
+#: app/views/quota.html:15
+#: app/views/secrets.html:29
+#: app/views/service-instances.html:26
+#: app/views/services.html:26
+#: app/views/set-limits.html:7
+#: app/views/storage.html:31
+msgid "Loading..."
+msgstr ""
+
+#: app/views/modals/logout.html:14
+msgid "Log Out"
+msgstr ""
+
+#: app/views/browse/pod.html:111
+msgid "Log from"
+msgstr ""
+
+#: app/views/browse/build.html:131
+#: app/views/monitoring.html:484
+msgid "Log from {{build.status.startTimestamp  | date : 'medium'}}"
+msgstr ""
+
+#: app/views/util/logout.html:4
+msgid "Log out"
+msgstr ""
+
+#: app/views/util/oauth.html:4
+msgid "Logging in"
+msgstr ""
+
+#: app/views/browse/build.html:116
+#: app/views/browse/pod.html:79
+#: app/views/browse/replica-set.html:78
+msgid "Logs"
+msgstr ""
+
+#: app/views/monitoring.html:306
+msgid "Logs are not available for replica sets."
+msgstr ""
+
+#: app/views/monitoring.html:383
+msgid "Logs are not available for stateful sets."
+msgstr ""
+
+#: app/views/directives/logs/_log-viewer.html:49
+msgid "Logs are not available."
+msgstr ""
+
+#: app/views/directives/next-steps.html:72
+msgid "Making code changes"
+msgstr ""
+
+#: app/views/browse/build-config.html:440
+#: app/views/browse/deployment-config.html:252
+msgid "Manual (CLI):"
+msgstr ""
+
+#: app/views/browse/_build-details.html:43
+msgid "Manual build"
+msgstr ""
+
+#: app/views/directives/notifications/notification-body.html:97
+msgid "Mark Read"
+msgstr ""
+
+#: app/views/directives/_service-binding.html:20
+#: app/views/overview/_service-instance-row.html:26
+msgid "Marked for Deletion"
+msgstr ""
+
+#: app/views/quota.html:156
+#: app/views/quota.html:218
+#: app/views/quota.html:65
+msgid "Max"
+msgstr ""
+
+#: app/views/quota.html:237
+msgid "Max Limit/Request"
+msgstr ""
+
+#: app/views/directives/osc-autoscaling.html:69
+msgid "Max Pods"
+msgstr ""
+
+#: app/views/directives/hpa.html:27
+msgid "Max Pods:"
+msgstr ""
+
+#: app/views/browse/deployment-config.html:222
+#: app/views/browse/deployment.html:172
+msgid "Max Surge:"
+msgstr ""
+
+#: app/views/browse/deployment-config.html:220
+#: app/views/browse/deployment.html:160
+msgid "Max Unavailable:"
+msgstr ""
+
+#: app/views/directives/osc-autoscaling.html:96
+msgid "Max pods is a required field."
+msgstr ""
+
+#: app/views/directives/osc-autoscaling.html:85
+msgid "Max pods must be a number."
+msgstr ""
+
+#: app/views/directives/osc-autoscaling.html:92
+msgid "Max pods must be greater than or equal to"
+msgstr ""
+
+#: app/views/directives/osc-persistent-volume-claim.html:151
+#: app/views/modals/edit-pvc-resource.html:39
+msgid "Max: {{limits.max | usageWithUnits : 'storage'}}"
+msgstr ""
+
+#: app/views/_edit-request-limit.html:10
+msgid "Max: {{limits.max | usageWithUnits : type}}"
+msgstr ""
+
+#: app/views/edit/deployment-config.html:202
+msgid "Maximum Number of Surge Pods"
+msgstr ""
+
+#: app/views/edit/deployment-config.html:179
+msgid "Maximum Number of Unavailable Pods"
+msgstr ""
+
+#: app/views/_volumes.html:63
+msgid "Medium:"
+msgstr ""
+
+#: app/views/membership.html:14
+msgid "Membership"
+msgstr ""
+
+#: app/views/quota.html:129
+#: app/views/quota.html:137
+#: app/views/quota.html:145
+#: app/views/quota.html:37
+#: app/views/quota.html:45
+#: app/views/quota.html:53
+msgid "Memory"
+msgstr ""
+
+#: app/views/modals/about-compute-units-modal.html:28
+msgid "Memory and Storage"
+msgstr ""
+
+#: app/views/_pod-template-container.html:149
+msgid "Memory:"
+msgstr ""
+
+#: app/views/directives/events.html:51
+#: app/views/overview/_notification-icon.html:44
+msgid "Message"
+msgstr ""
+
+#: app/views/directives/notifications/notification-body.html:91
+msgid "Message Unread."
+msgstr ""
+
+#: app/views/browse/_pod-details.html:18
+msgid "Message:"
+msgstr ""
+
+#: app/views/overview/_notification-icon.html:47
+msgid "Messages"
+msgstr ""
+
+#: app/views/browse/stateful-set.html:150
+#: app/views/overview/_list-row-expanded.html:131
+msgid "Metrics"
+msgstr ""
+
+#: app/views/directives/deployment-metrics.html:41
+#: app/views/directives/pod-metrics.html:41
+msgid "Metrics are not available."
+msgstr ""
+
+#: app/views/edit/autoscaler.html:25
+msgid "Metrics might not be configured by your cluster administrator. Metrics are required for autoscaling."
+msgstr ""
+
+#: app/views/_edit-request-limit.html:42
+msgid "MiB"
+msgstr ""
+
+#: app/views/edit/deployment-config.html:243
+msgid "Mid Lifecycle Hook"
+msgstr ""
+
+#: app/views/directives/edit-lifecycle-hook.html:4
+msgid "Mid hooks execute after the previous deployment is scaled down to zero and before the first pod of the new deployment is created."
+msgstr ""
+
+#: app/views/quota.html:212
+msgid "Min"
+msgstr ""
+
+#: app/views/directives/osc-autoscaling.html:42
+msgid "Min Pods"
+msgstr ""
+
+#: app/views/directives/hpa.html:25
+msgid "Min Pods:"
+msgstr ""
+
+#: app/views/browse/deployment.html:184
+msgid "Min Ready:"
+msgstr ""
+
+#: app/views/directives/osc-autoscaling.html:57
+msgid "Min pods must be a number."
+msgstr ""
+
+#: app/views/directives/osc-autoscaling.html:60
+#: app/views/directives/osc-autoscaling.html:88
+msgid "Min pods must be a whole number."
+msgstr ""
+
+#: app/views/directives/osc-autoscaling.html:63
+msgid "Min pods must be greater than or equal to 1."
+msgstr ""
+
+#: app/views/directives/osc-persistent-volume-claim.html:148
+#: app/views/modals/edit-pvc-resource.html:36
+msgid "Min: {{limits.min | usageWithUnits : 'storage'}}"
+msgstr ""
+
+#: app/views/_edit-request-limit.html:7
+msgid "Min: {{limits.min | usageWithUnits : type}}"
+msgstr ""
+
+#: app/views/directives/key-value-editor.html:67
+msgid "Minimum character count is {{keyMinlength}}"
+msgstr ""
+
+#: app/views/directives/key-value-editor.html:195
+msgid "Minimum character count is {{valueMinlength}}"
+msgstr ""
+
+#: app/views/overview.html:384
+msgid "Mobile Clients"
+msgstr ""
+
+#: app/views/_volumes.html:42
+msgid "Mode:"
+msgstr ""
+
+#: app/views/monitoring.html:7
+msgid "Monitoring"
+msgstr ""
+
+#: app/views/directives/labels.html:10
+msgid "More labels..."
+msgstr ""
+
+#: app/views/directives/edit-lifecycle-hook.html:106
+msgid "More than one image tag is defined. To change image tags, use the YAML editor."
+msgstr ""
+
+#: app/views/add-config-volume.html:61
+#: app/views/attach-pvc.html:77
+#: app/views/directives/add-config-to-application.html:86
+msgid "Mount Path"
+msgstr ""
+
+#: app/views/directives/add-config-to-application.html:115
+msgid "Mount Path for the volume. A file will be created in this directory for each key from the {{ctrl.apiObject.kind | humanizeKind}}.The file contents will be the value of the key."
+msgstr ""
+
+#: app/views/directives/osc-source-secrets.html:66
+msgid "Mount path"
+msgstr ""
+
+#: app/views/attach-pvc.html:92
+msgid "Mount path for the volume inside the container. If not specified, the volume will not be mounted automatically."
+msgstr ""
+
+#: app/views/add-config-volume.html:78
+msgid "Mount path for the volume."
+msgstr ""
+
+#: app/views/add-config-volume.html:86
+#: app/views/attach-pvc.html:96
+#: app/views/directives/add-config-to-application.html:110
+msgid "Mount path must be a valid path to a directory starting with"
+msgstr ""
+
+#: app/views/attach-pvc.html:181
+msgid "Mount the volume as read-only."
+msgstr ""
+
+#: app/views/_pod-template-container.html:118
+msgid "Mount:"
+msgstr ""
+
+#: app/views/directives/_edit-command.html:31
+#: app/views/directives/edit-environment-from.html:105
+#: app/views/directives/key-value-editor.html:208
+msgid "Move row"
+msgstr ""
+
+#: app/views/edit/deployment-config.html:195
+#: app/views/edit/deployment-config.html:218
+msgid "Must be a non-negative whole number or percentage."
+msgstr ""
+
+#: app/views/_compute-resource.html:32
+#: app/views/directives/_edit-probe.html:115
+#: app/views/directives/_edit-probe.html:83
+#: app/views/directives/osc-persistent-volume-claim.html:189
+#: app/views/directives/osc-routing-service.html:54
+#: app/views/edit/deployment-config.html:133
+#: app/views/edit/deployment-config.html:165
+#: app/views/edit/deployment-config.html:98
+#: app/views/modals/edit-pvc-resource.html:75
+msgid "Must be a number."
+msgstr ""
+
+#: app/views/directives/osc-persistent-volume-claim.html:194
+#: app/views/modals/edit-pvc-resource.html:78
+msgid "Must be a positive number."
+msgstr ""
+
+#: app/views/directives/osc-routing-service.html:59
+msgid "Must be a whole number greater than or equal to 0."
+msgstr ""
+
+#: app/views/directives/_edit-probe.html:121
+#: app/views/directives/_edit-probe.html:89
+#: app/views/edit/deployment-config.html:104
+#: app/views/edit/deployment-config.html:139
+#: app/views/edit/deployment-config.html:171
+msgid "Must be a whole number."
+msgstr ""
+
+#: app/views/edit/project.html:15
+msgid "My Project"
+msgstr ""
+
+#: app/views/projects.html:20
+msgid "My Projects"
+msgstr ""
+
+#: app/views/modals/set-home-page-modal.html:23
+msgid "My Projects List"
+msgstr ""
+
+#: app/views/browse/config-maps.html:51
+#: app/views/browse/deployment.html:101
+#: app/views/browse/stateful-sets.html:48
+#: app/views/builds.html:51
+#: app/views/create/fromimage.html:22
+#: app/views/deployments.html:132
+#: app/views/deployments.html:173
+#: app/views/deployments.html:201
+#: app/views/deployments.html:51
+#: app/views/directives/deploy-image.html:122
+#: app/views/directives/edit-config-map-or-secret.html:5
+#: app/views/directives/events.html:44
+#: app/views/directives/osc-persistent-volume-claim.html:64
+#: app/views/directives/osc-routing.html:6
+#: app/views/images.html:48
+#: app/views/membership.html:155
+#: app/views/membership.html:58
+#: app/views/other-resources.html:51
+#: app/views/secrets.html:53
+#: app/views/service-instances.html:45
+#: app/views/services.html:45
+#: app/views/storage.html:56
+msgid "Name"
+msgstr ""
+
+#: app/views/directives/deploy-image.html:149
+msgid "Name can't have more than 24 characters."
+msgstr ""
+
+#: app/views/directives/create-secret.html:39
+#: app/views/directives/edit-config-map-or-secret.html:33
+#: app/views/directives/osc-autoscaling.html:28
+#: app/views/directives/osc-persistent-volume-claim.html:87
+msgid "Name is required."
+msgstr ""
+
+#: app/views/directives/deploy-image.html:143
+msgid "Name must be an alphanumeric (a-z, 0-9) string with a maximum length of 24 characters where the first character is a letter (a-z). The '-' character is allowed anywhere except the first or last character."
+msgstr ""
+
+#: app/views/directives/deploy-image.html:146
+msgid "Name must have at least 2 characters."
+msgstr ""
+
+#: app/views/directives/edit-environment-from.html:36
+msgid "Names will be prefixed with"
+msgstr ""
+
+#: app/components/istag-select/istag-select.html:5
+msgid "Namespace"
+msgstr ""
+
+#: app/views/directives/osc-image-summary.html:5
+msgid "Namespace: {{ resource.metadata.namespace }}"
+msgstr ""
+
+#: app/views/catalog/_image.html:24
+msgid "Namespace: {{imageStream.metadata.namespace}}"
+msgstr ""
+
+#: app/views/catalog/_template.html:22
+msgid "Namespace: {{template.metadata.namespace}}"
+msgstr ""
+
+#: app/views/overview/_list-row-expanded.html:114
+#: app/views/overview/_networking.html:2
+msgid "Networking"
+msgstr ""
+
+#: app/views/browse/build-config.html:417
+#: app/views/browse/deployment-config.html:264
+msgid "New Image For:"
+msgstr ""
+
+#: app/views/create/fromimage.html:244
+msgid "New image is available"
+msgstr ""
+
+#: app/views/create-from-url.html:38
+#: app/views/create-from-url.html:73
+msgid "Next"
+msgstr ""
+
+#: app/views/directives/pods-table.html:49
+msgid "No"
+msgstr ""
+
+#: app/views/overview/_networking.html:54
+msgid "No Routes"
+msgstr ""
+
+#: app/views/overview/_traffic-percent.html:1
+msgid "No Traffic"
+msgstr ""
+
+#: app/views/service-instances.html:82
+msgid "No bindings"
+msgstr ""
+
+#: app/views/builds.html:66
+msgid "No builds"
+msgstr ""
+
+#: app/views/builds.html:32
+msgid "No builds have been added to project {{projectName}}."
+msgstr ""
+
+#: app/views/browse/build-config.html:82
+#: app/views/builds.html:31
+#: app/views/overview/_builds.html:10
+msgid "No builds."
+msgstr ""
+
+#: app/views/browse/config-maps.html:35
+msgid "No config maps have been added to project {{projectName}}."
+msgstr ""
+
+#: app/views/directives/edit-environment-from.html:29
+msgid "No config maps or secrets have been added as Environment From."
+msgstr ""
+
+#: app/views/add-config-volume.html:15
+msgid "No config maps or secrets."
+msgstr ""
+
+#: app/views/browse/config-maps.html:34
+msgid "No config maps."
+msgstr ""
+
+#: app/views/browse/secret.html:93
+msgid "No data."
+msgstr ""
+
+#: app/views/deployments.html:66
+msgid "No deployments"
+msgstr ""
+
+#: app/views/overview/_list-row-content.html:30
+msgid "No deployments for"
+msgstr ""
+
+#: app/views/deployments.html:32
+msgid "No deployments have been added to project {{projectName}}."
+msgstr ""
+
+#: app/views/deployments.html:31
+#: app/views/overview/_list-row-empty-state.html:1
+msgid "No deployments."
+msgstr ""
+
+#: app/views/directives/edit-environment-variables.html:7
+msgid "No environment variables set in the {{$ctrl.apiObject.kind | humanizeKind}} template for container {{container.name}}."
+msgstr ""
+
+#: app/views/directives/events.html:57
+#: app/views/directives/events.html:64
+msgid "No events to show."
+msgstr ""
+
+#: app/views/directives/events-sidebar.html:25
+msgid "No events."
+msgstr ""
+
+#: app/views/directives/deploy-image.html:204
+msgid "No image metadata found."
+msgstr ""
+
+#: app/views/images.html:32
+msgid "No image streams have been added to project {{projectName}}."
+msgstr ""
+
+#: app/views/images.html:31
+msgid "No image streams."
+msgstr ""
+
+#: app/views/catalog/category-content.html:6
+msgid "No images or templates are loaded for the category {{category.label}}."
+msgstr ""
+
+#: app/views/catalog/catalog.html:7
+msgid "No images or templates are loaded for this project or the shared"
+msgstr ""
+
+#: app/views/catalog/catalog.html:4
+#: app/views/catalog/category-content.html:4
+msgid "No images or templates."
+msgstr ""
+
+#: app/views/browse/image.html:36
+msgid "No layer information is available for this image."
+msgstr ""
+
+#: app/views/directives/deployment-metrics.html:34
+#: app/views/directives/pod-metrics.html:36
+msgid "No metrics to display."
+msgstr ""
+
+#: app/views/storage.html:37
+msgid "No persistent volume claims have been added to project {{projectName}}."
+msgstr ""
+
+#: app/views/attach-pvc.html:10
+#: app/views/storage.html:36
+msgid "No persistent volume claims."
+msgstr ""
+
+#: app/views/browse/build-config.html:104
+#: app/views/pipelines.html:83
+msgid "No pipeline builds have run for {{buildConfigName}}."
+msgstr ""
+
+#: app/views/overview.html:310
+msgid "No pipeline runs."
+msgstr ""
+
+#: app/views/overview.html:274
+#: app/views/pipelines.html:29
+msgid "No pipelines have been added to project {{projectName}}."
+msgstr ""
+
+#: app/views/overview.html:271
+msgid "No pipelines."
+msgstr ""
+
+#: app/views/pods.html:32
+msgid "No pods have been added to project {{projectName}}."
+msgstr ""
+
+#: app/views/directives/pod-donut.html:18
+#: app/views/pods.html:31
+msgid "No pods."
+msgstr ""
+
+#: app/views/service-instances.html:32
+msgid "No provisioned services have been added to project {{projectName}}."
+msgstr ""
+
+#: app/views/service-instances.html:31
+msgid "No provisioned services."
+msgstr ""
+
+#: app/views/browse/routes.html:35
+msgid "No routes have been added to project {{projectName}}."
+msgstr ""
+
+#: app/views/directives/traffic-table.html:15
+msgid "No routes or ports to show"
+msgstr ""
+
+#: app/views/browse/routes.html:34
+msgid "No routes."
+msgstr ""
+
+#: app/views/browse/pod.html:125
+msgid "No running containers"
+msgstr ""
+
+#: app/views/secrets.html:35
+msgid "No secrets have been added to project {{projectName}}."
+msgstr ""
+
+#: app/views/secrets.html:34
+msgid "No secrets."
+msgstr ""
+
+#: app/views/services.html:32
+msgid "No services have been added to project {{projectName}}."
+msgstr ""
+
+#: app/views/services.html:31
+msgid "No services."
+msgstr ""
+
+#: app/views/edit/build-config.html:287
+msgid "No source inputs have been defined for this build configuration."
+msgstr ""
+
+#: app/views/directives/_build-pipeline-expanded.html:28
+msgid "No stages have started."
+msgstr ""
+
+#: app/views/browse/stateful-sets.html:35
+msgid "No stateful sets have been added to project {{projectName}}."
+msgstr ""
+
+#: app/views/browse/stateful-sets.html:34
+msgid "No stateful sets."
+msgstr ""
+
+#: app/views/_config-file-params.html:14
+msgid "No username and password."
+msgstr ""
+
+#: app/views/browse/secret.html:76
+msgid "No value"
+msgstr ""
+
+#: app/views/other-resources.html:33
+msgid "No {{resourceName}} have been added to project {{projectName}}."
+msgstr ""
+
+#: app/views/other-resources.html:32
+msgid "No {{resourceName}}."
+msgstr ""
+
+#: app/views/directives/_edit-command.html:2
+msgid "No {{type || 'command'}} set."
+msgstr ""
+
+#: app/views/browse/_pod-details.html:46
+msgid "Node:"
+msgstr ""
+
+#: app/views/browse/service.html:85
+#: app/views/builds.html:75
+msgid "None"
+msgstr ""
+
+#: app/views/directives/events-badge.html:1
+#: app/views/directives/events-badge.html:2
+msgid "Normal"
+msgstr ""
+
+#: app/views/_pod-template.html:14
+msgid "Not all containers have health checks"
+msgstr ""
+
+#: app/views/directives/hpa.html:37
+msgid "Not available"
+msgstr ""
+
+#: app/views/directives/next-steps.html:75
+msgid "Note that this will start a new build."
+msgstr ""
+
+#: app/views/modals/set-home-page-modal.html:9
+msgid "Note: This setting is browser-specific and will not be maintained across browsers."
+msgstr ""
+
+#: app/views/directives/notifications/notification-counter.html:3
+msgid "Notifications"
+msgstr ""
+
+#: app/views/projects.html:163
+msgid "Only the first {{limitListTo}} projects are displayed."
+msgstr ""
+
+#: app/views/directives/logs/_log-viewer.html:38
+msgid "Only the previous {{options.tailLines || 5000}} log lines and new log messages will be displayed because of the large log size."
+msgstr ""
+
+#: app/views/browse/pod.html:136
+msgid "Open Fullscreen Terminal"
+msgstr ""
+
+#: app/views/directives/_probe.html:16
+msgid "Open socket on port {{probe.tcpSocket.port}}"
+msgstr ""
+
+#: app/views/about.html:10
+msgid "OpenShift"
+msgstr ""
+
+#: app/views/about.html:15
+msgid "OpenShift Master:"
+msgstr ""
+
+#: app/views/edit/jenkinsfile-examples.html:54
+#: app/views/overview.html:279
+#: app/views/pipelines.html:34
+msgid "OpenShift Pipeline Plugin"
+msgstr ""
+
+#: app/views/about.html:23
+msgid "OpenShift Web Console:"
+msgstr ""
+
+#: app/views/projects.html:174
+msgid "OpenShift helps you quickly develop, host, and scale applications."
+msgstr ""
+
+#: app/views/overview/_virtual-machine-row.html:74
+msgid "Operating System:"
+msgstr ""
+
+#: app/views/create/fromimage.html:116
+#: app/views/edit/build-config.html:69
+msgid "Optional branch, tag, or commit."
+msgstr ""
+
+#: app/views/edit/build-config.html:258
+msgid "Optional path to the Jenkinsfile relative to the context dir. Defaults to the Jenkinsfile in context dir."
+msgstr ""
+
+#: app/views/attach-pvc.html:120
+msgid "Optional path within the volume from which it will be mounted into the container. Defaults to the volume's root."
+msgstr ""
+
+#: app/views/create/fromimage.html:135
+#: app/views/edit/build-config.html:89
+msgid "Optional subdirectory for the application source code, used as the context directory for the build."
+msgstr ""
+
+#: app/views/directives/create-secret.html:111
+msgid "Optional username for Git authentication."
+msgstr ""
+
+#: app/views/directives/add-config-to-application.html:73
+msgid "Optionally, you can specify a prefix to use with environment variables."
+msgstr ""
+
+#: app/views/modals/debug-terminal.html:38
+msgid "Original Command:"
+msgstr ""
+
+#: app/views/deployments.html:194
+msgid "Other Replication Controllers"
+msgstr ""
+
+#: app/views/other-resources.html:5
+#: app/views/overview.html:137
+#: app/views/overview.html:338
+msgid "Other Resources"
+msgstr ""
+
+#: app/views/browse/build-config.html:435
+msgid "Other Trigger:"
+msgstr ""
+
+#: app/views/catalog/catalog.html:124
+msgid "Other {{parentCategory.label}}"
+msgstr ""
+
+#: app/views/browse/_build-details.html:89
+msgid "Output Image:"
+msgstr ""
+
+#: app/views/browse/build-config.html:311
+msgid "Output To:"
+msgstr ""
+
+#: app/views/directives/pod-metrics.html:82
+msgid "Over limit of"
+msgstr ""
+
+#: app/views/modals/set-home-page-modal.html:29
+msgid "Overview Page for{{availableProjects.length === 1 ? ' ' + (selectedProject | displayName) : ':'}}"
+msgstr ""
+
+#: app/views/directives/next-steps.html:100
+msgid "Parameter {{$ctrl.parameters.generated[0]}} was generated automatically."
+msgstr ""
+
+#: app/views/_templateopt.html:6
+#: app/views/directives/_service-binding.html:52
+#: app/views/directives/next-steps.html:99
+msgid "Parameters"
+msgstr ""
+
+#: app/views/directives/osc-routing.html:280
+msgid "Passthrough routes can't use the insecure traffic policy"
+msgstr ""
+
+#: app/views/directives/create-secret.html:259
+msgid "Password"
+msgstr ""
+
+#: app/views/directives/create-secret.html:273
+msgid "Password is required."
+msgstr ""
+
+#: app/views/directives/create-secret.html:117
+msgid "Password or Token"
+msgstr ""
+
+#: app/views/directives/create-secret.html:134
+msgid "Password or token for Git authentication. Required if a ca.crt or .gitconfig file is not specified."
+msgstr ""
+
+#: app/views/directives/create-secret.html:130
+msgid "Password or token is required."
+msgstr ""
+
+#: app/views/add-config-volume.html:134
+#: app/views/directives/_edit-probe.html:23
+#: app/views/directives/osc-routing.html:87
+msgid "Path"
+msgstr ""
+
+#: app/views/directives/osc-source-secrets.html:105
+msgid "Path at which to mount the secret."
+msgstr ""
+
+#: app/views/add-config-volume.html:151
+#: app/views/attach-pvc.html:125
+msgid "Path must be a relative path. It cannot start with"
+msgstr ""
+
+#: app/views/directives/osc-routing.html:110
+msgid "Path must start with"
+msgstr ""
+
+#: app/views/directives/osc-routing.html:104
+msgid "Path that the router watches to route traffic to the service."
+msgstr ""
+
+#: app/views/directives/osc-routing.html:114
+msgid "Path value will not be used. Paths cannot be set for passthrough TLS."
+msgstr ""
+
+#: app/views/_volumes.html:54
+#: app/views/browse/route.html:94
+msgid "Path:"
+msgstr ""
+
+#: app/views/add-config-volume.html:155
+msgid "Paths must be unique."
+msgstr ""
+
+#: app/views/browse/build-config.html:291
+msgid "Paths:"
+msgstr ""
+
+#: app/views/browse/deployment-config.html:39
+#: app/views/browse/deployment.html:18
+msgid "Pause Rollouts"
+msgstr ""
+
+#: app/views/directives/pause-rollouts-checkbox.html:9
+msgid "Pause rollouts for this {{deployment.kind | humanizeKind}}"
+msgstr ""
+
+#: app/views/directives/pause-rollouts-checkbox.html:12
+msgid "Pausing lets you make changes without triggering a rollout. You can resume rollouts at any time."
+msgstr ""
+
+#: app/views/browse/routes.html:87
+#: app/views/directives/_service-binding.html:33
+#: app/views/directives/next-steps.html:5
+#: app/views/directives/traffic-table.html:51
+#: app/views/overview/_service-instance-row.html:30
+msgid "Pending"
+msgstr ""
+
+#: app/views/directives/osc-routing.html:224
+msgid "Percentage of traffic sent to each service. Drag the slider to adjust the values or"
+msgstr ""
+
+#: app/views/directives/osc-persistent-volume-claim.html:129
+msgid "Permissions to the mounted volume."
+msgstr ""
+
+#: app/views/add-config-volume.html:55
+msgid "Pick the config source. Its data will be mounted as a volume in the container."
+msgstr ""
+
+#: app/views/directives/_build-pipeline-collapsed.html:4
+#: app/views/overview.html:307
+msgid "Pipeline"
+msgstr ""
+
+#: app/views/edit/jenkinsfile-examples.html:52
+#: app/views/overview.html:277
+#: app/views/pipelines.html:32
+msgid "Pipeline Builds"
+msgstr ""
+
+#: app/views/overview/_list-row-expanded.html:158
+#: app/views/overview/_pipelines.html:2
+#: app/views/pipelines.html:6
+msgid "Pipelines"
+msgstr ""
+
+#: app/views/browse/service-instance.html:100
+msgid "Plan"
+msgstr ""
+
+#: app/views/create/fromimage.html:52
+msgid "Please enter a valid name."
+msgstr ""
+
+#: app/views/directives/edit-environment-from.html:84
+msgid "Please enter a valid prefix."
+msgstr ""
+
+#: app/views/util/oauth.html:5
+msgid "Please wait while you are logged in"
+msgstr ""
+
+#: app/views/directives/pod-metrics.html:60
+msgid "Pod Metrics"
+msgstr ""
+
+#: app/views/directives/pod-donut.html:20
+msgid "Pod status:"
+msgstr ""
+
+#: app/views/browse/_replica-set-details.html:220
+#: app/views/browse/service.html:96
+#: app/views/browse/stateful-set.html:126
+#: app/views/monitoring.html:56
+#: app/views/overview.html:258
+#: app/views/pods.html:6
+msgid "Pods"
+msgstr ""
+
+#: app/views/directives/osc-routing.html:274
+msgid "Policy for traffic on insecure schemes like HTTP."
+msgstr ""
+
+#: app/views/directives/_edit-probe.html:37
+#: app/views/directives/_edit-probe.html:53
+#: app/views/directives/deploy-image.html:103
+msgid "Port"
+msgstr ""
+
+#: app/views/directives/deploy-image.html:104
+#: app/views/services.html:48
+msgid "Ports"
+msgstr ""
+
+#: app/views/_pod-template-container.html:101
+msgid "Ports:"
+msgstr ""
+
+#: app/views/edit/deployment-config.html:256
+msgid "Post Lifecycle Hook"
+msgstr ""
+
+#: app/views/directives/edit-lifecycle-hook.html:5
+msgid "Post hooks execute after the deployment strategy completes."
+msgstr ""
+
+#: app/views/browse/_build-details.html:137
+#: app/views/browse/build-config.html:378
+#: app/views/edit/build-config.html:536
+msgid "Post-Commit Hooks"
+msgstr ""
+
+#: app/views/edit/deployment-config.html:230
+msgid "Pre Lifecycle Hook"
+msgstr ""
+
+#: app/views/directives/edit-lifecycle-hook.html:3
+msgid "Pre hooks execute before the deployment begins."
+msgstr ""
+
+#: app/views/directives/add-config-to-application.html:50
+#: app/views/directives/edit-environment-from.html:11
+#: app/views/directives/edit-environment-from.html:72
+msgid "Prefix"
+msgstr ""
+
+#: app/views/directives/add-config-to-application.html:70
+msgid "Prefix can contain numbers, letters, and underscores, but can not start with a number."
+msgstr ""
+
+#: app/views/directives/osc-routing.html:315
+msgid "Private Key"
+msgstr ""
+
+#: app/views/directives/create-secret.html:182
+msgid "Private SSH key file for Git authentication."
+msgstr ""
+
+#: app/views/modals/process-or-save-template.html:14
+msgid "Process the template"
+msgstr ""
+
+#: app/views/browse/deployment.html:202
+msgid "Progress Deadline:"
+msgstr ""
+
+#: app/views/projects.html:68
+msgid "Project Name"
+msgstr ""
+
+#: app/views/quota.html:109
+msgid "Project Quota"
+msgstr ""
+
+#: app/views/edit/jenkinsfile-examples.html:39
+msgid "Prompt for manual input:"
+msgstr ""
+
+#: app/views/directives/osc-image-summary.html:4
+msgid "Provider: {{ resource | annotation:'provider' }}"
+msgstr ""
+
+#: app/views/catalog/_image.html:20
+msgid "Provider: {{imageStream | imageStreamTagAnnotation : 'provider' : is.tag.tag}}"
+msgstr ""
+
+#: app/views/catalog/_template.html:18
+msgid "Provider: {{template | annotation : 'provider'}}"
+msgstr ""
+
+#: app/views/overview.html:404
+#: app/views/service-instances.html:10
+msgid "Provisioned Services"
+msgstr ""
+
+#: app/views/directives/osc-routing.html:61
+msgid "Public hostname for the route."
+msgstr ""
+
+#: app/views/browse/_build-details.html:99
+msgid "Push Secret:"
+msgstr ""
+
+#: app/views/edit/build-config.html:369
+msgid "Push To"
+msgstr ""
+
+#: app/views/directives/deployment-donut.html:69
+#: app/views/quota.html:6
+msgid "Quota"
+msgstr ""
+
+#: app/views/quota.html:239
+msgid "Ratio"
+msgstr ""
+
+#: app/views/directives/osc-persistent-volume-claim.html:125
+msgid "Read Only (ROX)"
+msgstr ""
+
+#: app/views/attach-pvc.html:179
+msgid "Read only"
+msgstr ""
+
+#: app/views/edit/health-checks.html:19
+msgid "Readiness Probe"
+msgstr ""
+
+#: app/views/_pod-template-container.html:167
+msgid "Readiness Probe:"
+msgstr ""
+
+#: app/views/_container-statuses.html:40
+#: app/views/_container-statuses.html:60
+msgid "Ready:"
+msgstr ""
+
+#: app/views/directives/events.html:50
+msgid "Reason"
+msgstr ""
+
+#: app/views/directives/events.html:51
+msgid "Reason and"
+msgstr ""
+
+#: app/views/browse/build.html:14
+#: app/views/browse/build.html:48
+msgid "Rebuild"
+msgstr ""
+
+#: app/views/directives/pods-table.html:13
+msgid "Receiving Traffic"
+msgstr ""
+
+#: app/views/pipelines.html:101
+msgid "Recent Runs"
+msgstr ""
+
+#: app/views/about.html:7
+msgid "Red Hat OpenShift"
+msgstr ""
+
+#: app/views/command-line.html:14
+msgid "Refer to the"
+msgstr ""
+
+#: app/views/browse/route.html:79
+msgid "Rejected by router '{{ingress.routerName}}'"
+msgstr ""
+
+#: app/views/directives/logs/_log-viewer.html:111
+msgid "Reload"
+msgstr ""
+
+#: app/views/_volumes.html:10
+msgid "Remove"
+msgstr ""
+
+#: app/views/add-config-volume.html:162
+#: app/views/directives/edit-config-map-or-secret.html:117
+msgid "Remove Item"
+msgstr ""
+
+#: app/views/edit/health-checks.html:49
+msgid "Remove Liveness Probe"
+msgstr ""
+
+#: app/views/edit/health-checks.html:33
+msgid "Remove Readiness Probe"
+msgstr ""
+
+#: app/views/directives/osc-routing.html:172
+msgid "Remove Service"
+msgstr ""
+
+#: app/components/osc-webhook-triggers/osc-webhook-triggers.html:71
+msgid "Remove Webhook trigger"
+msgstr ""
+
+#: app/views/directives/osc-secrets.html:26
+#: app/views/directives/osc-source-secrets.html:46
+#: app/views/directives/osc-source-secrets.html:98
+msgid "Remove build secret"
+msgstr ""
+
+#: app/views/overview/_service-linking-button.html:11
+msgid "Remove {{service.metadata.name}} from service group"
+msgstr ""
+
+#: app/views/directives/edit-lifecycle-hook.html:133
+msgid "Remove {{type | upperFirst}} Lifecycle Hook"
+msgstr ""
+
+#: app/views/modals/confirm-replace.html:27
+msgid "Replace"
+msgstr ""
+
+#: app/views/deployments.html:166
+#: app/views/overview.html:228
+msgid "Replica Sets"
+msgstr ""
+
+#: app/views/browse/deployment.html:102
+#: app/views/browse/stateful-sets.html:49
+#: app/views/create/fromimage.html:323
+#: app/views/deployments.html:134
+#: app/views/deployments.html:174
+#: app/views/deployments.html:202
+msgid "Replicas"
+msgstr ""
+
+#: app/views/directives/replicas.html:46
+msgid "Replicas can't be negative."
+msgstr ""
+
+#: app/views/directives/replicas.html:43
+msgid "Replicas must be a whole number."
+msgstr ""
+
+#: app/views/create/fromimage.html:338
+msgid "Replicas must be an integer value greater than or equal to 0."
+msgstr ""
+
+#: app/views/browse/_replica-set-details.html:72
+#: app/views/browse/deployment-config.html:201
+#: app/views/browse/deployment.html:142
+#: app/views/browse/stateful-set.html:84
+msgid "Replicas:"
+msgstr ""
+
+#: app/views/overview.html:218
+msgid "Replication Controllers"
+msgstr ""
+
+#: app/views/_volumes.html:75
+msgid "Repository:"
+msgstr ""
+
+#: app/views/quota.html:125
+#: app/views/quota.html:129
+#: app/views/quota.html:133
+#: app/views/quota.html:137
+#: app/views/quota.html:225
+#: app/views/quota.html:33
+#: app/views/quota.html:37
+#: app/views/quota.html:41
+#: app/views/quota.html:45
+msgid "Request"
+msgstr ""
+
+#: app/views/browse/persistent-volume-claim.html:73
+msgid "Requested Capacity:"
+msgstr ""
+
+#: app/views/browse/_replica-set-details.html:175
+#: app/views/browse/_replica-set-details.html:180
+#: app/views/browse/_replica-set-details.html:184
+#: app/views/browse/deployment-config.html:299
+#: app/views/browse/deployment.html:251
+msgid "Requests and"
+msgstr ""
+
+#: app/views/set-limits.html:9
+msgid "Resource Limits: {{name}}"
+msgstr ""
+
+#: app/views/quota.html:154
+#: app/views/quota.html:209
+#: app/views/quota.html:62
+msgid "Resource Type"
+msgstr ""
+
+#: app/views/set-limits.html:11
+msgid "Resource limits control how much"
+msgstr ""
+
+#: app/views/overview/_virtual-machine-row.html:33
+#: app/views/overview/_virtual-machine-row.html:60
+msgid "Restart"
+msgstr ""
+
+#: app/views/_container-statuses.html:42
+#: app/views/_container-statuses.html:62
+msgid "Restart Count:"
+msgstr ""
+
+#: app/views/browse/_pod-details.html:48
+msgid "Restart Policy:"
+msgstr ""
+
+#: app/views/browse/deployment-config.html:42
+#: app/views/browse/deployment-config.html:98
+#: app/views/browse/deployment.html:21
+#: app/views/browse/deployment.html:78
+msgid "Resume Rollouts"
+msgstr ""
+
+#: app/views/directives/edit-lifecycle-hook.html:123
+msgid "Retry the hook until it succeeds."
+msgstr ""
+
+#: app/views/util/error.html:12
+msgid "Return to the"
+msgstr ""
+
+#: app/views/browse/deployment.html:193
+msgid "Revision History Limit:"
+msgstr ""
+
+#: app/views/_volumes.html:77
+msgid "Revision:"
+msgstr ""
+
+#: app/views/membership.html:62
+msgid "Roles"
+msgstr ""
+
+#: app/views/browse/_replica-set-details.html:23
+#: app/views/browse/_replica-set-details.html:41
+msgid "Roll Back"
+msgstr ""
+
+#: app/views/overview/_networking.html:42
+msgid "Route"
+msgstr ""
+
+#: app/views/browse/routes.html:9
+msgid "Routes"
+msgstr ""
+
+#: app/views/overview/_networking.html:26
+msgid "Routes - External Traffic"
+msgstr ""
+
+#: app/views/directives/osc-routing.html:236
+msgid "Routes can be secured using several TLS termination types for serving certificates."
+msgstr ""
+
+#: app/views/directives/osc-routing.html:156
+msgid "Routes can direct traffic to multiple services for A/B testing. Each service has a weight controlling how much traffic it gets."
+msgstr ""
+
+#: app/views/browse/service.html:81
+msgid "Routes:"
+msgstr ""
+
+#: app/views/create-route.html:9
+msgid "Routing is a way to make your application publicly visible."
+msgstr ""
+
+#: app/views/edit/build-config.html:507
+msgid "Run Policy"
+msgstr ""
+
+#: app/views/browse/build-config.html:323
+msgid "Run Policy:"
+msgstr ""
+
+#: app/views/directives/edit-lifecycle-hook.html:20
+msgid "Run a specific command in a new pod"
+msgstr ""
+
+#: app/views/edit/jenkinsfile-examples.html:6
+msgid "Run an OpenShift build and deployment:"
+msgstr ""
+
+#: app/views/edit/build-config.html:545
+msgid "Run build hooks after image is built"
+msgstr ""
+
+#: app/views/edit/build-config.html:515
+msgid "Run policy type"
+msgstr ""
+
+#: app/views/directives/edit-lifecycle-hook.html:32
+msgid "Runs a command in a new pod using the container from the deployment template. You can add additional environment variables and volumes."
+msgstr ""
+
+#: app/views/directives/create-secret.html:169
+msgid "SSH Private Key"
+msgstr ""
+
+#: app/views/create/fromimage.html:88
+msgid "Sample repository for {{imageName}}:"
+msgstr ""
+
+#: app/views/browse/build-config.html:483
+#: app/views/directives/add-config-to-application.html:148
+#: app/views/directives/edit-environment-variables.html:51
+#: app/views/directives/logs/_log-viewer.html:23
+#: app/views/edit/autoscaler.html:63
+#: app/views/edit/build-config.html:611
+#: app/views/edit/config-map.html:29
+#: app/views/edit/deployment-config.html:372
+#: app/views/edit/health-checks.html:60
+#: app/views/edit/project.html:30
+#: app/views/edit/route.html:21
+#: app/views/edit/yaml.html:29
+#: app/views/modals/confirm-save-log.html:21
+#: app/views/modals/set-home-page-modal.html:48
+#: app/views/set-limits.html:50
+msgid "Save"
+msgstr ""
+
+#: app/views/modals/confirm-save-log.html:9
+msgid "Save partial log for"
+msgstr ""
+
+#: app/views/modals/confirmScale.html:17
+msgid "Scale Down"
+msgstr ""
+
+#: app/views/directives/deployment-donut.html:45
+msgid "Scale down"
+msgstr ""
+
+#: app/views/modals/confirmScale.html:9
+msgid "Scale down {{type}}"
+msgstr ""
+
+#: app/views/edit/autoscaler.html:14
+msgid "Scale replicas automatically based on CPU usage."
+msgstr ""
+
+#: app/views/create/fromimage.html:308
+msgid "Scale replicas manually or automatically based on CPU usage."
+msgstr ""
+
+#: app/views/directives/deployment-donut.html:33
+msgid "Scale up"
+msgstr ""
+
+#: app/views/directives/deployment-donut.html:73
+msgid "Scaling may be affected."
+msgstr ""
+
+#: app/views/quota.html:114
+msgid "Scopes:"
+msgstr ""
+
+#: app/views/edit/build-config.html:567
+msgid "Script"
+msgstr ""
+
+#: app/views/directives/build-hooks.html:18
+msgid "Script:"
+msgstr ""
+
+#: app/views/browse/secret.html:62
+msgid "Secret"
+msgstr ""
+
+#: app/views/directives/create-secret.html:14
+msgid "Secret Name"
+msgstr ""
+
+#: app/views/directives/create-secret.html:3
+msgid "Secret Type"
+msgstr ""
+
+#: app/views/directives/osc-secrets.html:37
+msgid "Secret for authentication when pulling images from a secured registry."
+msgstr ""
+
+#: app/views/directives/osc-secrets.html:41
+msgid "Secret for authentication when pushing images to a secured registry."
+msgstr ""
+
+#: app/components/osc-webhook-triggers/osc-webhook-triggers.html:40
+msgid "Secret reference is required."
+msgstr ""
+
+#: app/views/directives/osc-secrets.html:33
+msgid "Secret with credentials for pulling your source code."
+msgstr ""
+
+#: app/views/_volumes.html:20
+msgid "Secret:"
+msgstr ""
+
+#: app/views/secrets.html:9
+msgid "Secrets"
+msgstr ""
+
+#: app/views/create-secret.html:12
+msgid "Secrets allow you to authenticate to a private Git repository or a private image registry."
+msgstr ""
+
+#: app/views/directives/osc-routing.html:234
+msgid "Secure route"
+msgstr ""
+
+#: app/views/directives/osc-routing.html:230
+msgid "Security"
+msgstr ""
+
+#: app/views/catalog/_image.html:49
+#: app/views/catalog/_template.html:27
+msgid "Select"
+msgstr ""
+
+#: app/views/directives/bind-service/delete-binding-select-form.html:2
+msgid "Select a binding to delete from"
+msgstr ""
+
+#: app/views/other-resources.html:28
+msgid "Select a resource from the list above..."
+msgstr ""
+
+#: app/views/directives/deploy-image.html:77
+msgid "Select an image stream tag or enter an image name."
+msgstr ""
+
+#: app/views/directives/header/header.html:53
+#: app/views/directives/process-template-dialog/process-template-select.html:4
+#: app/views/overview.html:25
+msgid "Select from Project"
+msgstr ""
+
+#: app/views/add-config-volume.html:105
+msgid "Select specific keys and paths"
+msgstr ""
+
+#: app/views/attach-pvc.html:67
+msgid "Select storage to use"
+msgstr ""
+
+#: app/views/attach-pvc.html:63
+msgid "Select storage to use."
+msgstr ""
+
+#: app/views/add-config-volume.html:116
+msgid "Select the keys to use and the file paths where each key will be exposed."
+msgstr ""
+
+#: app/views/services.html:49
+msgid "Selector"
+msgstr ""
+
+#: app/views/_volume-claim-templates.html:38
+msgid "Selector:"
+msgstr ""
+
+#: app/views/browse/_replica-set-details.html:68
+#: app/views/browse/deployment-config.html:197
+#: app/views/browse/deployment.html:138
+#: app/views/browse/service.html:51
+msgid "Selectors:"
+msgstr ""
+
+#: app/views/browse/route.html:128
+#: app/views/browse/routes.html:61
+#: app/views/directives/osc-routing-service.html:4
+msgid "Service"
+msgstr ""
+
+#: app/views/overview/_networking.html:5
+msgid "Service - Internal Traffic"
+msgstr ""
+
+#: app/views/directives/create-secret.html:342
+msgid "Service Account"
+msgstr ""
+
+#: app/views/directives/header/header.html:16
+msgid "Service Catalog"
+msgstr ""
+
+#: app/views/directives/traffic-table.html:7
+msgid "Service Port"
+msgstr ""
+
+#: app/views/directives/osc-routing.html:192
+msgid "Service Weights"
+msgstr ""
+
+#: app/views/directives/deploy-image.html:19
+msgid "Service account"
+msgstr ""
+
+#: app/views/directives/osc-routing-service.html:15
+msgid "Service to route to."
+msgstr ""
+
+#: app/views/directives/osc-routing.html:184
+msgid "Service {{duplicate.metadata.name}} cannot be added twice."
+msgstr ""
+
+#: app/views/directives/osc-routing-service.html:20
+msgid "Service {{model.name}} does not exist."
+msgstr ""
+
+#: app/views/directives/osc-routing-service.html:30
+msgid "Service {{model.name}} has a single, unnamed port. A route cannot specifically target an unnamed service port. If more service ports are added later, the route will also direct traffic to them."
+msgstr ""
+
+#: app/views/directives/osc-routing.html:205
+msgid "Service {{route.to.service.metadata.name}} Weight"
+msgstr ""
+
+#: app/views/services.html:6
+msgid "Services"
+msgstr ""
+
+#: app/views/modals/logout.html:6
+msgid "Session Timeout Warning"
+msgstr ""
+
+#: app/views/browse/service.html:69
+msgid "Session affinity:"
+msgstr ""
+
+#: app/views/modals/set-home-page-modal.html:6
+msgid "Set Home Page"
+msgstr ""
+
+#: app/views/directives/key-value-editor.html:115
+msgid "Set to the key {{entry.valueFrom.configMapKeyRef.key}} in config map"
+msgstr ""
+
+#: app/views/directives/key-value-editor.html:127
+msgid "Set to the key {{entry.valueFrom.secretKeyRef.key}} in secret"
+msgstr ""
+
+#: app/views/directives/events.html:49
+msgid "Severity"
+msgstr ""
+
+#: app/views/directives/osc-persistent-volume-claim.html:119
+msgid "Shared Access (RWX)"
+msgstr ""
+
+#: app/views/_container-statuses.html:19
+#: app/views/browse/route.html:163
+#: app/views/browse/route.html:173
+#: app/views/browse/route.html:183
+#: app/views/browse/route.html:193
+#: app/views/create/fromimage.html:391
+msgid "Show"
+msgstr ""
+
+#: app/views/browse/build-config.html:456
+msgid "Show Image Environment Variables"
+msgstr ""
+
+#: app/views/_webhook-trigger-cause.html:15
+msgid "Show Obfuscated Secret"
+msgstr ""
+
+#: app/views/membership.html:271
+msgid "Show hidden roles"
+msgstr ""
+
+#: app/views/directives/next-steps.html:103
+msgid "Show parameter values"
+msgstr ""
+
+#: app/views/directives/osc-persistent-volume-claim.html:113
+msgid "Single User (RWO)"
+msgstr ""
+
+#: app/views/directives/osc-persistent-volume-claim.html:135
+#: app/views/directives/osc-persistent-volume-claim.html:144
+#: app/views/modals/edit-pvc-resource.html:23
+msgid "Size"
+msgstr ""
+
+#: app/views/directives/osc-persistent-volume-claim.html:184
+#: app/views/modals/edit-pvc-resource.html:72
+msgid "Size is required."
+msgstr ""
+
+#: app/views/modals/confirm-replace.html:15
+msgid "Some items already exist:"
+msgstr ""
+
+#: app/views/directives/events.html:32
+#: app/views/projects.html:51
+msgid "Sort by"
+msgstr ""
+
+#: app/views/add-config-volume.html:32
+#: app/views/builds.html:57
+msgid "Source"
+msgstr ""
+
+#: app/views/browse/_build-details.html:76
+msgid "Source Commit:"
+msgstr ""
+
+#: app/views/edit/build-config.html:16
+msgid "Source Configuration"
+msgstr ""
+
+#: app/views/browse/_build-details.html:74
+#: app/views/browse/build-config.html:255
+msgid "Source Context Dir:"
+msgstr ""
+
+#: app/views/browse/_build-details.html:72
+#: app/views/browse/build-config.html:253
+msgid "Source Ref:"
+msgstr ""
+
+#: app/views/browse/_build-details.html:67
+#: app/views/browse/build-config.html:248
+msgid "Source Repo:"
+msgstr ""
+
+#: app/views/pipelines.html:64
+msgid "Source Repository:"
+msgstr ""
+
+#: app/views/browse/_build-details.html:65
+msgid "Source Type:"
+msgstr ""
+
+#: app/views/edit/build-config.html:198
+msgid "Source and Destination Paths"
+msgstr ""
+
+#: app/views/create-from-url.html:10
+msgid "Source code from"
+msgstr ""
+
+#: app/views/directives/osc-source-secrets.html:52
+msgid "Source secret to copy into the builder pod at build time."
+msgstr ""
+
+#: app/views/directives/osc-source-secrets.html:104
+msgid "Source secret to mount into the builder pod at build time."
+msgstr ""
+
+#: app/views/_pod-template-container.html:49
+#: app/views/browse/build-config.html:273
+msgid "Source:"
+msgstr ""
+
+#: app/views/monitoring.html:460
+msgid "Source: {{build.spec.source.type}}"
+msgstr ""
+
+#: app/views/attach-pvc.html:72
+msgid "Specify details about how volumes are going to be mounted inside containers."
+msgstr ""
+
+#: app/views/directives/osc-routing.html:154
+msgid "Split traffic across multiple services"
+msgstr ""
+
+#: app/views/overview/_virtual-machine-row.html:32
+#: app/views/overview/_virtual-machine-row.html:57
+msgid "Start"
+msgstr ""
+
+#: app/views/browse/build-config.html:122
+#: app/views/browse/build-config.html:13
+#: app/views/browse/build-config.html:32
+#: app/views/overview/_list-row-actions.html:15
+msgid "Start Build"
+msgstr ""
+
+#: app/views/overview/_list-row-empty-state.html:31
+msgid "Start Deployment"
+msgstr ""
+
+#: app/views/browse/build-config.html:125
+#: app/views/browse/build-config.html:16
+#: app/views/browse/build-config.html:35
+#: app/views/overview.html:299
+#: app/views/overview/_list-row-actions.html:12
+#: app/views/overview/_list-row-empty-state.html:25
+#: app/views/pipelines.html:52
+msgid "Start Pipeline"
+msgstr ""
+
+#: app/views/browse/build-config.html:89
+msgid "Start a new build to create an image from"
+msgstr ""
+
+#: app/views/browse/_build-details.html:16
+msgid "Started:"
+msgstr ""
+
+#: app/views/_container-statuses.html:32
+#: app/views/_container-statuses.html:52
+#: app/views/overview/_virtual-machine-row.html:52
+msgid "State:"
+msgstr ""
+
+#: app/views/browse/stateful-sets.html:7
+#: app/views/monitoring.html:325
+#: app/views/overview.html:238
+msgid "Stateful Sets"
+msgstr ""
+
+#: app/views/browse/_build-details.html:4
+#: app/views/browse/_pod-details.html:5
+#: app/views/browse/build-config.html:185
+#: app/views/browse/deployment-config.html:136
+#: app/views/browse/service-instance.html:73
+#: app/views/builds.html:53
+#: app/views/deployments.html:53
+#: app/views/directives/pods-table.html:9
+#: app/views/service-instances.html:47
+#: app/views/storage.html:57
+msgid "Status"
+msgstr ""
+
+#: app/views/browse/_replica-set-details.html:57
+#: app/views/browse/service-instance.html:80
+msgid "Status Reason:"
+msgstr ""
+
+#: app/views/quota.html:162
+#: app/views/quota.html:71
+msgid "Status has not been reported on this quota usage record.  Any resources limited by this quota record can not be allocated."
+msgstr ""
+
+#: app/views/browse/_build-details.html:6
+#: app/views/browse/_pod-details.html:12
+#: app/views/browse/_replica-set-details.html:18
+#: app/views/browse/build.html:126
+#: app/views/browse/persistent-volume-claim.html:60
+#: app/views/browse/replica-set.html:89
+#: app/views/browse/service-instance.html:75
+#: app/views/browse/stateful-set.html:79
+msgid "Status:"
+msgstr ""
+
+#: app/views/overview/_virtual-machine-row.html:34
+#: app/views/overview/_virtual-machine-row.html:63
+msgid "Stop"
+msgstr ""
+
+#: app/views/directives/logs/_log-viewer.html:78
+msgid "Stop Following"
+msgstr ""
+
+#: app/views/attach-pvc.html:36
+#: app/views/storage.html:10
+msgid "Storage"
+msgstr ""
+
+#: app/views/directives/osc-persistent-volume-claim.html:11
+msgid "Storage Class"
+msgstr ""
+
+#: app/views/_volume-claim-templates.html:5
+msgid "Storage claim: {{template.metadata.name}}"
+msgstr ""
+
+#: app/views/directives/osc-persistent-volume-claim.html:53
+msgid "Storage classes are set by the administrator to define types of storage the users can select."
+msgstr ""
+
+#: app/views/directives/osc-persistent-volume-claim.html:6
+msgid "Storage quota limit has been reached. You will not be able to create any new storage."
+msgstr ""
+
+#: app/views/directives/osc-persistent-volume-claim.html:209
+#: app/views/modals/edit-pvc-resource.html:95
+msgid "Storage quota will be exceeded."
+msgstr ""
+
+#: app/views/create/fromimage.html:301
+#: app/views/deployments.html:136
+msgid "Strategy"
+msgstr ""
+
+#: app/views/edit/deployment-config.html:20
+msgid "Strategy Type"
+msgstr ""
+
+#: app/views/browse/deployment-config.html:210
+#: app/views/browse/deployment.html:157
+msgid "Strategy:"
+msgstr ""
+
+#: app/views/attach-pvc.html:107
+msgid "Subpath"
+msgstr ""
+
+#: app/views/directives/next-steps.html:30
+#: app/views/directives/next-steps.html:42
+msgid "Success"
+msgstr ""
+
+#: app/views/util/oauth.html:19
+msgid "Switch Users"
+msgstr ""
+
+#: app/views/directives/_edit-command.html:102
+msgid "Switch to {{multiline ? 'Single-line' : 'Multiline'}} Editor"
+msgstr ""
+
+#: app/views/browse/route.html:154
+msgid "TLS Settings"
+msgstr ""
+
+#: app/views/browse/routes.html:63
+#: app/views/directives/osc-routing.html:244
+#: app/views/directives/traffic-table.html:11
+msgid "TLS Termination"
+msgstr ""
+
+#: app/views/directives/osc-routing.html:287
+msgid "TLS certificates for edge and re-encrypt termination. If not specified, the router's default certificate is used."
+msgstr ""
+
+#: app/views/browse/route.html:202
+msgid "TLS is not enabled."
+msgstr ""
+
+#: app/components/istag-select/istag-select.html:27
+msgid "Tag"
+msgstr ""
+
+#: app/views/directives/edit-lifecycle-hook.html:98
+msgid "Tag As"
+msgstr ""
+
+#: app/views/directives/lifecycle-hook.html:80
+msgid "Tag image as"
+msgstr ""
+
+#: app/views/directives/edit-lifecycle-hook.html:29
+msgid "Tag image if the deployment succeeds"
+msgstr ""
+
+#: app/views/images.html:50
+msgid "Tags"
+msgstr ""
+
+#: app/views/directives/edit-lifecycle-hook.html:33
+msgid "Tags the current image as an image stream tag if the deployment succeeds."
+msgstr ""
+
+#: app/views/directives/osc-autoscaling.html:124
+msgid "Target CPU percentage must be a number."
+msgstr ""
+
+#: app/views/directives/osc-autoscaling.html:127
+msgid "Target CPU percentage must be a whole number."
+msgstr ""
+
+#: app/views/directives/osc-autoscaling.html:130
+msgid "Target CPU percentage must be greater than 1."
+msgstr ""
+
+#: app/views/browse/routes.html:62
+#: app/views/directives/osc-routing.html:132
+#: app/views/directives/traffic-table.html:9
+msgid "Target Port"
+msgstr ""
+
+#: app/views/browse/route.html:103
+msgid "Target Port:"
+msgstr ""
+
+#: app/views/directives/osc-routing.html:140
+msgid "Target port for traffic."
+msgstr ""
+
+#: app/views/browse/_pod-details.html:73
+#: app/views/browse/_replica-set-details.html:90
+#: app/views/browse/deployment-config.html:227
+#: app/views/browse/deployment.html:212
+#: app/views/browse/stateful-set.html:106
+msgid "Template"
+msgstr ""
+
+#: app/views/browse/pod.html:122
+msgid "Terminal"
+msgstr ""
+
+#: app/views/browse/route.html:156
+msgid "Termination Type:"
+msgstr ""
+
+#: app/views/browse/route.html:85
+msgid "The DNS admin should set up a CNAME from the route's hostname, {{ingress.host}}, to the router's canonical hostname, {{ingress.routerCanonicalHostname}}."
+msgstr ""
+
+#: app/views/browse/build.html:112
+msgid "The build strategy had no environment variables defined."
+msgstr ""
+
+#: app/views/browse/build-config.html:455
+msgid "The builder image has additional environment variables defined.  Variables defined below will overwrite any from the image with the same name."
+msgstr ""
+
+#: app/views/directives/osc-routing.html:292
+msgid "The certificate or key you've set will not be used."
+msgstr ""
+
+#: app/views/projects.html:63
+msgid "The complete list of your projects could not be loaded."
+msgstr ""
+
+#: app/views/browse/config-map.html:8
+msgid "The config map could not be loaded."
+msgstr ""
+
+#: app/views/browse/config-map.html:66
+msgid "The config map has no items."
+msgstr ""
+
+#: app/views/add-config-volume.html:118
+msgid "The contents of each file will be the value of the key."
+msgstr ""
+
+#: app/views/projects.html:94
+msgid "The current filter is hiding all projects."
+msgstr ""
+
+#: app/views/monitoring.html:408
+msgid "The current filters are hiding all builds."
+msgstr ""
+
+#: app/views/monitoring.html:158
+msgid "The current filters are hiding all deployments."
+msgstr ""
+
+#: app/views/monitoring.html:62
+msgid "The current filters are hiding all pods."
+msgstr ""
+
+#: app/views/monitoring.html:331
+msgid "The current filters are hiding all stateful sets."
+msgstr ""
+
+#: app/views/_templateopt.html:76
+msgid "The current value is \"{{parameter.value}}\", which is not empty."
+msgstr ""
+
+#: app/views/edit/deployment-config.html:38
+msgid "The custom strategy allows you to specify container image that will provide your own deployment behavior."
+msgstr ""
+
+#: app/views/directives/osc-routing.html:349
+msgid "The destination CA certificate will be removed from the route. Destination CA certificates are only used for re-encrypt termination."
+msgstr ""
+
+#: app/views/add-config-volume.html:117
+msgid "The file paths are relative to the mount path."
+msgstr ""
+
+#: app/views/builds.html:35
+msgid "The filter is hiding all builds."
+msgstr ""
+
+#: app/views/browse/config-maps.html:41
+msgid "The filter is hiding all config maps."
+msgstr ""
+
+#: app/views/deployments.html:35
+msgid "The filter is hiding all deployments."
+msgstr ""
+
+#: app/views/images.html:35
+msgid "The filter is hiding all image streams."
+msgstr ""
+
+#: app/views/storage.html:46
+msgid "The filter is hiding all persistent volume claims."
+msgstr ""
+
+#: app/views/pods.html:35
+msgid "The filter is hiding all pods."
+msgstr ""
+
+#: app/views/service-instances.html:35
+msgid "The filter is hiding all provisioned services."
+msgstr ""
+
+#: app/views/overview.html:114
+msgid "The filter is hiding all resources."
+msgstr ""
+
+#: app/views/browse/routes.html:41
+msgid "The filter is hiding all routes."
+msgstr ""
+
+#: app/views/secrets.html:41
+msgid "The filter is hiding all secrets."
+msgstr ""
+
+#: app/views/services.html:35
+msgid "The filter is hiding all services."
+msgstr ""
+
+#: app/views/browse/stateful-sets.html:38
+msgid "The filter is hiding all stateful sets."
+msgstr ""
+
+#: app/views/other-resources.html:38
+msgid "The filter is hiding all {{resourceName}}."
+msgstr ""
+
+#: app/views/directives/osc-routing.html:69
+msgid "The hostname can't be changed after the route is created."
+msgstr ""
+
+#: app/views/directives/deploy-image.html:200
+msgid "The image may not exist or it may be in a secure registry. Check that you have entered the image name correctly or"
+msgstr ""
+
+#: app/views/directives/create-secret.html:81
+msgid "The key must have at least {{secretReferenceValidation.minLength}} characters."
+msgstr ""
+
+#: app/views/modals/confirm-save-log.html:11
+msgid "The log might not be complete. Continuing will save only the content currently displayed."
+msgstr ""
+
+#: app/views/directives/osc-autoscaling.html:53
+msgid "The lower limit for the number of pods that can be set by the autoscaler. If not specified, defaults to 1."
+msgstr ""
+
+#: app/views/edit/deployment-config.html:214
+msgid "The maximum number of pods that can be scheduled above the original number of pods while the rolling deployment is in progress. This can be either a percentage (10%) or a whole number (1)."
+msgstr ""
+
+#: app/views/edit/deployment-config.html:191
+msgid "The maximum number of pods that can be unavailable during the rolling deployment. This can be either a percentage (10%) or a whole number (1)."
+msgstr ""
+
+#: app/views/directives/logs/_log-viewer.html:104
+msgid "The maximum web console log size has been reached. Use the command-line interface or"
+msgstr ""
+
+#: app/views/add-config-volume.html:90
+#: app/views/directives/add-config-to-application.html:113
+msgid "The mount path is already used. Please choose another mount path."
+msgstr ""
+
+#: app/views/create/fromimage.html:57
+msgid "The name must have at least 2 characters."
+msgstr ""
+
+#: app/views/create/fromimage.html:335
+msgid "The number of instances of your image."
+msgstr ""
+
+#: app/views/directives/osc-autoscaling.html:116
+msgid "The percentage of the CPU request that each pod should ideally be using. Pods will be added or removed periodically when CPU usage exceeds or drops below this target value."
+msgstr ""
+
+#: app/views/edit/deployment-config.html:30
+msgid "The recreate strategy has basic rollout behavior and supports lifecycle hooks for injecting code into the deployment process."
+msgstr ""
+
+#: app/views/modals/edit-pvc-resource.html:81
+msgid "The requested capacity may not be less than the current capacity."
+msgstr ""
+
+#: app/views/edit/deployment-config.html:34
+msgid "The rolling strategy will wait for pods to pass their readiness check, scale down old components and then scale up."
+msgstr ""
+
+#: app/views/browse/route.html:56
+msgid "The route is not accepting traffic yet because it has not been admitted by a router."
+msgstr ""
+
+#: app/views/directives/osc-routing.html:293
+msgid "The route is unsecured."
+msgstr ""
+
+#: app/views/overview/_service-instance-row.html:114
+msgid "The service failed."
+msgstr ""
+
+#: app/views/overview/_service-instance-row.html:133
+msgid "The service is not yet ready."
+msgstr ""
+
+#: app/views/browse/service-instance.html:64
+msgid "The service was marked for deletion"
+msgstr ""
+
+#: app/views/overview/_service-instance-row.html:105
+msgid "The service was marked for deletion."
+msgstr ""
+
+#: app/views/directives/osc-autoscaling.html:81
+msgid "The upper limit for the number of pods that can be set by the autoscaler."
+msgstr ""
+
+#: app/views/add-config-volume.html:174
+msgid "The volume will be mounted into all containers. You can  instead"
+msgstr ""
+
+#: app/views/attach-pvc.html:190
+msgid "The volume will be mounted into all containers. You can instead"
+msgstr ""
+
+#: app/views/directives/edit-environment-from.html:145
+msgid "The {{$ctrl.overlayPaneEntryDetails.kind | humanizeKind}} has no properties."
+msgstr ""
+
+#: app/views/directives/add-config-to-application.html:30
+msgid "The {{ctrl.apiObject.kind | humanizeKind}} has already been added to this application."
+msgstr ""
+
+#: app/views/directives/add-config-to-application.html:125
+msgid "The {{ctrl.apiObject.kind | humanizeKind}} will be added to all containers. You can"
+msgstr ""
+
+#: app/views/add-config-volume.html:9
+msgid "The {{kind | humanizeKind}} could not be loaded."
+msgstr ""
+
+#: app/views/directives/edit-config-map-or-secret.html:45
+msgid "The {{type}} has no items."
+msgstr ""
+
+#: app/views/directives/osc-routing-service.html:26
+msgid "There are no"
+msgstr ""
+
+#: app/views/directives/annotations.html:21
+msgid "There are no annotations on this resource."
+msgstr ""
+
+#: app/views/monitoring.html:409
+msgid "There are no builds in this project."
+msgstr ""
+
+#: app/views/add-config-volume.html:17
+msgid "There are no config maps or secrets in project {{project | displayName}} to use as a volume for this {{kind | humanizeKind}}."
+msgstr ""
+
+#: app/views/monitoring.html:159
+msgid "There are no deployments in this project."
+msgstr ""
+
+#: app/views/edit/build-config.html:227
+msgid "There are no editable source types for this build config."
+msgstr ""
+
+#: app/views/monitoring.html:63
+msgid "There are no pods in this project."
+msgstr ""
+
+#: app/views/quota.html:15
+msgid "There are no resource quotas set on this project."
+msgstr ""
+
+#: app/views/directives/resource-service-bindings.html:26
+#: app/views/directives/service-instance-bindings.html:17
+msgid "There are no service bindings."
+msgstr ""
+
+#: app/views/monitoring.html:332
+msgid "There are no stateful sets in this project."
+msgstr ""
+
+#: app/views/membership.html:69
+msgid "There are no {{ subjectKind.name | humanizeKind }}s with access to this project."
+msgstr ""
+
+#: app/views/directives/osc-file-input.html:25
+msgid "There was an error reading the file. Please copy the file content into the text area."
+msgstr ""
+
+#: app/views/directives/next-steps.html:98
+msgid "These parameters often include things like passwords. If you will need to reference these values later, copy them to a safe location."
+msgstr ""
+
+#: app/views/create/fromimage.html:269
+msgid "These variables exist on the image and will be available at runtime. You may override them below."
+msgstr ""
+
+#: app/views/edit/autoscaler.html:44
+msgid "This autoscaler uses a newer API, consider editing it with the"
+msgstr ""
+
+#: app/views/modals/edit-pvc-resource.html:19
+msgid "This can be a time-consuming process."
+msgstr ""
+
+#: app/views/overview/_list-row-empty-state.html:21
+msgid "This deployment config is part of the pipeline"
+msgstr ""
+
+#: app/views/directives/edit-config-map-or-secret.html:100
+msgid "This file contains binary content."
+msgstr ""
+
+#: app/views/directives/deploy-image.html:113
+msgid "This image declares volumes and will default to use non-persistent, host-local storage. You can add persistent storage later to the deployment config."
+msgstr ""
+
+#: app/views/create/fromimage.html:96
+#: app/views/edit/build-config.html:49
+msgid "This might not be a valid Git URL. Check that it is the correct URL to a remote Git repository."
+msgstr ""
+
+#: app/views/create/fromimage.html:60
+#: app/views/directives/deploy-image.html:154
+msgid "This name is already in use within the project. Please choose a different name."
+msgstr ""
+
+#: app/views/directives/create-secret.html:31
+msgid "This name is already in use. Please choose a different name."
+msgstr ""
+
+#: app/views/browse/deployment.html:76
+msgid "This pauses any in-progress rollouts and stops new rollouts from running until the deployment is resumed."
+msgstr ""
+
+#: app/views/overview.html:321
+msgid "This pipeline is not associated with any deployments."
+msgstr ""
+
+#: app/views/modals/delete-resource.html:70
+msgid "This resource has an autoscaler associated with it. It is recommended you delete the autoscaler with the resource it scales."
+msgstr ""
+
+#: app/views/modals/delete-resource.html:73
+msgid "This resource has autoscalers associated with it. It is recommended you delete the autoscalers with the resource they scale."
+msgstr ""
+
+#: app/views/browse/route.html:117
+msgid "This route splits traffic across multiple services."
+msgstr ""
+
+#: app/views/browse/secret.html:94
+msgid "This secret has no data."
+msgstr ""
+
+#: app/views/browse/secret.html:83
+#: app/views/directives/edit-environment-from.html:174
+msgid "This secret value contains non-printable characters and is displayed as a Base64-encoded string."
+msgstr ""
+
+#: app/views/browse/route.html:110
+msgid "This target port will route to {{route | routeTargetPortMapping : services[route.spec.to.name]}}."
+msgstr ""
+
+#: app/views/modals/debug-terminal.html:35
+msgid "This temporary pod has a modified entrypoint command to debug a failing container. The pod will be available for one hour and will be deleted when the terminal window is closed."
+msgstr ""
+
+#: app/views/modals/delete-resource.html:31
+msgid "This will delete all resources associated with the project {{displayName ? displayName : resourceName}}."
+msgstr ""
+
+#: app/views/modals/delete-resource.html:15
+msgid "This will delete the deployment config, all rollout history, and any running pods."
+msgstr ""
+
+#: app/views/modals/delete-resource.html:19
+msgid "This will delete the deployment, all rollout history, and any running pods."
+msgstr ""
+
+#: app/views/modals/delete-resource.html:23
+msgid "This will delete the {{typeDisplayName || (kind | humanizeKind)}} and any running pods."
+msgstr ""
+
+#: app/views/_templateopt.html:77
+msgid "This will prevent a value from being generated."
+msgstr ""
+
+#: app/views/browse/deployment-config.html:96
+msgid "This will stop any new rollouts or triggers from running until resumed."
+msgstr ""
+
+#: app/views/edit/autoscaler.html:32
+msgid "This {{targetKind | humanizeKind}} does not have any containers with a CPU"
+msgstr ""
+
+#: app/views/directives/events.html:40
+msgid "Time"
+msgstr ""
+
+#: app/views/directives/deployment-metrics.html:21
+#: app/views/directives/pod-metrics.html:22
+msgid "Time Range:"
+msgstr ""
+
+#: app/views/edit/deployment-config.html:161
+msgid "Time to wait between polling deployment status after running a pod."
+msgstr ""
+
+#: app/views/edit/deployment-config.html:129
+msgid "Time to wait between retrying to run individual pod."
+msgstr ""
+
+#: app/views/directives/_edit-probe.html:95
+#: app/views/edit/deployment-config.html:79
+msgid "Timeout"
+msgstr ""
+
+#: app/views/edit/deployment-config.html:101
+msgid "Timeout can't be negative."
+msgstr ""
+
+#: app/views/directives/_edit-probe.html:118
+msgid "Timeout must be greater than or equal to one."
+msgstr ""
+
+#: app/views/browse/deployment-config.html:214
+msgid "Timeout:"
+msgstr ""
+
+#: app/views/catalog/catalog.html:12
+#: app/views/catalog/category-content.html:11
+msgid "To add an image stream or template from a file, use the editor in the"
+msgstr ""
+
+#: app/views/attach-pvc.html:22
+msgid "To claim storage from a persistent volume, refer to the documentation on"
+msgstr ""
+
+#: app/views/directives/deploy-image.html:63
+msgid "To deploy an image from a private repository, you must"
+msgstr ""
+
+#: app/views/modals/confirm-save-log.html:12
+msgid "To get the complete log, run the command"
+msgstr ""
+
+#: app/views/projects.html:183
+msgid "To learn more, visit the OpenShift"
+msgstr ""
+
+#: app/views/monitoring.html:308
+msgid "To see application logs, view the logs for one of the replica set's"
+msgstr ""
+
+#: app/views/monitoring.html:385
+msgid "To see application logs, view the logs for one of the stateful sets's"
+msgstr ""
+
+#: app/views/edit/deployment-config.html:271
+msgid "To set additional parameters or edit lifecycle hooks, view"
+msgstr ""
+
+#: app/views/edit/deployment-config.html:341
+msgid "To set secrets for pulling your images from private image registries, view"
+msgstr ""
+
+#: app/views/command-line.html:50
+msgid "To show a high level overview of the current project:"
+msgstr ""
+
+#: app/components/osc-webhook-triggers/osc-webhook-triggers.html:63
+msgid "Toggle Token Visibility"
+msgstr ""
+
+#: app/views/directives/header/header.html:27
+#: app/views/directives/header/header.html:4
+msgid "Toggle navigation"
+msgstr ""
+
+#: app/views/browse/service.html:89
+#: app/views/overview/_traffic-percent.html:9
+msgid "Traffic"
+msgstr ""
+
+#: app/views/directives/route-service-bar-chart.html:2
+msgid "Traffic Split"
+msgstr ""
+
+#: app/views/overview/_traffic-percent.html:5
+msgid "Traffic {{(weightByService[service.metadata.name] / totalWeight) | percent}}"
+msgstr ""
+
+#: app/views/browse/deployment-config.html:138
+#: app/views/deployments.html:55
+msgid "Trigger"
+msgstr ""
+
+#: app/views/browse/_build-details.html:39
+msgid "Triggered By:"
+msgstr ""
+
+#: app/views/browse/build-config.html:383
+#: app/views/browse/deployment-config.html:250
+#: app/views/edit/build-config.html:441
+msgid "Triggers"
+msgstr ""
+
+#: app/views/create/fromimage.html:90
+msgid "Try It"
+msgstr ""
+
+#: app/views/builds.html:56
+#: app/views/directives/_edit-probe.html:3
+#: app/views/secrets.html:54
+msgid "Type"
+msgstr ""
+
+#: app/views/projects.html:64
+msgid "Type a project name to go to that project."
+msgstr ""
+
+#: app/views/modals/delete-resource.html:39
+msgid "Type the name of the {{typeDisplayName || (kind | humanizeKind)}} to confirm."
+msgstr ""
+
+#: app/views/_volumes.html:15
+#: app/views/_volumes.html:35
+#: app/views/_volumes.html:49
+#: app/views/_volumes.html:58
+#: app/views/_volumes.html:70
+#: app/views/_volumes.html:81
+#: app/views/_volumes.html:92
+#: app/views/browse/service.html:56
+msgid "Type:"
+msgstr ""
+
+#: app/views/directives/osc-persistent-volume-claim.html:31
+msgid "Type: {{sclass.parameters.type}}"
+msgstr ""
+
+#: app/views/directives/create-secret.html:46
+msgid "Unique name of the new secret."
+msgstr ""
+
+#: app/views/attach-pvc.html:156
+msgid "Unique name used to identify this volume. If not specified, a volume name is generated."
+msgstr ""
+
+#: app/views/_compute-resource.html:19
+#: app/views/directives/osc-persistent-volume-claim.html:170
+#: app/views/modals/edit-pvc-resource.html:56
+msgid "Unit"
+msgstr ""
+
+#: app/views/browse/deployment-config.html:167
+#: app/views/deployments.html:101
+msgid "Unknown"
+msgstr ""
+
+#: app/views/edit/deployment-config.html:114
+msgid "Update Period"
+msgstr ""
+
+#: app/views/browse/deployment-config.html:216
+msgid "Update Period:"
+msgstr ""
+
+#: app/views/edit/deployment-config.html:136
+msgid "Update period can't be negative."
+msgstr ""
+
+#: app/views/edit/project.html:6
+msgid "Update the display name and description of your project. The project's unique name cannot be modified."
+msgstr ""
+
+#: app/views/images.html:51
+msgid "Updated"
+msgstr ""
+
+#: app/views/directives/add-config-to-application.html:162
+msgid "Updating"
+msgstr ""
+
+#: app/views/overview/_virtual-machine-row.html:69
+msgid "Uptime:"
+msgstr ""
+
+#: app/views/overview/_list-row-expanded.html:142
+#: app/views/overview/_list-row-expanded.html:38
+msgid "Usage"
+msgstr ""
+
+#: app/views/directives/_edit-probe.html:18
+msgid "Use HTTPS"
+msgstr ""
+
+#: app/views/edit/build-config.html:242
+msgid "Use a Jenkinsfile from the source repository or specify the Jenkinsfile content directly in the build configuration."
+msgstr ""
+
+#: app/views/directives/create-secret.html:193
+msgid "Use a custom .gitconfig file"
+msgstr ""
+
+#: app/views/directives/create-secret.html:142
+msgid "Use a custom ca.crt file"
+msgstr ""
+
+#: app/views/directives/edit-environment-from.html:33
+msgid "Use all keys and values from"
+msgstr ""
+
+#: app/views/directives/osc-persistent-volume-claim.html:221
+msgid "Use label selectors to request storage"
+msgstr ""
+
+#: app/views/browse/_replica-set-details.html:25
+msgid "Use the following settings from {{replicaSet.metadata.name}} when rolling back:"
+msgstr ""
+
+#: app/views/directives/edit-lifecycle-hook.html:93
+msgid "Use the image for this container as the source of the tag."
+msgstr ""
+
+#: app/views/quota.html:155
+msgid "Used"
+msgstr ""
+
+#: app/views/quota.html:64
+msgid "Used (All Projects)"
+msgstr ""
+
+#: app/views/quota.html:63
+msgid "Used (This Project)"
+msgstr ""
+
+#: app/views/directives/create-secret.html:101
+#: app/views/directives/create-secret.html:239
+msgid "Username"
+msgstr ""
+
+#: app/views/directives/create-secret.html:253
+msgid "Username is required."
+msgstr ""
+
+#: app/views/directives/edit-config-map-or-secret.html:99
+msgid "Value"
+msgstr ""
+
+#: app/views/directives/create-secret.html:72
+msgid "Value of the secret will be supplied when invoking the webhook."
+msgstr ""
+
+#: app/views/about.html:13
+#: app/views/browse/deployment.html:100
+#: app/views/catalog/_image.html:29
+msgid "Version"
+msgstr ""
+
+#: app/views/directives/osc-image-summary.html:6
+msgid "Version: {{ resource | annotation:'version' }}"
+msgstr ""
+
+#: app/views/directives/notifications/header.html:10
+msgid "View All Events"
+msgstr ""
+
+#: app/views/directives/logs/_log-viewer.html:15
+#: app/views/directives/logs/_log-viewer.html:61
+msgid "View Archive"
+msgstr ""
+
+#: app/views/_init-containers-summary.html:6
+#: app/views/directives/edit-environment-from.html:91
+#: app/views/directives/events-sidebar.html:18
+msgid "View Details"
+msgstr ""
+
+#: app/views/directives/from-file-dialog.html:60
+#: app/views/directives/process-template-dialog/process-template-info.html:21
+#: app/views/overview/_service-instance-row.html:156
+msgid "View Documentation"
+msgstr ""
+
+#: app/views/overview/_list-row-content.html:45
+msgid "View Events"
+msgstr ""
+
+#: app/views/overview/_builds.html:15
+msgid "View Full Log"
+msgstr ""
+
+#: app/views/browse/_build-details.html:13
+#: app/views/browse/build-config.html:154
+#: app/views/browse/build-config.html:158
+#: app/views/browse/deployment-config.html:117
+#: app/views/directives/_build-pipeline-links.html:1
+msgid "View Log"
+msgstr ""
+
+#: app/views/overview/_list-row-actions.html:37
+#: app/views/overview/_list-row-actions.html:52
+#: app/views/overview/_list-row-actions.html:77
+msgid "View Logs"
+msgstr ""
+
+#: app/views/projects.html:131
+msgid "View Membership"
+msgstr ""
+
+#: app/views/pipelines.html:112
+msgid "View Pipeline Runs"
+msgstr ""
+
+#: app/views/directives/osc-persistent-volume-claim.html:7
+#: app/views/modals/edit-pvc-resource.html:95
+msgid "View Quota"
+msgstr ""
+
+#: app/views/directives/_service-binding.html:46
+msgid "View Secret"
+msgstr ""
+
+#: app/views/directives/deployment-donut.html:13
+msgid "View pods for {{rc | displayName}}"
+msgstr ""
+
+#: app/views/browse/build-config.html:107
+#: app/views/pipelines.html:85
+msgid "View the"
+msgstr ""
+
+#: app/views/browse/build-config.html:110
+#: app/views/pipelines.html:88
+msgid "View the file"
+msgstr ""
+
+#: app/views/overview/_virtual-machine-row.html:9
+msgid "Virtual Machine"
+msgstr ""
+
+#: app/views/overview.html:394
+msgid "Virtual Machines"
+msgstr ""
+
+#: app/views/attach-pvc.html:71
+#: app/views/directives/add-config-to-application.html:80
+msgid "Volume"
+msgstr ""
+
+#: app/views/_volumes.html:87
+msgid "Volume File:"
+msgstr ""
+
+#: app/views/attach-pvc.html:132
+msgid "Volume Name"
+msgstr ""
+
+#: app/views/attach-pvc.html:100
+msgid "Volume mount in that path already exists. Please choose another mount path."
+msgstr ""
+
+#: app/views/attach-pvc.html:169
+msgid "Volume name already exists. Please choose another name."
+msgstr ""
+
+#: app/views/attach-pvc.html:164
+msgid "Volume names cannot be longer than 63 characters."
+msgstr ""
+
+#: app/views/attach-pvc.html:159
+msgid "Volume names may only contain lower-case letters, numbers, and dashes. They may not start or end with a dash."
+msgstr ""
+
+#: app/views/browse/_pod-details.html:81
+#: app/views/browse/_replica-set-details.html:98
+#: app/views/browse/deployment-config.html:235
+#: app/views/browse/deployment.html:223
+#: app/views/browse/stateful-set.html:117
+#: app/views/directives/edit-lifecycle-hook.html:69
+msgid "Volumes"
+msgstr ""
+
+#: app/views/directives/lifecycle-hook.html:68
+msgid "Volumes:"
+msgstr ""
+
+#: app/views/modals/debug-terminal.html:16
+msgid "Waiting for container {{container.name}} to start..."
+msgstr ""
+
+#: app/views/directives/events-badge.html:1
+#: app/views/directives/events-badge.html:2
+#: app/views/directives/ui-ace-yaml.html:26
+#: app/views/overview/_notification-icon.html:27
+msgid "Warning"
+msgstr ""
+
+#: app/views/browse/_replica-set-details.html:166
+#: app/views/browse/deployment-config.html:292
+#: app/views/browse/deployment.html:244
+#: app/views/edit/autoscaler.html:24
+#: app/views/edit/autoscaler.html:31
+#: app/views/edit/autoscaler.html:43
+#: app/views/edit/config-map.html:17
+#: app/views/edit/config-map.html:23
+#: app/views/edit/yaml.html:13
+#: app/views/edit/yaml.html:19
+#: app/views/pipelines.html:77
+#: app/views/projects.html:62
+msgid "Warning:"
+msgstr ""
+
+#: app/views/browse/replica-set.html:26
+msgid "Warning: The deployment's deployment config is missing."
+msgstr ""
+
+#: app/views/overview/_notification-icon.html:30
+msgid "Warnings"
+msgstr ""
+
+#: app/views/directives/create-secret.html:53
+msgid "Webhook Secret Key"
+msgstr ""
+
+#: app/views/browse/route.html:129
+#: app/views/directives/osc-routing-service.html:37
+msgid "Weight"
+msgstr ""
+
+#: app/views/directives/osc-routing-service.html:50
+msgid "Weight is a number between 0 and 256 that specifies the relative weight against otherroute services."
+msgstr ""
+
+#: app/views/projects.html:172
+msgid "Welcome to OpenShift."
+msgstr ""
+
+#: app/views/overview.html:31
+msgid "Welcome to project {{projectName}}."
+msgstr ""
+
+#: app/views/_edit-request-limit.html:41
+msgid "What are"
+msgstr ""
+
+#: app/views/directives/osc-persistent-volume-claim.html:214
+msgid "What are GiB?"
+msgstr ""
+
+#: app/views/modals/process-or-save-template.html:9
+msgid "What would you like to do?"
+msgstr ""
+
+#: app/views/browse/_build-details.html:113
+#: app/views/browse/_build-details.html:116
+#: app/views/browse/build-config.html:267
+#: app/views/browse/build-config.html:357
+#: app/views/edit/build-config.html:275
+msgid "What's a Jenkinsfile?"
+msgstr ""
+
+#: app/views/browse/pod.html:133
+msgid "When you navigate away from this pod, any open terminal connections will be closed. This will kill any foreground processes you started from the&nbsp;terminal."
+msgstr ""
+
+#: app/views/browse/route.html:92
+msgid "Wildcard Policy:"
+msgstr ""
+
+#: app/views/directives/osc-routing.html:75
+msgid "Wildcard subdomains may start with"
+msgstr ""
+
+#: app/views/command-line.html:9
+msgid "With the OpenShift command line interface (CLI), you can create applications and manage OpenShift projects from a terminal."
+msgstr ""
+
+#: app/views/about.html:34
+msgid "With the OpenShift command line interface (CLI), you can create applications and manage OpenShift projects from a terminal. To get started using the CLI, visit"
+msgstr ""
+
+#: app/views/directives/pods-table.html:44
+msgid "Yes"
+msgstr ""
+
+#: app/views/util/oauth.html:17
+msgid "You are about to change users from"
+msgstr ""
+
+#: app/views/util/oauth.html:10
+msgid "You are being logged in as"
+msgstr ""
+
+#: app/views/about.html:40
+msgid "You are currently logged in under the user account"
+msgstr ""
+
+#: app/views/create-from-url.html:33
+#: app/views/create-from-url.html:68
+msgid "You are not authorized to add to this project."
+msgstr ""
+
+#: app/views/directives/next-steps.html:74
+msgid "You are set up to use the example git repository. If you would like to modify the source code, fork the"
+msgstr ""
+
+#: app/views/directives/next-steps.html:81
+msgid "You can configure the webhook in the forked repository's settings, using the following payload URL:"
+msgstr ""
+
+#: app/views/command-line.html:11
+msgid "You can download the"
+msgstr ""
+
+#: app/views/directives/deploy-image.html:19
+msgid "You can grant authority with the command:"
+msgstr ""
+
+#: app/views/directives/next-steps.html:86
+msgid "You can now set up the webhook in the GitHub repository settings if you own it, in"
+msgstr ""
+
+#: app/views/directives/osc-routing.html:66
+msgid "You can use"
+msgstr ""
+
+#: app/views/membership.html:28
+msgid "You do not have permission to view roles in this project."
+msgstr ""
+
+#: app/views/directives/resource-service-bindings.html:20
+#: app/views/overview/_service-bindings.html:20
+msgid "You must have a bindable service in your namespace in order to create bindings."
+msgstr ""
+
+#: app/views/directives/select-containers.html:21
+msgid "You must select at least one container."
+msgstr ""
+
+#: app/views/create/fromimage.html:345
+msgid "You should configure resource limits below for autoscaling. Autoscaling will not work without a CPU request."
+msgstr ""
+
+#: app/views/modals/logout.html:11
+msgid "You will be logged out in"
+msgstr ""
+
+#: app/views/directives/bind-service/delete-binding-result.html:19
+msgid "You will need to redeploy your pods for this to take effect."
+msgstr ""
+
+#: app/views/edit/config-map.html:19
+msgid "You'll need to copy any changes you've made and edit the config map again."
+msgstr ""
+
+#: app/views/modals/logout.html:10
+msgid "Your session is about to expire due to inactivity."
+msgstr ""
+
+#: app/views/directives/next-steps.html:89
+msgid "Your source does not appear to be a URL to a GitHub repository.  If you have a GitHub repository that you want to trigger this build from then use the following payload URL and specifying a"
+msgstr ""
+
+#: app/views/directives/osc-persistent-volume-claim.html:36
+msgid "Zone: {{sclass.parameters.zone}}"
+msgstr ""
+
+#: app/views/directives/osc-routing-service.html:26
+msgid "additional"
+msgstr ""
+
+#: app/views/edit/deployment-config.html:341
+msgid "advanced image options."
+msgstr ""
+
+#: app/views/create/fromimage.html:393
+#: app/views/edit/build-config.html:43
+msgid "advanced options"
+msgstr ""
+
+#: app/views/edit/deployment-config.html:271
+msgid "advanced strategy options."
+msgstr ""
+
+#: app/views/service-instances.html:65
+msgid "ago"
+msgstr ""
+
+#: app/views/browse/persistent-volume-claim.html:71
+msgid "allocated unknown size"
+msgstr ""
+
+#: app/views/modals/confirm-replace.html:10
+msgid "already exists."
+msgstr ""
+
+#: app/views/overview/_list-row-empty-state.html:5
+msgid "an image is pushed to"
+msgstr ""
+
+#: app/views/browse/service.html:94
+#: app/views/command-line.html:54
+msgid "and"
+msgstr ""
+
+#: app/views/edit/jenkinsfile-examples.html:53
+#: app/views/overview.html:278
+#: app/views/pipelines.html:33
+msgid "and the"
+msgstr ""
+
+#: app/views/images.html:66
+msgid "and {{imageStream.status.tags.length - 4}} others"
+msgstr ""
+
+#: app/views/browse/route.html:108
+msgid "any"
+msgstr ""
+
+#: app/views/_pod-template-container.html:58
+#: app/views/monitoring.html:453
+msgid "authored by {{build.spec.revision.git.author.name}}"
+msgstr ""
+
+#: app/views/_webhook-trigger-cause.html:9
+msgid "authored by {{trigger.githubWebHook.revision.git.author.name || trigger.genericWebHook.revision.git.author.name}},"
+msgstr ""
+
+#: app/views/directives/next-steps.html:74
+msgid "build config"
+msgstr ""
+
+#: app/views/directives/next-steps.html:79
+msgid "build config."
+msgstr ""
+
+#: app/views/browse/build.html:99
+msgid "build configuration"
+msgstr ""
+
+#: app/views/browse/build-config.html:99
+msgid "build configuration {{buildConfig.metadata.name}}."
+msgstr ""
+
+#: app/views/projects.html:116
+msgid "by"
+msgstr ""
+
+#: app/views/browse/deployment-config.html:173
+#: app/views/deployments.html:107
+msgid "change"
+msgstr ""
+
+#: app/views/_templateopt.html:79
+msgid "clear the value"
+msgstr ""
+
+#: app/views/command-line.html:11
+msgid "client tool using the links below. For more information about downloading and installing it, please refer to the"
+msgstr ""
+
+#: app/views/command-line.html:14
+msgid "client tool."
+msgstr ""
+
+#: app/views/edit/autoscaler.html:45
+#: app/views/modals/confirm-save-log.html:16
+msgid "command line tools"
+msgstr ""
+
+#: app/views/_container-statuses.html:15
+msgid "completed successfully"
+msgstr ""
+
+#: app/views/_volumes.html:94
+msgid "config map"
+msgstr ""
+
+#: app/views/directives/edit-environment-from.html:34
+msgid "config map {{entry.configMapRef.name}}."
+msgstr ""
+
+#: app/views/util/error.html:12
+msgid "console"
+msgstr ""
+
+#: app/views/attach-pvc.html:126
+msgid "contain"
+msgstr ""
+
+#: app/views/directives/add-config-to-application.html:45
+msgid "contains keys that are not valid environment variable names. Only {{ctrl.apiObject.kind | humanizeKind}} keys with valid names will be added as environment variables."
+msgstr ""
+
+#: app/views/directives/edit-environment-from.html:60
+msgid "contains keys that are not valid environment variable names. Only {{entry.selectedEnvFrom.kind | humanizeKind}} keys with valid names will be added as environment variables."
+msgstr ""
+
+#: app/views/directives/deploy-image.html:200
+#: app/views/directives/deploy-image.html:63
+#: app/views/directives/deploy-image.html:64
+msgid "create an image pull secret"
+msgstr ""
+
+#: app/views/attach-pvc.html:67
+msgid "create storage"
+msgstr ""
+
+#: app/views/browse/build-config.html:164
+#: app/views/browse/build-config.html:63
+#: app/views/browse/build.html:75
+#: app/views/browse/config-map.html:55
+#: app/views/browse/deployment-config.html:122
+#: app/views/browse/deployment-config.html:82
+#: app/views/browse/deployment.html:62
+#: app/views/browse/persistent-volume-claim.html:45
+#: app/views/browse/pod.html:39
+#: app/views/browse/replica-set.html:27
+#: app/views/browse/route.html:39
+#: app/views/browse/secret.html:49
+#: app/views/browse/service-instance.html:50
+#: app/views/browse/service.html:36
+#: app/views/directives/_service-binding.html:13
+#: app/views/monitoring.html:186
+#: app/views/monitoring.html:256
+#: app/views/monitoring.html:359
+#: app/views/monitoring.html:436
+#: app/views/monitoring.html:90
+#: app/views/overview/_builds.html:37
+#: app/views/pipelines.html:61
+#: app/views/projects.html:115
+msgid "created"
+msgstr ""
+
+#: app/views/browse/_build-details.html:59
+msgid "created from"
+msgstr ""
+
+#: app/views/browse/_pod-details.html:7
+msgid "debugging"
+msgstr ""
+
+#: app/views/directives/deploy-image.html:19
+msgid "default"
+msgstr ""
+
+#: app/views/browse/_replica-set-details.html:206
+msgid "deployment config or deployment."
+msgstr ""
+
+#: app/views/browse/_replica-set-details.html:33
+msgid "deployment strategy"
+msgstr ""
+
+#: app/views/browse/_replica-set-details.html:38
+msgid "deployment trigger"
+msgstr ""
+
+#: app/views/projects.html:183
+msgid "documentation"
+msgstr ""
+
+#: app/views/command-line.html:14
+msgid "documentation for instructions about downloading and installing the"
+msgstr ""
+
+#: app/views/command-line.html:11
+msgid "documentation."
+msgstr ""
+
+#: app/views/_volumes.html:83
+msgid "downward API"
+msgstr ""
+
+#: app/views/directives/next-steps.html:74
+msgid "edit the"
+msgstr ""
+
+#: app/views/directives/osc-routing.html:225
+msgid "edit weights as integers"
+msgstr ""
+
+#: app/views/browse/_pod-details.html:60
+msgid "elapsed"
+msgstr ""
+
+#: app/views/_config-file-params.html:12
+msgid "email"
+msgstr ""
+
+#: app/views/_volumes.html:60
+msgid "empty dir"
+msgstr ""
+
+#: app/views/overview/_builds.html:32
+msgid "encountered an error"
+msgstr ""
+
+#: app/views/browse/build-config.html:146
+msgid "encountered an error."
+msgstr ""
+
+#: app/views/overview/_service-instance-row.html:113
+msgid "error"
+msgstr ""
+
+#: app/views/overview/_builds.html:31
+msgid "failed"
+msgstr ""
+
+#: app/views/browse/build-config.html:145
+msgid "failed."
+msgstr ""
+
+#: app/views/directives/deployment-metrics.html:45
+#: app/views/directives/pod-metrics.html:45
+msgid "for container {{options.selectedContainer.name}}"
+msgstr ""
+
+#: app/views/create/fromimage.html:394
+msgid "for source, routes, builds, and deployments."
+msgstr ""
+
+#: app/views/directives/select-containers.html:11
+msgid "from image"
+msgstr ""
+
+#: app/views/newfromtemplate.html:25
+msgid "from parameter"
+msgstr ""
+
+#: app/views/_volumes.html:72
+msgid "git repo"
+msgstr ""
+
+#: app/views/directives/next-steps.html:79
+msgid "has been created for the"
+msgstr ""
+
+#: app/views/edit/yaml.html:20
+msgid "has been deleted since you started editing it."
+msgstr ""
+
+#: app/views/edit/yaml.html:14
+msgid "has changed since you started editing it. You'll need to copy any changes you've made and edit the {{updated.resource.kind | humanizeKind}} again."
+msgstr ""
+
+#: app/views/about.html:30
+msgid "helps you learn about OpenShift and start exploring its features. From getting started with creating your first application to trying out more advanced build and deployment techniques, it provides guidance on setting up and managing your OpenShift environment as an application developer."
+msgstr ""
+
+#: app/views/_volumes.html:51
+msgid "host path"
+msgstr ""
+
+#: app/views/browse/build-config.html:110
+#: app/views/pipelines.html:88
+msgid "in the"
+msgstr ""
+
+#: app/views/overview/_service-instance-row.html:132
+msgid "info"
+msgstr ""
+
+#: app/views/directives/add-config-to-application.html:127
+msgid "instead."
+msgstr ""
+
+#: app/views/browse/build-config.html:148
+#: app/views/browse/deployment-config.html:115
+msgid "is"
+msgstr ""
+
+#: app/views/about.html:10
+msgid "is Red Hat's container application platform that allows developers to quickly develop, host, and scale applications in a cloud environment."
+msgstr ""
+
+#: app/views/attach-pvc.html:13
+msgid "is required to attach to this {{kind | humanizeKind}}, but none are loaded on this project."
+msgstr ""
+
+#: app/views/edit/autoscaler.html:33
+msgid "limit"
+msgstr ""
+
+#: app/views/directives/deployment-donut.html:70
+msgid "limit reached."
+msgstr ""
+
+#: app/views/edit/autoscaler.html:36
+msgid "limit."
+msgstr ""
+
+#: app/views/directives/deployment-donut.html:55
+msgid "max: {{hpa[0].spec.maxReplicas}}"
+msgstr ""
+
+#: app/views/set-limits.html:11
+msgid "memory a container will consume on a node."
+msgstr ""
+
+#: app/views/_edit-request-limit.html:42
+#: app/views/modals/about-compute-units-modal.html:21
+msgid "millicores"
+msgstr ""
+
+#: app/views/directives/osc-autoscaling.html:93
+msgid "min pods, which is"
+msgstr ""
+
+#: app/views/directives/deployment-donut.html:54
+msgid "min: {{hpa[0].spec.minReplicas || 1}},"
+msgstr ""
+
+#: app/views/catalog/catalog.html:8
+msgid "namespace. An image or template is required to add content."
+msgstr ""
+
+#: app/views/pipelines.html:78
+msgid "no longer exists."
+msgstr ""
+
+#: app/views/_webhook-trigger-cause.html:12
+msgid "no revision information,"
+msgstr ""
+
+#: app/views/_volumes.html:65
+msgid "node's default"
+msgstr ""
+
+#: app/views/browse/_build-details.html:64
+#: app/views/browse/_pod-details.html:83
+#: app/views/browse/_replica-set-details.html:107
+#: app/views/browse/_replica-set-details.html:123
+#: app/views/browse/_replica-set-details.html:135
+#: app/views/browse/_replica-set-details.html:151
+#: app/views/browse/build-config.html:275
+#: app/views/browse/config-maps.html:65
+#: app/views/browse/deployment-config.html:236
+#: app/views/browse/deployment-config.html:330
+#: app/views/browse/deployment.html:224
+#: app/views/browse/deployment.html:258
+#: app/views/browse/persistent-volume-claim.html:78
+#: app/views/browse/route.html:165
+#: app/views/browse/route.html:175
+#: app/views/browse/route.html:185
+#: app/views/browse/route.html:195
+#: app/views/browse/route.html:97
+#: app/views/browse/service.html:53
+#: app/views/browse/stateful-set.html:118
+#: app/views/builds.html:125
+#: app/views/builds.html:144
+#: app/views/builds.html:171
+#: app/views/directives/selector.html:1
+#: app/views/directives/traffic-table.html:63
+#: app/views/directives/traffic-table.html:75
+#: app/views/directives/traffic-table.html:77
+#: app/views/images.html:62
+#: app/views/other-resources.html:62
+#: app/views/services.html:58
+#: app/views/services.html:64
+#: app/views/services.html:70
+msgid "none"
+msgstr ""
+
+#: app/views/browse/_build-details.html:22
+#: app/views/directives/_build-pipeline-expanded.html:41
+msgid "not started"
+msgstr ""
+
+#: app/views/overview/_list-row-empty-state.html:15
+msgid "o deployments for {{row.apiObject.kind | humanizeKind}}"
+msgstr ""
+
+#: app/views/modals/about-compute-units-modal.html:21
+msgid "of a CPU&nbsp;core."
+msgstr ""
+
+#: app/views/overview/_list-row-empty-state.html:9
+msgid "one of the images referenced by this deployment config changes."
+msgstr ""
+
+#: app/views/catalog/catalog.html:8
+msgid "openshift"
+msgstr ""
+
+#: app/views/attach-pvc.html:125
+#: app/views/attach-pvc.html:67
+msgid "or"
+msgstr ""
+
+#: app/views/add-config-volume.html:151
+msgid "or contain"
+msgstr ""
+
+#: app/views/_pod-template-container.html:108
+#: app/views/overview/_networking.html:21
+msgid "other"
+msgstr ""
+
+#: app/views/_pod-template-container.html:107
+#: app/views/overview/_networking.html:20
+msgid "others"
+msgstr ""
+
+#: app/views/_config-file-params.html:5
+msgid "password"
+msgstr ""
+
+#: app/views/add-config-volume.html:151
+#: app/views/attach-pvc.html:126
+msgid "path elements."
+msgstr ""
+
+#: app/views/_volumes.html:37
+msgid "persistent volume claim"
+msgstr ""
+
+#: app/views/directives/pod-donut.html:8
+msgid "pod"
+msgstr ""
+
+#: app/views/directives/pod-donut.html:12
+#: app/views/monitoring.html:309
+#: app/views/monitoring.html:386
+msgid "pods"
+msgstr ""
+
+#: app/views/_volumes.html:44
+msgid "read-only"
+msgstr ""
+
+#: app/views/_volumes.html:45
+msgid "read-write"
+msgstr ""
+
+#: app/views/directives/logs/_log-viewer.html:105
+msgid "reload"
+msgstr ""
+
+#: app/views/browse/stateful-set.html:95
+#: app/views/browse/stateful-sets.html:59
+msgid "replica"
+msgstr ""
+
+#: app/views/browse/_replica-set-details.html:28
+msgid "replica count and selector"
+msgstr ""
+
+#: app/views/directives/next-steps.html:74
+msgid "repository to an OpenShift-visible git account and"
+msgstr ""
+
+#: app/views/edit/autoscaler.html:34
+msgid "request"
+msgstr ""
+
+#: app/views/edit/autoscaler.html:37
+msgid "request."
+msgstr ""
+
+#: app/views/browse/service.html:94
+msgid "routes"
+msgstr ""
+
+#: app/views/browse/_build-details.html:29
+#: app/views/browse/_replica-set-details.html:64
+msgid "running for"
+msgstr ""
+
+#: app/views/directives/deploy-image.html:87
+msgid "runs as the"
+msgstr ""
+
+#: app/views/directives/_edit-probe.html:109
+#: app/views/directives/_edit-probe.html:77
+#: app/views/edit/deployment-config.html:127
+#: app/views/edit/deployment-config.html:159
+#: app/views/edit/deployment-config.html:92
+msgid "seconds"
+msgstr ""
+
+#: app/views/modals/logout.html:11
+msgid "seconds."
+msgstr ""
+
+#: app/views/_volumes.html:17
+msgid "secret"
+msgstr ""
+
+#: app/views/directives/edit-environment-from.html:35
+msgid "secret {{entry.secretRef.name}}."
+msgstr ""
+
+#: app/views/add-config-volume.html:175
+#: app/views/attach-pvc.html:191
+#: app/views/directives/add-config-to-application.html:126
+msgid "select specific containers"
+msgstr ""
+
+#: app/views/browse/service.html:94
+msgid "services"
+msgstr ""
+
+#: app/views/directives/osc-routing-service.html:26
+msgid "services in your project to expose with a route."
+msgstr ""
+
+#: app/views/edit/autoscaler.html:35
+msgid "set. Autoscaling will not work without a CPU"
+msgstr ""
+
+#: app/views/browse/build-config.html:111
+#: app/views/browse/build-config.html:112
+#: app/views/browse/build-config.html:93
+#: app/views/pipelines.html:89
+#: app/views/pipelines.html:90
+msgid "source repository"
+msgstr ""
+
+#: app/views/browse/build-config.html:167
+msgid "started"
+msgstr ""
+
+#: app/views/catalog/catalog.html:13
+#: app/views/catalog/category-content.html:12
+msgid "tab, or run the following command:"
+msgstr ""
+
+#: app/views/directives/logs/_log-viewer.html:105
+msgid "the log to see new messages."
+msgstr ""
+
+#: app/views/browse/route.html:204
+msgid "this route to enable secure network traffic."
+msgstr ""
+
+#: app/views/browse/pod.html:111
+msgid "to"
+msgstr ""
+
+#: app/views/modals/confirmScale.html:11
+msgid ""
+"to 0\n"
+"      replicas? This will stop all pods for the {{type}}."
+msgstr ""
+
+#: app/views/_pod-template.html:15
+msgid "to ensure your application is running correctly."
+msgstr ""
+
+#: app/views/directives/next-steps.html:74
+msgid "to point to your fork."
+msgstr ""
+
+#: app/views/browse/build-config.html:107
+#: app/views/browse/build-config.html:113
+#: app/views/pipelines.html:85
+#: app/views/pipelines.html:91
+msgid "to see what stages will run."
+msgstr ""
+
+#: app/views/attach-pvc.html:56
+#: app/views/browse/persistent-volume-claim.html:64
+#: app/views/storage.html:71
+msgid "to volume"
+msgstr ""
+
+#: app/views/browse/build.html:133
+#: app/views/monitoring.html:486
+msgid "to {{build.status.completionTimestamp  | date : 'medium'}}"
+msgstr ""
+
+#: app/views/images.html:58
+#: app/views/storage.html:76
+msgid "unknown"
+msgstr ""
+
+#: app/views/directives/deploy-image.html:87
+msgid "user which might not be permitted by your cluster administrator."
+msgstr ""
+
+#: app/views/_config-file-params.html:3
+msgid "username"
+msgstr ""
+
+#: app/views/attach-pvc.html:22
+msgid "using persistent volumes"
+msgstr ""
+
+#: app/views/storage.html:66
+msgid "using storage class {{pvc | storageClass}}"
+msgstr ""
+
+#: app/views/directives/next-steps.html:86
+msgid "using the following payload URL and specifying a"
+msgstr ""
+
+#: app/views/browse/_build-details.html:34
+msgid "waited for"
+msgstr ""
+
+#: app/views/browse/_build-details.html:30
+#: app/views/browse/_build-details.html:31
+#: app/views/browse/_replica-set-details.html:65
+msgid "waiting for"
+msgstr ""
+
+#: app/views/browse/persistent-volume-claim.html:43
+msgid "waiting for allocation,"
+msgstr ""
+
+#: app/views/browse/persistent-volume-claim.html:40
+msgid "waiting for {{pvc.spec.resources.requests['storage'] | usageWithUnits: 'storage'}} allocation,"
+msgstr ""
+
+#: app/views/browse/service-instance.html:63
+#: app/views/directives/events-sidebar.html:11
+#: app/views/overview/_service-instance-row.html:104
+msgid "warning"
+msgstr ""
+
+#: app/views/directives/events-sidebar.html:12
+msgid "warnings"
+msgstr ""
+
+#: app/views/overview/_builds.html:33
+msgid "was cancelled"
+msgstr ""
+
+#: app/views/browse/build-config.html:147
+msgid "was cancelled."
+msgstr ""
+
+#: app/views/directives/next-steps.html:79
+msgid "webhook trigger"
+msgstr ""
+
+#: app/views/directives/next-steps.html:99
+msgid "were generated automatically."
+msgstr ""
+
+#: app/views/create-from-url.html:10
+msgid "will be built and deployed unless otherwise specified in the next step."
+msgstr ""
+
+#: app/views/directives/osc-persistent-volume-claim.html:54
+msgid "will be used."
+msgstr ""
+
+#: app/views/directives/deploy-image.html:19
+msgid "will need image pull authority to deploy images from"
+msgstr ""
+
+#: app/views/directives/osc-routing.html:66
+msgid "with routers that support wildcard subdomains."
+msgstr ""
+
+#: app/views/directives/deploy-image.html:200
+msgid "with your image registry credentials and try again."
+msgstr ""
+
+#: app/views/directives/deploy-image.html:67
+msgid "with your image registry credentials."
+msgstr ""
+
+#: app/views/directives/lifecycle-hook.html:39
+msgid "{env.valueFrom.configMapKeyRef.key}} in config map"
+msgstr ""
+
+#: app/views/directives/edit-environment-from.html:134
+msgid "{{$ctrl.overlayPaneEntryDetails.kind | humanizeKind : true}} Details"
+msgstr ""
+
+#: app/views/directives/edit-environment-from.html:139
+msgid "{{$ctrl.showSecret ? \"Hide\" : \"Reveal\"}} Secret"
+msgstr ""
+
+#: app/views/directives/create-secret.html:5
+msgid "{{$select.selected | upperFirst}} Secret"
+msgstr ""
+
+#: app/views/overview/_traffic-percent.html:14
+msgid "{{(weightByService[service.metadata.name] / totalWeight) | percent}}"
+msgstr ""
+
+#: app/views/_pod-template-container.html:135
+msgid "{{container.resources.limits.cpu | usageWithUnits: 'cpu'}} limit"
+msgstr ""
+
+#: app/views/_pod-template-container.html:153
+msgid "{{container.resources.limits.memory | usageWithUnits: 'memory'}} limit"
+msgstr ""
+
+#: app/views/_pod-template-container.html:138
+msgid "{{container.resources.requests.cpu | usageWithUnits: 'cpu'}} requested"
+msgstr ""
+
+#: app/views/_pod-template-container.html:132
+msgid "{{container.resources.requests.cpu | usageWithUnits: 'cpu'}} to {{container.resources.limits.cpu | usageWithUnits: 'cpu'}}"
+msgstr ""
+
+#: app/views/_pod-template-container.html:156
+msgid "{{container.resources.requests.memory | usageWithUnits: 'memory'}} requested"
+msgstr ""
+
+#: app/views/_pod-template-container.html:150
+msgid "{{container.resources.requests.memory | usageWithUnits: 'memory'}} to {{container.resources.limits.memory | usageWithUnits: 'memory'}}"
+msgstr ""
+
+#: app/views/directives/pods-table.html:8
+msgid "{{customNameHeader || 'Name'}}"
+msgstr ""
+
+#: app/views/directives/traffic-table.html:5
+msgid "{{customNameHeader || 'Route'}}"
+msgstr ""
+
+#: app/views/browse/deployment.html:75
+msgid "{{deployment.metadata.name}} is paused."
+msgstr ""
+
+#: app/views/browse/deployment.html:153
+msgid "{{deployment.status.availableReplicas}} available"
+msgstr ""
+
+#: app/views/browse/deployment.html:154
+msgid "{{deployment.status.unavailableReplicas}} unavailable"
+msgstr ""
+
+#: app/views/modals/delete-resource.html:27
+msgid "{{displayName ? displayName : resourceName}} and its data will no longer be available to your applications."
+msgstr ""
+
+#: app/views/directives/osc-secrets.html:5
+msgid "{{displayType | startCase}} Secret"
+msgstr ""
+
+#: app/views/directives/pods-table.html:17
+msgid "{{emptyMessage || 'No pods to show'}}"
+msgstr ""
+
+#: app/views/directives/lifecycle-hook.html:37
+msgid "{{env.name}} set to key"
+msgstr ""
+
+#: app/views/directives/lifecycle-hook.html:51
+msgid "{{env.valueFrom.secretKeyRef.key}} in secret"
+msgstr ""
+
+#: app/views/directives/events-sidebar.html:61
+#: app/views/directives/events.html:110
+msgid "{{event.count}} times in the last"
+msgstr ""
+
+#: app/views/modals/delete-resource.html:84
+msgid "{{hpaList.length}} associated Horizontal Pod Autoscalers"
+msgstr ""
+
+#: app/views/modals/edit-pvc-resource.html:33
+msgid "{{limits.min | usageWithUnits : 'storage'}} min to {{limits.max | usageWithUnits : 'storage'}} max"
+msgstr ""
+
+#: app/views/directives/notifications/notification-body.html:103
+msgid "{{notification.event.count}} times in the last"
+msgstr ""
+
+#: app/views/directives/notifications/header.html:6
+msgid "{{notificationGroup.totalUnread}} Unread"
+msgstr ""
+
+#: app/views/_templateopt.html:73
+msgid "{{parameter.displayName || parameter.name}} is required."
+msgstr ""
+
+#: app/views/_templateopt.html:91
+msgid "{{parameter.name}} is required."
+msgstr ""
+
+#: app/views/monitoring.html:100
+msgid "{{pod | numContainersReady}}/{{pod.spec.containers.length}} ready"
+msgstr ""
+
+#: app/views/directives/_probe.html:21
+msgid "{{probe.initialDelaySeconds}}s delay,"
+msgstr ""
+
+#: app/views/directives/_probe.html:22
+msgid "{{probe.timeoutSeconds || 1}}s timeout"
+msgstr ""
+
+#: app/views/overview/_list-row-content.html:37
+msgid ""
+"{{row.apiObject.spec.strategy.type}} deployment is\n"
+"        {{row.current | deploymentStatus | lowercase}}"
+msgstr ""
+
+#: app/views/create/fromimage.html:261
+msgid "{{showDCEnvs ? 'Hide' : 'Show'}} Image Environment Variables"
+msgstr ""
+
+#: app/views/directives/replicas.html:2
+msgid "{{spec}} replica"
+msgstr ""
+
+#: app/views/directives/replicas.html:3
+msgid "{{status}} current / {{spec}} desired"
+msgstr ""
+
+#: app/views/directives/lifecycle-hook.html:2
+msgid "{{type | upperFirst}} Hook"
+msgstr ""
+
+#: app/views/directives/create-secret.html:6
+msgid "{{type | upperFirst}} Secret"
+msgstr ""
+
+#: app/views/modals/delete-resource.html:41
+msgid "{{typeDisplayName || (kind | humanizeKind)}} to delete"
+msgstr ""
+
+#: app/views/modals/process-or-save-template.html:27
+msgid "{{updateTemplate ? \"This will overwrite the current version of the template.\" : \"Save the template to the project. This will make the template available to anyone who can view the project.\"}}"
+msgstr ""
+
+#: app/views/modals/process-or-save-template.html:6
+msgid "{{updateTemplate ? \"Update\" : \"Add\"}} Template"
+msgstr ""
+
+#: app/views/modals/process-or-save-template.html:25
+msgid "{{updateTemplate ? \"Update\" : \"Save\"}} template"
+msgstr ""

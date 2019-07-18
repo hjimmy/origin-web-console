@@ -19,10 +19,11 @@ angular.module('openshiftConsole')
                                             DataService,
                                             LabelFilter,
                                             Logger,
-                                            ProjectsService) {
+                                            ProjectsService,
+                                            gettext) {
     $scope.projectName = $routeParams.project;
 
-    $scope.categories = Constants.CATALOG_CATEGORIES;
+    $scope.categories = Constants.CATALOG_CATEGORIES(gettext);
 
     $scope.alerts = $scope.alerts || {};
 

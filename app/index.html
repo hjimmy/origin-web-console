@@ -4,14 +4,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
     <meta charset="utf-8">
     <base href="/">
-    <title>OpenShift Web Console</title>
+    <title>天固彩石云平台软件</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <!-- <link rel="icon" type="image/png" href="images/favicon.png" /> -->
     <link rel="icon" type="image/x-icon" href="images/favicon.ico"/>
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/apple-touch-icon-precomposed.png">
     <link rel="mask-icon" href="images/mask-icon.svg" color="#DB242F">
-    <meta name="application-name" content="OpenShift">
+    <meta name="application-name" content="NeokylinContainer">
     <meta name="msapplication-TileColor" content="#000000">
     <meta name="msapplication-TileImage" content="images/mstile-144x144.png">
     <!-- build:css(.) styles/vendor.css -->
@@ -49,7 +49,7 @@
         <div class="middle">
           <div class="middle-content">
             <div class="empty-state-message loading">
-              <h2 class="text-center" id="temporary-loading-message" style="display: none;">Loading...</h2>
+              <h2 class="text-center" id="temporary-loading-message" style="display: none;" translate>Loading...</h2>
               <!-- So that we don't get the Loading... message AND the noscript message -->
               <script>
                 document.getElementById('temporary-loading-message').style.display = "";
@@ -110,7 +110,7 @@
     <script src="bower_components/datatables.net-select/js/dataTables.select.js"></script>
     <script src="bower_components/lodash/lodash.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
+    <script src="bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
     <script src="bower_components/bootstrap-select/dist/js/bootstrap-select.js"></script>
     <script src="bower_components/bootstrap-slider/dist/bootstrap-slider.js"></script>
     <script src="bower_components/bootstrap-switch/dist/js/bootstrap-switch.js"></script>
@@ -185,7 +185,6 @@
         <script src="scripts/services/shims/hawtioExtension.js"></script>
         <script src="scripts/services/browserStore.js"></script>
         <script src="scripts/services/discovery.js"></script>
-        <script src="scripts/services/aggregatedLoggingService.js"></script>
         <script src="scripts/services/applicationGenerator.js"></script>
         <script src="scripts/services/navigate.js"></script>
         <script src="scripts/services/nameGenerator.js"></script>
@@ -412,7 +411,7 @@
 
         <!-- add bundled extensions here -->
         <script src="scripts/extensions/javalink/javaLink.js"></script>
-        <script src="scripts/extensions/nav/helpDropdown.js"></script>
+        <!--<script src="scripts/extensions/nav/helpDropdown.js"></script> -->
         <script src="scripts/extensions/nav/userDropdown.js"></script>
         <script src="scripts/extensions/nav/dropdownMobile.js"></script>
         <!-- endbuild -->

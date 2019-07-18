@@ -20,12 +20,12 @@ angular.module('openshiftConsole')
     return {
       restrict: 'E',
       templateUrl: 'views/_sidebar.html',
-      controller: function($scope) {
+      controller: function($scope, gettext) {
         var path;
         var hoverDelay = 200;
         var hideDelay = hoverDelay + 100;
 
-        $scope.navItems = Constants.PROJECT_NAVIGATION;
+        $scope.navItems = Constants.PROJECT_NAVIGATION(gettext);
         $scope.sidebar = {};
 
         var updateActive = function() {

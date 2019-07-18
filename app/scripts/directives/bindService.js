@@ -76,7 +76,7 @@
     };
 
     var showBind = function() {
-      ctrl.nextTitle = bindParametersStep.hidden ? 'Bind' : 'Next >';
+      ctrl.nextTitle = bindParametersStep.hidden ? '绑定':'下一页';//'Bind' : 'Next >';
       if (ctrl.podPresets && !selectionValidityWatcher) {
         selectionValidityWatcher = $scope.$watch("ctrl.selectionForm.$valid", function(isValid) {
           bindFormStep.valid = isValid;
@@ -85,7 +85,7 @@
     };
 
     var showParameters = function() {
-      ctrl.nextTitle = 'Bind';
+      ctrl.nextTitle = '绑定';//'Bind';
       if (!parametersValidityWatcher) {
         parametersValidityWatcher = $scope.$watch("ctrl.parametersForm.$valid", function(isValid) {
           bindParametersStep.valid = isValid;
@@ -102,7 +102,7 @@
         parametersValidityWatcher();
         parametersValidityWatcher = undefined;
       }
-      ctrl.nextTitle = "Close";
+      ctrl.nextTitle = '关闭';//"Close";
       ctrl.wizardComplete = true;
 
       ctrl.bindService();
@@ -141,7 +141,7 @@
 
     bindFormStep = {
       id: 'bindForm',
-      label: 'Binding',
+      label: '绑定',//'Binding',
       view: 'views/directives/bind-service/bind-service-form.html',
       valid: false,
       allowClickNav: true,
@@ -150,7 +150,7 @@
 
     bindParametersStep = {
       id: 'bindParameters',
-      label: 'Parameters',
+      label: '参数',//'Parameters',
       view: 'views/directives/bind-service/bind-parameters.html',
       hidden: true,
       allowClickNav: true,
@@ -159,7 +159,7 @@
 
     resultsStep = {
       id: 'results',
-      label: 'Results',
+      label: '结果',//'Results',
       view: 'views/directives/bind-service/results.html',
       valid: true,
       allowClickNav: false,
@@ -180,7 +180,7 @@
           ctrl.parameterFormDefinition = _.get(ctrl.plan, 'spec.externalMetadata.schemas.service_binding.create.openshift_form_definition');
 
           bindParametersStep.hidden = !_.has(ctrl.parameterSchema, 'properties');
-          ctrl.nextTitle = bindParametersStep.hidden ? 'Bind' : 'Next >';
+          ctrl.nextTitle = bindParametersStep.hidden ? '绑定':'下一页';//'Bind' : 'Next >';
           ctrl.hideBack = bindParametersStep.hidden;
           bindFormStep.valid = true;
         });

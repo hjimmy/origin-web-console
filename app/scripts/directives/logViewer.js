@@ -8,10 +8,9 @@ angular.module('openshiftConsole')
     '$window',
     '$filter',
     '$q',
-    'AggregatedLoggingService',
+    'AuthService',
     'APIService',
     'APIDiscovery',
-    'AuthService',
     'DataService',
     'HTMLService',
     'ModalsService',
@@ -22,10 +21,9 @@ angular.module('openshiftConsole')
              $window,
              $filter,
              $q,
-             AggregatedLoggingService,
+             AuthService,
              APIService,
              APIDiscovery,
-             AuthService,
              DataService,
              HTMLService,
              ModalsService,
@@ -437,21 +435,34 @@ angular.module('openshiftConsole')
                   return;
                 }
 
-                AggregatedLoggingService.isOperationsUser().then(function(canViewOperationsLogs) {
-                  $scope.$watchGroup(['context.project.metadata.name', 'options.container', 'name'], function() {
-                    angular.extend($scope, {
-                      kibanaArchiveUrl: logLinks.archiveUri({
-                        baseURL: url,
-                        namespace: $scope.context.project.metadata.name,
-                        namespaceUid: $scope.context.project.metadata.uid,
-                        podname: name,
-                        containername: $scope.options.container,
-                        backlink: URI.encode($window.location.href)
-                      }, $filter('annotation')($scope.context.project,'loggingDataPrefix'), canViewOperationsLogs)
-                    });
+                // 3 things needed:
+                // - kibanaAuthUrl to authorize user
+                // - access_token
+                // - kibanaArchiveUrl for the final destination once auth'd
+                angular.extend($scope, {
+                  kibanaAuthUrl: $sce.trustAsResourceUrl(URI(url)
+                                                          .segment('auth').segment('token')
+                                                          .normalizePathname().toString()),
+                  access_token: AuthService.UserStore().getToken()
+                });
+
+                $scope.$watchGroup(['context.project.metadata.name', 'options.container', 'name'], function() {
+                  angular.extend($scope, {
+                    // The archive URL violates angular's built in same origin policy.
+                    // Need to explicitly tell it to trust this location or it will throw errors.
+                    kibanaArchiveUrl: $sce.trustAsResourceUrl(logLinks.archiveUri({
+                                        namespace: $scope.context.project.metadata.name,
+                                        namespaceUid: $scope.context.project.metadata.uid,
+                                        podname: name,
+                                        containername: $scope.options.container,
+                                        backlink: URI.encode($window.location.href)
+                                      }, $filter('annotation')($scope.context.project,'loggingDataPrefix')))
                   });
                 });
               });
+
+
+
 
             // PUBLIC API ----------------------------------------------------
 

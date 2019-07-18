@@ -18,7 +18,8 @@ angular.module('openshiftConsole')
                                                     DataService,
                                                     LabelFilter,
                                                     Navigate,
-                                                    ProjectsService) {
+                                                    ProjectsService,
+                                                    gettext) {
     $scope.projectName = $routeParams.project;
 
     var findCategoryItem = function(categories, id) {
@@ -37,7 +38,7 @@ angular.module('openshiftConsole')
       return item;
     };
 
-    var categories = Constants.CATALOG_CATEGORIES;
+    var categories = Constants.CATALOG_CATEGORIES(gettext);
     var categoryID = $routeParams.category === 'none' ? '' : $routeParams.category;
     $scope.category = findCategoryItem(categories, categoryID);
     if (!$scope.category) {

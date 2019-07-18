@@ -645,7 +645,15 @@ module.exports = function (grunt) {
         dir: 'coverage',
         root: 'test'
       }
-    }
+    },
+
+    nggettext_extract: {
+        pot: {
+          files: {
+            'po/consolejs.pot': ['app/scripts/*.js']
+          }
+        }
+      },
   });
 
 
@@ -760,4 +768,6 @@ module.exports = function (grunt) {
     'test',
     'build'
   ]);
+
+  grunt.registerTask('update-pot', ['nggettext_extract']);
 };

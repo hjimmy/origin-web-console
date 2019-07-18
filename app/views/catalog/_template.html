@@ -15,16 +15,16 @@
           use-word-boundary="true"
           highlight-keywords="keywords"></truncate-long-text>
       </p>
-      <p ng-if="template | annotation : 'provider'">
+      <p ng-if="template | annotation : 'provider'" translate>
         Provider: {{template | annotation : 'provider'}}
       </p>
       <!-- Only show the namespace if it's not in the shared openshift namespace -->
-      <p ng-if="template.metadata.namespace !== 'openshift'">
+      <p ng-if="template.metadata.namespace !== 'openshift'" translate>
         Namespace: {{template.metadata.namespace}}
       </p>
     </div>
     <div class="card-pf-footer clearfix">
-      <a class="btn btn-default pull-right" ng-href="{{template | createFromTemplateURL : project}}">
+      <a class="btn btn-default pull-right" ng-href="{{template | createFromTemplateURL : project}}" translate>
         Select
       </a>
     </div>

@@ -1,0 +1,122 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: \n"
+
+#: app/scripts/constants.js:238
+msgid "Applications"
+msgstr ""
+
+#: app/scripts/constants.js:306
+#: app/scripts/constants.js:312
+msgid "Builds"
+msgstr ""
+
+#: app/scripts/constants.js:531
+msgid "Business Process Services"
+msgstr ""
+
+#: app/scripts/constants.js:425
+msgid "Catalog"
+msgstr ""
+
+#: app/scripts/constants.js:359
+msgid "Config Maps"
+msgstr ""
+
+#: app/scripts/constants.js:537
+msgid "Continuous Integration & Deployment"
+msgstr ""
+
+#: app/scripts/constants.js:543
+msgid "Data Stores"
+msgstr ""
+
+#: app/scripts/constants.js:244
+msgid "Deployments"
+msgstr ""
+
+#: app/scripts/constants.js:329
+msgid "Images"
+msgstr ""
+
+#: app/scripts/constants.js:553
+msgid "Integration"
+msgstr ""
+
+#: app/scripts/constants.js:436
+msgid "Languages"
+msgstr ""
+
+#: app/scripts/constants.js:350
+msgid "Membership"
+msgstr ""
+
+#: app/scripts/constants.js:548
+msgid "Messaging"
+msgstr ""
+
+#: app/scripts/constants.js:398
+msgid "Monitoring"
+msgstr ""
+
+#: app/scripts/constants.js:380
+msgid "Other Resources"
+msgstr ""
+
+#: app/scripts/constants.js:233
+msgid "Overview"
+msgstr ""
+
+#: app/scripts/constants.js:321
+msgid "Pipelines"
+msgstr ""
+
+#: app/scripts/constants.js:267
+msgid "Pods"
+msgstr ""
+
+#: app/scripts/constants.js:290
+msgid "Provisioned Services"
+msgstr ""
+
+#: app/scripts/constants.js:346
+msgid "Quota"
+msgstr ""
+
+#: app/scripts/constants.js:340
+msgid "Resources"
+msgstr ""
+
+#: app/scripts/constants.js:281
+msgid "Routes"
+msgstr ""
+
+#: app/scripts/constants.js:368
+msgid "Secrets"
+msgstr ""
+
+#: app/scripts/constants.js:274
+msgid "Services"
+msgstr ""
+
+#: app/scripts/constants.js:559
+msgid "Single Sign-On"
+msgstr ""
+
+#: app/scripts/constants.js:260
+msgid "Stateful Sets"
+msgstr ""
+
+#: app/scripts/constants.js:388
+msgid "Storage"
+msgstr ""
+
+#: app/scripts/constants.js:526
+msgid "Technologies"
+msgstr ""
+
+#: app/scripts/constants.js:564
+msgid "Uncategorized"
+msgstr ""

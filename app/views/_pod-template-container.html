@@ -13,7 +13,7 @@
       <span class="pficon pficon-image" aria-hidden="true"></span>
     </div>
     <div class="pod-template-detail word-break">
-      <span class="pod-template-key">Image:</span>
+      <span class="pod-template-key" translate>Image:</span>
       <span ng-if="!imagesByDockerReference[container.image]">{{container.image | imageStreamName}}</span>
       <span ng-if="imagesByDockerReference[container.image]">
             <a ng-href="{{imagesByDockerReference[container.image].imageStreamName | navigateResourceURL : 'ImageStream' : imagesByDockerReference[container.image].imageStreamNamespace}}">{{container.image | imageStreamName}}</a>
@@ -31,7 +31,7 @@
         <span class="fa fa-refresh" aria-hidden="true"></span>
       </div>
       <div class="pod-template-detail word-break">
-        <span class="pod-template-key">Build:</span>
+        <span class="pod-template-key" translate>Build:</span>
         <span ng-if="build | configURLForResource">
               <a ng-href="{{build | configURLForResource}}">{{build | buildConfigForBuild}}</a>,
             </span>
@@ -46,7 +46,7 @@
         <span class="fa fa-code" aria-hidden="true"></span>
       </div>
       <div class="pod-template-detail word-break">
-        <span class="pod-template-key">Source:</span>
+        <span class="pod-template-key" translate>Source:</span>
         <span ng-switch="build.spec.source.type">
               <span ng-switch-when="Git">
                 <span ng-if="build.spec.revision.git.commit">
@@ -55,7 +55,7 @@
                     class="hash"
                     uri="build.spec.source.git.uri"
                     ref="build.spec.revision.git.commit">{{build.spec.revision.git.commit | limitTo:7}}</osc-git-link>
-                  <span ng-if="detailed && build.spec.revision.git.author">
+                  <span ng-if="detailed && build.spec.revision.git.author" translate>
                     authored by {{build.spec.revision.git.author.name}}
                   </span>
                 </span>
@@ -76,7 +76,7 @@
       <span aria-hidden="true" class="fa fa-terminal"></span>
     </div>
     <div class="pod-template-detail word-break">
-          <span class="pod-template-key">
+          <span class="pod-template-key" translate>
             Command:
           </span>
       <span>
@@ -98,14 +98,14 @@
       <span aria-hidden="true" class="pficon pficon-port"></span>
     </div>
     <div class="pod-template-detail word-break">
-      <span class="pod-template-key">Ports:</span>
+      <span class="pod-template-key" translate>Ports:</span>
       <span ng-repeat="port in container.ports | orderBy: 'containerPort' | limitToOrAll : detailed ? undefined : 1">
         <span class="nowrap">{{port.containerPort}}/{{port.protocol}}</span><span ng-if="port.name"><span class="nowrap"> ({{port.name}})</span></span><span ng-if="port.hostPort"><span class="nowrap"><span class="port-icon"> &#8594;</span> {{port.hostPort}}</span></span><span ng-if="!$last">, </span>
       </span>
       <span ng-if="!detailed && container.ports.length >= 2">
         and {{container.ports.length - 1}}
-        <span ng-if="container.ports.length > 2">others</span>
-        <span ng-if="container.ports.length === 2">other</span>
+        <span ng-if="container.ports.length > 2" translate>others</span>
+        <span ng-if="container.ports.length === 2" translate>other</span>
       </span>
     </div>
   </div>
@@ -115,9 +115,9 @@
       <span aria-hidden="true" class="fa fa-database"></span>
     </div>
     <div class="pod-template-detail word-break">
-      <span class="pod-template-key">Mount:</span>
+      <span class="pod-template-key" translate>Mount:</span>
       <span>
-            {{mount.name}}<span ng-if="mount.subPath">, subpath {{mount.subPath}}</span>&#8201;&#8594;&#8201;<span>{{mount.mountPath}}</span>
+            {{mount.name}}<span ng-if="mount.subPath" translate>, subpath {{mount.subPath}}</span>&#8201;&#8594;&#8201;<span>{{mount.mountPath}}</span>
             <small class="text-muted">{{mount | volumeMountMode : podTemplate.spec.volumes}}</small>
           </span>
     </div>
@@ -129,13 +129,13 @@
     </div>
     <div class="pod-template-detail">
       <span class="pod-template-key">CPU:</span>
-      <span ng-if="container.resources.requests.cpu && container.resources.limits.cpu">
+      <span ng-if="container.resources.requests.cpu && container.resources.limits.cpu" translate>
             {{container.resources.requests.cpu | usageWithUnits: 'cpu'}} to {{container.resources.limits.cpu | usageWithUnits: 'cpu'}}
           </span>
-      <span ng-if="!container.resources.requests.cpu">
+      <span ng-if="!container.resources.requests.cpu" translate>
             {{container.resources.limits.cpu | usageWithUnits: 'cpu'}} limit
           </span>
-      <span ng-if="!container.resources.limits.cpu">
+      <span ng-if="!container.resources.limits.cpu" translate>
             {{container.resources.requests.cpu | usageWithUnits: 'cpu'}} requested
           </span>
     </div>
@@ -146,14 +146,14 @@
       <i class="fa fa-area-chart" aria-hidden="true"></i>
     </div>
     <div class="pod-template-detail">
-      <span class="pod-template-key">Memory:</span>
-      <span ng-if="container.resources.requests.memory && container.resources.limits.memory">
+      <span class="pod-template-key" translate>Memory:</span>
+      <span ng-if="container.resources.requests.memory && container.resources.limits.memory" translate>
             {{container.resources.requests.memory | usageWithUnits: 'memory'}} to {{container.resources.limits.memory | usageWithUnits: 'memory'}}
           </span>
-      <span ng-if="!container.resources.requests.memory">
+      <span ng-if="!container.resources.requests.memory" translate>
             {{container.resources.limits.memory | usageWithUnits: 'memory'}} limit
           </span>
-      <span ng-if="!container.resources.limits.memory">
+      <span ng-if="!container.resources.limits.memory" translate>
             {{container.resources.requests.memory | usageWithUnits: 'memory'}} requested
           </span>
     </div>
@@ -164,7 +164,7 @@
       <i class="fa fa-medkit" aria-hidden="true"></i>
     </div>
     <div class="pod-template-detail">
-      <span class="pod-template-key">Readiness Probe:</span>
+      <span class="pod-template-key" translate>Readiness Probe:</span>
       <probe probe="container.readinessProbe"></probe>
     </div>
   </div>
@@ -174,7 +174,7 @@
       <i class="fa fa-medkit" aria-hidden="true"></i>
     </div>
     <div class="pod-template-detail">
-      <span class="pod-template-key">Liveness Probe:</span>
+      <span class="pod-template-key" translate>Liveness Probe:</span>
       <probe probe="container.livenessProbe"></probe>
     </div>
   </div>

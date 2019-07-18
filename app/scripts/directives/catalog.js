@@ -14,8 +14,8 @@ angular.module('openshiftConsole')
         parentCategory: '=category'
       },
       templateUrl: 'views/catalog/catalog.html',
-      link: function($scope) {
-        $scope.categories = _.get($scope, 'parentCategory.subcategories', Constants.CATALOG_CATEGORIES);
+      link: function($scope, gettext) {
+        $scope.categories = _.get($scope, 'parentCategory.subcategories', Constants.CATALOG_CATEGORIES(gettext));
 
         // Set to true when everything has finished loading.
         $scope.loaded = false;

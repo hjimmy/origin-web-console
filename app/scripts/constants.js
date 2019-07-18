@@ -5,6 +5,9 @@
 // Reference: https://docs.openshift.org/latest/install_config/web_console_customization.html#loading-custom-scripts-and-stylesheets
 
 // NOTE: Update extensions/examples/online-extensions.js if you add a new help link to this map.
+/*var gettext = function(s) {
+  return s;
+}*/
 
 if (angular.isUndefined(window.OPENSHIFT_CONSTANTS)) {
   window.OPENSHIFT_CONSTANTS = {};
@@ -100,7 +103,7 @@ angular.extend(window.OPENSHIFT_CONSTANTS, {
   DISABLE_GLOBAL_EVENT_WATCH: false,
 
   // Disables the copy login command option from the user menu and CLI page.
-  DISABLE_COPY_LOGIN_COMMAND: false,
+  DISABLE_COPY_LOGIN_COMMAND: true,
 
   ENABLE_TECH_PREVIEW_FEATURE: {
     // Set to true if the service catalog supports pod presets for binding services to applications.
@@ -225,345 +228,350 @@ angular.extend(window.OPENSHIFT_CONSTANTS, {
   },
 
   // href's will be prefixed with /project/{{projectName}} unless they are absolute URLs
-  PROJECT_NAVIGATION: [
-    {
-      label: "Overview",
-      iconClass: "fa fa-dashboard",
-      href: "/overview"
-    },
-    {
-      label: "Applications",
-      iconClass: "fa fa-cubes",
-      secondaryNavSections: [
+  PROJECT_NAVIGATION: function() {
+      return [
         {
-          items: [
-            {
-              label: "Deployments",
-              href: "/browse/deployments",
-              prefixes: [
-                "/add-config-volume",
-                "/attach-pvc",
-                "/browse/deployment/",
-                "/browse/dc/",
-                "/browse/rs/",
-                "/browse/rc/",
-                "/edit/autoscaler",
-                "/edit/dc/",
-                "/edit/health-checks",
-                "/set-limits"
-              ]
-            },
-            {
-              label: "Stateful Sets",
-              href: "/browse/stateful-sets",
-              prefixes: [
-                "/browse/stateful-sets/"
-              ]
-            },
-            {
-              label: "Pods",
-              href: "/browse/pods",
-              prefixes: [
-                "/browse/pods/"
-              ]
-            },
-            {
-              label: "Services",
-              href: "/browse/services",
-              prefixes: [
-                "/browse/services/"
-              ]
-            },
-            {
-              label: "Routes",
-              href: "/browse/routes",
-              prefixes: [
-                "/browse/routes/",
-                "/create-route",
-                "/edit/routes/"
-              ]
-            },
-            {
-              label: "Provisioned Services",
-              href: "/browse/service-instances",
-              prefixes: [
-                "/browse/service-instances/"
-              ],
-              canI: {
-                resource: 'serviceinstances',
-                group: 'servicecatalog.k8s.io',
-                verb: 'list'
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      label: "Builds",
-      iconClass: "pficon pficon-build",
-      secondaryNavSections: [
+          label: "概述",//Overview
+          iconClass: "fa fa-dashboard",
+          href: "/overview"
+        },
         {
-          items: [
+          label: "应用",//gettext("Applications"),
+          iconClass: "fa fa-cubes",
+          secondaryNavSections: [
             {
-              label: "Builds",
-              href: "/browse/builds",
-              prefixes: [
-                "/browse/builds/",
-                "/browse/builds-noconfig/",
-                "/edit/builds/"
-              ]
-            },
-            {
-              label: "Pipelines",
-              href: "/browse/pipelines",
-              prefixes: [
-                "/browse/pipelines/",
-                "/edit/pipelines/"
-              ]
-            },
-            {
-              label: "Images",
-              href: "/browse/images",
-              prefixes: [
-                "/browse/images/"
+              items: [
+                {
+                  label: "部署",//gettext("Deployments"),
+                  href: "/browse/deployments",
+                  prefixes: [
+                    "/add-config-volume",
+                    "/attach-pvc",
+                    "/browse/deployment/",
+                    "/browse/dc/",
+                    "/browse/rs/",
+                    "/browse/rc/",
+                    "/edit/autoscaler",
+                    "/edit/dc/",
+                    "/edit/health-checks",
+                    "/set-limits"
+                  ]
+                },
+                {
+                  label: "状态集",//gettext("Stateful Sets"),
+                  href: "/browse/stateful-sets",
+                  prefixes: [
+                    "/browse/stateful-sets/"
+                  ]
+                },
+                {
+                  label: "容器组",//gettext("Pods"),
+                  href: "/browse/pods",
+                  prefixes: [
+                    "/browse/pods/"
+                  ]
+                },
+                {
+                 label: "服务",//gettext("Services"),
+                  href: "/browse/services",
+                  prefixes: [
+                    "/browse/services/"
+                  ]
+                },
+                {
+                  label: "路由",//gettext("Routes"),
+                  href: "/browse/routes",
+                  prefixes: [
+                    "/browse/routes/",
+                    "/create-route",
+                    "/edit/routes/"
+                  ]
+                },
+                {
+                  label: "预配服务",//gettext("Provisioned Services"),
+                  href: "/browse/service-instances",
+                  prefixes: [
+                    "/browse/service-instances/"
+                  ],
+                  canI: {
+                    resource: 'serviceinstances',
+                    group: 'servicecatalog.k8s.io',
+                    verb: 'list'
+                  }
+                }
               ]
             }
           ]
-        }
-      ]
-    },
-    {
-      label: "Resources",
-      iconClass: "fa fa-files-o",
-      secondaryNavSections: [
+        },
         {
-          items: [
+          label: "构建",//gettext("Builds"),
+          iconClass: "pficon pficon-build",
+          secondaryNavSections: [
             {
-              label: "Quota",
-              href: "/quota"
-            },
-            {
-              label: "Membership",
-              href: "/membership",
-              // supports: {resource: '', verb: '', group: '' }
-              canI: {
-                resource: 'rolebindings',
-                verb: 'list'
-              }
-            },
-            {
-              label: "Config Maps",
-              href: "/browse/config-maps",
-              prefixes: [
-                "/browse/config-maps/",
-                "/create-config-map",
-                "/edit/config-maps/"
+              items: [
+                {
+                  label: "构建",//gettext("Builds"),
+                  href: "/browse/builds",
+                  prefixes: [
+                    "/browse/builds/",
+                    "/browse/builds-noconfig/",
+                    "/edit/builds/"
+                  ]
+                },
+                {
+                  label: "管道",//gettext("Pipelines"),
+                  href: "/browse/pipelines",
+                  prefixes: [
+                    "/browse/pipelines/",
+                    "/edit/pipelines/"
+                  ]
+                },
+                {
+                  label: "映像",//gettext("Images"),
+                  href: "/browse/images",
+                  prefixes: [
+                    "/browse/images/"
+                  ]
+                }
               ]
-            },
-            {
-              label: "Secrets",
-              href: "/browse/secrets",
-              prefixes: [
-                "/browse/secrets/",
-                "/create-secret"
-              ],
-              canI: {
-                resource: 'secrets',
-                verb: 'list'
-              }
-            },
-            {
-              label: "Other Resources",
-              href: "/browse/other"
             }
           ]
+        },
+        {
+          label: "资源",//gettext("Resources"),
+          iconClass: "fa fa-files-o",
+          secondaryNavSections: [
+            {
+              items: [
+                {
+                  label: "配额",//gettext("Quota"),
+                  href: "/quota"
+                },
+                {
+                  label: "成员",//gettext("Membership"),
+                  href: "/membership",
+                  // supports: {resource: '', verb: '', group: '' }
+                  canI: {
+                    resource: 'rolebindings',
+                    verb: 'list'
+                  }
+                },
+                {
+                  label: "配置映射",//gettext("Config Maps"),
+                  href: "/browse/config-maps",
+                  prefixes: [
+                    "/browse/config-maps/",
+                    "/create-config-map",
+                    "/edit/config-maps/"
+                  ]
+                },
+                {
+                  label: "秘钥",//gettext("Secrets"),
+                  href: "/browse/secrets",
+                  prefixes: [
+                    "/browse/secrets/",
+                    "/create-secret"
+                  ],
+                  canI: {
+                    resource: 'secrets',
+                    verb: 'list'
+                  }
+                },
+                {
+                  label: "其他资源",//gettext("Other Resources"),
+                  href: "/browse/other"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          label: "存储",//gettext("Storage"),
+          iconClass: "pficon pficon-container-node",
+          href: "/browse/storage",
+          prefixes: [
+            "/browse/storage/",
+            "/browse/persistentvolumeclaims/",
+            "/create-pvc"
+          ]
+        },
+        {
+          label: "监控",//gettext("Monitoring"),
+          iconClass: "pficon pficon-screen",
+          href: "/monitoring",
+          prefixes: [
+            "/browse/events"
+          ]
+          // TODO uncomment when we have at least one of metrics or logs pages and then take off the href going straight to events
+          // secondaryNavSections: [
+          //   {
+          //     items: [
+          //       {
+          //         label: "Events",
+          //         href: "/browse/events"
+          //       },
+          //       {
+          //         label: "Logs",
+          //         href: "#" // TODO
+          //       },
+          //       {
+          //         label: "Metrics",
+          //         href: "#" // TODO
+          //       }
+          //     ]
+          //   }
+          // ]
+        },
+        {
+          label: "目录",//gettext("Catalog"),
+          iconClass: "pficon pficon-catalog",
+          href: "/catalog",
+          canI: {
+            addToProject: true
+          }
         }
-      ]
-    },
-    {
-      label: "Storage",
-      iconClass: "pficon pficon-container-node",
-      href: "/browse/storage",
-      prefixes: [
-        "/browse/storage/",
-        "/browse/persistentvolumeclaims/",
-        "/create-pvc"
-      ]
-    },
-    {
-      label: "Monitoring",
-      iconClass: "pficon pficon-screen",
-      href: "/monitoring",
-      prefixes: [
-        "/browse/events"
-      ]
-      // TODO uncomment when we have at least one of metrics or logs pages and then take off the href going straight to events
-      // secondaryNavSections: [
-      //   {
-      //     items: [
-      //       {
-      //         label: "Events",
-      //         href: "/browse/events"
-      //       },
-      //       {
-      //         label: "Logs",
-      //         href: "#" // TODO
-      //       },
-      //       {
-      //         label: "Metrics",
-      //         href: "#" // TODO
-      //       }
-      //     ]
-      //   }
-      // ]
-    },
-    {
-      label: "Catalog",
-      iconClass: "pficon pficon-catalog",
-      href: "/catalog",
-      canI: {
-        addToProject: true
+      ];
+  },
+
+  CATALOG_CATEGORIES: function(){
+    return [
+      {
+        id: 'languages',
+        label: "语言",//gettext("Languages"),
+        iconClassDefault: "fa fa-code",
+        items: [
+          {
+            id: "java",
+            label: "Java",
+            iconClass: "font-icon icon-openjdk",
+            subcategories: [{
+              id: 'java-subcategories',
+              items: [
+                {
+                  id: "amq",
+                  label: "Red Hat JBoss A-MQ"
+                },
+                {
+                  id: "processserver",
+                  label: "Red Hat JBoss BPM Suite"
+                },
+                {
+                  id: "decisionserver",
+                  label: "Red Hat JBoss BRMS"
+                },
+                {
+                  id: "datagrid",
+                  label: "Red Hat JBoss Data Grid"
+                },
+                {
+                  id: "eap",
+                  label: "Red Hat JBoss EAP"
+                },
+                {
+                  id: "jboss-fuse",
+                  label: "Red Hat JBoss Fuse"
+                },
+                {
+                  id: "tomcat",
+                  label: "Red Hat JBoss Web Server (Tomcat)"
+                },
+                {
+                  id: "sso",
+                  label: "Red Hat Single Sign-On"
+                },
+                {
+                  id: "wildfly",
+                  label: "WildFly"
+                }
+              ]
+            }]
+          },
+          {
+            id: "javascript",
+            categoryAliases: ["nodejs","js"],
+            label: "JavaScript",
+            iconClass: "font-icon icon-js"
+          },
+          {
+            id: "dotnet",
+            label: ".NET",
+            iconClass: "font-icon icon-dotnet"
+          },
+          {
+            id: "perl",
+            label: "Perl",
+            iconClass: "font-icon icon-perl"
+          },
+          {
+            id: "php",
+            label: "PHP",
+            iconClass: "font-icon icon-php"
+          },
+          {
+            id: "python",
+            label: "Python",
+            iconClass: "font-icon icon-python"
+          },
+          {
+            id: "ruby",
+            label: "Ruby",
+            iconClass: "font-icon icon-ruby"
+          },
+          {
+            id: "Golang",
+            categoryAliases: ["go"],
+            label: "Go",
+            iconClass: "font-icon icon-go-gopher"
+          }
+        ]
+      },
+      {
+        id: 'technologies',
+        label: "技术",//gettext("Technologies"),
+        items: [
+          {
+            id: "business-process-services",
+            categoryAliases: ["decisionserver","processserver"],
+            label: "业务流程服务",//gettext("Business Process Services"),
+            description: "Model, automate, and orchestrate business processes across applications, services, and data."
+          },
+          {
+            id: "ci-cd",
+            categoryAliases:["jenkins"],
+            label: "持续集成和部署",//gettext("Continuous Integration & Deployment"),
+            description: "Automate the build, test, and deployment of your application with each new code revision."
+          },
+          {
+            id: "datastore",
+            categoryAliases: ["database","datagrid"],
+            label: "数据仓库",//gettext("Data Stores"),
+            description: "Store and manage collections of data."
+          },
+          {
+            id: "messaging",
+            label: "消息",//gettext("Messaging"),
+            description: "Facilitate communication between applications and distributed processes with a messaging server."
+          },
+          {
+            id: "integration",
+            label: "集成",//gettext("Integration"),
+            description: "Connect with other applications and data to enhance functionality without duplication."
+          },
+          {
+            id: "single-sign-on",
+            categoryAliases: ["sso"],
+            label: "单点登录",//gettext("Single Sign-On"),
+            description: "A centralized authentication server for users to log in, log out, register, and manage user accounts for applications and RESTful web services."
+          },
+          {
+            id: "",
+            label: "未分类",//gettext("Uncategorized"),
+            description: ""
+          }
+        ]
       }
-    }
-  ],
-  CATALOG_CATEGORIES: [
-    {
-      id: 'languages',
-      label: "Languages",
-      iconClassDefault: "fa fa-code",
-      items: [
-        {
-          id: "java",
-          label: "Java",
-          iconClass: "font-icon icon-openjdk",
-          subcategories: [{
-            id: 'java-subcategories',
-            items: [
-              {
-                id: "amq",
-                label: "Red Hat JBoss A-MQ"
-              },
-              {
-                id: "processserver",
-                label: "Red Hat JBoss BPM Suite"
-              },
-              {
-                id: "decisionserver",
-                label: "Red Hat JBoss BRMS"
-              },
-              {
-                id: "datagrid",
-                label: "Red Hat JBoss Data Grid"
-              },
-              {
-                id: "eap",
-                label: "Red Hat JBoss EAP"
-              },
-              {
-                id: "jboss-fuse",
-                label: "Red Hat JBoss Fuse"
-              },
-              {
-                id: "tomcat",
-                label: "Red Hat JBoss Web Server (Tomcat)"
-              },
-              {
-                id: "sso",
-                label: "Red Hat Single Sign-On"
-              },
-              {
-                id: "wildfly",
-                label: "WildFly"
-              }
-            ]
-          }]
-        },
-        {
-          id: "javascript",
-          categoryAliases: ["nodejs","js"],
-          label: "JavaScript",
-          iconClass: "font-icon icon-js"
-        },
-        {
-          id: "dotnet",
-          label: ".NET",
-          iconClass: "font-icon icon-dotnet"
-        },
-        {
-          id: "perl",
-          label: "Perl",
-          iconClass: "font-icon icon-perl"
-        },
-        {
-          id: "php",
-          label: "PHP",
-          iconClass: "font-icon icon-php"
-        },
-        {
-          id: "python",
-          label: "Python",
-          iconClass: "font-icon icon-python"
-        },
-        {
-          id: "ruby",
-          label: "Ruby",
-          iconClass: "font-icon icon-ruby"
-        },
-        {
-          id: "Golang",
-          categoryAliases: ["go"],
-          label: "Go",
-          iconClass: "font-icon icon-go-gopher"
-        }
-      ]
-    },
-    {
-      id: 'technologies',
-      label: "Technologies",
-      items: [
-        {
-          id: "business-process-services",
-          categoryAliases: ["decisionserver","processserver"],
-          label: "Business Process Services",
-          description: "Model, automate, and orchestrate business processes across applications, services, and data."
-        },
-        {
-          id: "ci-cd",
-          categoryAliases:["jenkins"],
-          label: "Continuous Integration & Deployment",
-          description: "Automate the build, test, and deployment of your application with each new code revision."
-        },
-        {
-          id: "datastore",
-          categoryAliases: ["database","datagrid"],
-          label: "Data Stores",
-          description: "Store and manage collections of data."
-        },
-        {
-          id: "messaging",
-          label: "Messaging",
-          description: "Facilitate communication between applications and distributed processes with a messaging server."
-        },
-        {
-          id: "integration",
-          label: "Integration",
-          description: "Connect with other applications and data to enhance functionality without duplication."
-        },
-        {
-          id: "single-sign-on",
-          categoryAliases: ["sso"],
-          label: "Single Sign-On",
-          description: "A centralized authentication server for users to log in, log out, register, and manage user accounts for applications and RESTful web services."
-        },
-        {
-          id: "",
-          label: "Uncategorized",
-          description: ""
-        }
-      ]
-    }
-  ],
+    ];
+  },
   SAAS_OFFERINGS: [
     // Example application link to add to the top of the landing page.
     // {

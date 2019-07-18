@@ -41,7 +41,7 @@
 
     ctrl.selectStep = {
       id: 'projectTemplates',
-      label: 'Selection',
+      label: '选择',//'Selection',
       view: 'views/directives/process-template-dialog/process-template-select.html',
       hidden: ctrl.useProjectTemplate !== true,
       allowed: true,
@@ -52,7 +52,7 @@
 
     ctrl.infoStep = {
       id: 'info',
-      label: 'Information',
+      label: '信息',//'Information',
       view: 'views/directives/process-template-dialog/process-template-info.html',
       allowed: true,
       valid: true,
@@ -62,7 +62,7 @@
 
     ctrl.configStep = {
       id: 'configuration',
-      label: 'Configuration',
+      label: '配置',//'Configuration',
       view: 'views/directives/process-template-dialog/process-template-config.html',
       // Start initially as invalid so the button doesn't flicker when the dialog
       // is displayed and the template has required fields.
@@ -74,7 +74,7 @@
 
     ctrl.resultsStep = {
       id: 'results',
-      label: 'Results',
+      label: '结果',//'Results',
       view: 'views/directives/process-template-dialog/process-template-results.html',
       valid: true,
       allowed: false,
@@ -261,7 +261,7 @@
       ctrl.selectStep.selected = false;
       ctrl.configStep.selected = false;
       ctrl.resultsStep.selected = false;
-      ctrl.nextTitle = "Next >";
+      ctrl.nextTitle = "下一步";//"Next >";
       clearValidityWatcher();
     }
 
@@ -270,7 +270,7 @@
       ctrl.selectStep.selected = true;
       ctrl.configStep.selected = false;
       ctrl.resultsStep.selected = false;
-      ctrl.nextTitle = "Next >";
+      ctrl.nextTitle = "下一步";//"Next >";
       clearValidityWatcher();
       listProjects();
     }
@@ -280,7 +280,7 @@
       ctrl.selectStep.selected = false;
       ctrl.configStep.selected = true;
       ctrl.resultsStep.selected = false;
-      ctrl.nextTitle = "Create";
+      ctrl.nextTitle = "创建";//"Create";
       ctrl.resultsStep.allowed = ctrl.configStep.valid;
 
       validityWatcher = $scope.$watch("$ctrl.form.$valid", function(isValid) {
@@ -294,7 +294,7 @@
       ctrl.selectStep.selected = false;
       ctrl.configStep.selected = false;
       ctrl.resultsStep.selected = true;
-      ctrl.nextTitle = "Close";
+      ctrl.nextTitle = "关闭";//"Close";
       clearValidityWatcher();
       ctrl.wizardDone = true;
     }
